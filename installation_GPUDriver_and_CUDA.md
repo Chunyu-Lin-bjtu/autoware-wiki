@@ -4,7 +4,7 @@ Installation of NVIDIA GPU Driver and CUDA
 
 Disable Nouveau (default graphic driver on Ubuntu)
 --------------------------------------------------
-1. Open `/etc/modprobe.d/bracklist-nouveau.conf` and add the following lines:
+1. Open `/etc/modprobe.d/blacklist-nouveau.conf` and add the following lines:
    ```bash
    blacklist nouveau
    options nouveau modeset=0
