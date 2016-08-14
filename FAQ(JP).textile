@@ -1,0 +1,87 @@
+* "Autowareとは何ですか?":#autoware
+* "Autowareにはどんな機能がありますか?":#function
+* "マニュアルはありますか?":#manual
+* "どの環境で動作しますか?":#environment
+* "どのくらいのスペックのPCが必要ですか?":#spec
+* "CUDAは必要ですか?":#cuda
+* "OpenCVは必要ですか? どのバージョンに対応していますか?":#opencv
+* "どのLIDARに対応していますか?":#lidar
+* "どのカメラに対応していますか?":#camera
+* "どのGNSSに対応していますか?":#gnss
+* "サンプルデータはありますか?":#sample
+
+***
+
+h4. <a name="#autoware">Q.</a> Autowareとは何ですか?
+*A.* Autowareは、LinuxとROSをベースとした自動運転システム用オープンソースソフトウェアです。
+名古屋大学が中心となって開発しています。LIDARやカメラ、GNSSなどを使用して、自車位置や周囲物体を認識しながら、経路上を自律走行できます。
+
+h4. <a name="#function">Q.</a> Autowareにはどんな機能がありますか?
+*A.* 以下の機能があります。
+* 3次元自己位置推定
+* 3次元地図生成
+* 経路生成
+* 経路追従
+* 車両制御(アクセル・ブレーキ・ステアリング)
+* 車両認識
+* 歩行者認識
+* 信号認識
+* 移動体追跡
+* センサのキャリブレーション
+* センサ・フュージョン
+* Androidによるナビゲーション
+* データの記録
+* シミュレーション
+
+h4. <a name="#manual">Q.</a> マニュアルはありますか?
+*A.* "Autowareに含まれます。":https://github.com/CPFL/Autoware/tree/master/docs/jp
+ただし、最新ではありません。
+
+h4. <a name="#environment">Q.</a> どの環境で動作しますか?
+*A.* 以下の環境で動作します。
+* Ubuntu 14.04 + ROS Indigo
+* Ubuntu 15.04 + ROS Jade
+
+h4. <a name="#spec">Q.</a> どのくらいのスペックのPCが必要ですか?
+*A.* 以下が目安です。
+* CPU: Core i7、8コア程度
+* RAM: 32GB
+* ストレージ: 最低で30GB
+* GPU: NVIDIA GTX980クラス
+
+負荷分散のため、RVizを別のPCで実行することもあります。(つまり、1台では処理しきれないこともあります。)
+
+h4. <a name="#cuda">Q.</a> CUDAは必要ですか?
+*A.* 必須ではありません。
+* CUDAがあると、物体認識でより高速に動作します。(ビルド時に自動判別します。)
+* RVizで3次元点群地図などを表示するため、NVIDIAに限らず高速なGPUを必要とします。
+
+h4. <a name="#opencv">Q.</a> OpenCVは必要ですか? どのバージョンに対応していますか?
+*A.* 2.4.10以上のバージョンのOpenCVが必要です。
+なお、*バージョン3には対応していません。*
+
+h4. <a name="#lidar">Q.</a> どのLIDARに対応していますか?
+*A.* 以下のLIDARに対応しています。
+* Velodyne HDL-64e-S2
+* Velodyne HDL-64e-S3
+* Velodyne HDL-32e
+* Velodyne VLP-16
+* Hokuyo TOP-URG
+* Hokuyo 3D-URG
+
+h4. <a name="#camera">Q.</a> どのカメラに対応していますか?
+*A.* 以下のカメラに対応しています。
+* PointGrey Grasshoper 3
+* PointGrey LadyBug 5
+* Baumer VLG-22
+* USB Generic (UVC)
+
+h4. <a name="#gnss">Q.</a> どのGNSSに対応していますか?
+*A.* 以下のGNSSに対応しています。
+* Javad Delta 3
+* Serial GNSS
+
+h4. <a name="#sample">Q.</a> サンプルデータはありますか?
+*A.* 以下にあります。
+* "3D map of Moriyama in Nagoya":http://db3.ertl.jp/autoware/sample_data/sample_moriyama_data.tar.gz
+* "ROSBAG data of Moriyama driving":http://db3.ertl.jp/autoware/sample_data/sample_moriyama_150324.tar.gz
