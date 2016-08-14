@@ -12,11 +12,11 @@
 
 ***
 
-h4. <a name="#autoware">Q.</a> Autowareとは何ですか?
-*A.* Autowareは、LinuxとROSをベースとした自動運転システム用オープンソースソフトウェアです。
+h4. <a name="autoware">Q. Autowareとは何ですか?</a>
+A. Autowareは、LinuxとROSをベースとした自動運転システム用オープンソースソフトウェアです。
 名古屋大学が中心となって開発しています。LIDARやカメラ、GNSSなどを使用して、自車位置や周囲物体を認識しながら、経路上を自律走行できます。
 
-h4. <a name="#function">Q.</a> Autowareにはどんな機能がありますか?
+h4. <a name="function">Q. Autowareにはどんな機能がありますか?</a>
 *A.* 以下の機能があります。
 * 3次元自己位置推定
 * 3次元地図生成
@@ -33,16 +33,16 @@ h4. <a name="#function">Q.</a> Autowareにはどんな機能がありますか?
 * データの記録
 * シミュレーション
 
-h4. <a name="#manual">Q.</a> マニュアルはありますか?
+h4. <a name="manual">Q. マニュアルはありますか?</a>
 *A.* "Autowareに含まれます。":https://github.com/CPFL/Autoware/tree/master/docs/jp
 ただし、最新ではありません。
 
-h4. <a name="#environment">Q.</a> どの環境で動作しますか?
+h4. <a name="environment">Q. どの環境で動作しますか?</a>
 *A.* 以下の環境で動作します。
 * Ubuntu 14.04 + ROS Indigo
 * Ubuntu 15.04 + ROS Jade
 
-h4. <a name="#spec">Q.</a> どのくらいのスペックのPCが必要ですか?
+h4. <a name="spec">Q. どのくらいのスペックのPCが必要ですか?</a>
 *A.* 以下が目安です。
 * CPU: Core i7、8コア程度
 * RAM: 32GB
@@ -51,16 +51,16 @@ h4. <a name="#spec">Q.</a> どのくらいのスペックのPCが必要ですか
 
 負荷分散のため、RVizを別のPCで実行することもあります。(つまり、1台では処理しきれないこともあります。)
 
-h4. <a name="#cuda">Q.</a> CUDAは必要ですか?
+h4. <a name="cuda">Q. CUDAは必要ですか?</a>
 *A.* 必須ではありません。
 * CUDAがあると、物体認識でより高速に動作します。(ビルド時に自動判別します。)
 * RVizで3次元点群地図などを表示するため、NVIDIAに限らず高速なGPUを必要とします。
 
-h4. <a name="#opencv">Q.</a> OpenCVは必要ですか? どのバージョンに対応していますか?
+h4. <a name="opencv">Q. OpenCVは必要ですか? どのバージョンに対応していますか?</a>
 *A.* 2.4.10以上のバージョンのOpenCVが必要です。
 なお、*バージョン3には対応していません。*
 
-h4. <a name="#lidar">Q.</a> どのLIDARに対応していますか?
+h4. <a name="lidar">Q. どのLIDARに対応していますか?</a>
 *A.* 以下のLIDARに対応しています。
 * Velodyne HDL-64e-S2
 * Velodyne HDL-64e-S3
@@ -69,19 +69,19 @@ h4. <a name="#lidar">Q.</a> どのLIDARに対応していますか?
 * Hokuyo TOP-URG
 * Hokuyo 3D-URG
 
-h4. <a name="#camera">Q.</a> どのカメラに対応していますか?
+h4. <a name="camera">Q. どのカメラに対応していますか?</a>
 *A.* 以下のカメラに対応しています。
 * PointGrey Grasshoper 3
 * PointGrey LadyBug 5
 * Baumer VLG-22
 * USB Generic (UVC)
 
-h4. <a name="#gnss">Q.</a> どのGNSSに対応していますか?
+h4. <a name="gnss">Q. どのGNSSに対応していますか?</a>
 *A.* 以下のGNSSに対応しています。
 * Javad Delta 3
 * Serial GNSS
 
-h4. <a name="#sample">Q.</a> サンプルデータはありますか?
+h4. <a name="sample">Q. サンプルデータはありますか?</a>
 *A.* 以下にあります。
 * "3D map of Moriyama in Nagoya":http://db3.ertl.jp/autoware/sample_data/sample_moriyama_data.tar.gz
 * "ROSBAG data of Moriyama driving":http://db3.ertl.jp/autoware/sample_data/sample_moriyama_150324.tar.gz
