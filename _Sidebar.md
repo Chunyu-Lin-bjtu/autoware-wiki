@@ -1,1 +1,1 @@
-![Autoware](https://sites.google.com/a/tier4.jp/products/_/rsrc/1449136649263/home/autoware_logo.png?height=62&width=320)
+![Autoware](http://en.tier4.jp/_/rsrc/1452224778734/home/autoware_logo.png?height=54&width=320)
