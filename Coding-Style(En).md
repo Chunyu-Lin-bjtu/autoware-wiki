@@ -1,8 +1,8 @@
-Coding rules and notes related to Real-Time. 
+#Coding rules and notes related to Real-Time. 
 
-INDEX
+##INDEX
 
-ROS specific coding Notes
+###ROS specific coding Notes
 1.	Not to “publish” in random period.
 2.  Node combining two or more topics, to publish at the stage of uniform two topics. 
 3.  Always put a header in the topic and time stamp to inherit the value of previous topic. 
@@ -12,7 +12,7 @@ ROS specific coding Notes
 7.  Interdict the usage for launch file output=”screen” 
 8.  Avoid using “tf” as much as possible.
 
-Notes for the general embedded and real-time systems.
+###Notes for the general embedded and real-time systems.
 1.  Do not use wide variety of the library such as the chrono.
 2.  For a functional argument, deploy the pointer and const reference pointer as much as possible. 
 3.  Use the reference argument as a result of the function.
@@ -22,7 +22,7 @@ Notes for the general embedded and real-time systems.
 7.  Make effective use of inline.
 8.  Naming functions, such as get and set, shall not have processing code described.
 
-Fine coding conventions
+###Fine coding conventions
 ※Appreciate if any collaborator can add, as needed.
 
 Must read (at least once) http://qiita.com/shirakawa4756/items/55b509fb56cb1bb0c9a4
@@ -34,7 +34,7 @@ Other recommendations for reading
 ・CODE COMPLETE 
 ・C++ Coding Standards
  
-ROS specific coding Notes
+##ROS specific coding Notes
 
 1.	Not to “publish” in random period.
 2.	Basicaly, the topic must publish once updated, In other words, there is a need to publics hin the callback.
@@ -46,7 +46,7 @@ while(ros::ok()) {
 
 3.	Node combining two or more topics, to publish at the stage of uniform two topics.
 For example, if you subscribe to A,B topic, do not publish in the call back function of A, which is updated only A topic.  Both A,B topic being updated and pair must be made in order to perform publish.   SAMPLE CODE 
-A_callback(A_msg) {
+`A_callback(A_msg) {
    if (is_b_callback == true){ // When A topic has been updated already 
         publish(hogehoge); // publish the data
         is_a_callback = false;
@@ -64,7 +64,7 @@ B_callback(B_msg) {
     }
     is_b_callback = true;
 }
-
+`
 3. Always put a header in the topic and time stamp to inherit the value of previous topic.  Update must not be performed without inheritance of the header’s time stamp. Yet, when combining 2 topic together, either topic’s header time stamp can be inherited. 
 *Time stamp of two topics header will be the same by synchronization.
  
