@@ -47,7 +47,8 @@ while(ros::ok()) {
 ```
 - Node combining two or more topics, to publish at the stage of uniform two topics.
 For example, if you subscribe to A,B topic, do not publish in the call back function of A, which is updated only A topic.  Both A,B topic being updated and pair must be made in order to perform publish.   
- ###SAMPLE CODE### 
+
+###SAMPLE CODE### 
 ```
 A_callback(A_msg) {
     if (is_b_callback == true){ // When A topic has been updated already 
@@ -100,7 +101,7 @@ http://qiita.com/amayaw9/items/6e55b91c28cdc8d32cf2
  
 -  Make effective use of inline. Few lines of function maybe expanded to inline.  However, it may lead to the increase of the footprint. Caution!
 
-###Bad Example;###
+###Bad Example###
 ```
 callback() {
     start_time = clock_get_time(); // Particle size and degree of abstraction is small 
