@@ -39,14 +39,17 @@ Other recommendations for reading
 1.  Not to “publish” in random period.
 2.  Basicaly, the topic must publish once updated, In other words, there is a need to publics hin the callback.
 Following is bad example of coding.
-`while(ros::ok()) {
+```
+while(ros::ok()) {
     publisher.publish(hogehoge);
     loop.sleep();
-}`
+}
+```
 
 3.  Node combining two or more topics, to publish at the stage of uniform two topics.
 For example, if you subscribe to A,B topic, do not publish in the call back function of A, which is updated only A topic.  Both A,B topic being updated and pair must be made in order to perform publish.   SAMPLE CODE 
-`A_callback(A_msg) {
+```
+A_callback(A_msg) {
     if (is_b_callback == true){ // When A topic has been updated already 
         publish(hogehoge); // publish the data
         is_a_callback = false;
@@ -63,7 +66,8 @@ B_callback(B_msg) {
         return;
     }
     is_b_callback = true;
-}`
+}
+```
 
 3. Always put a header in the topic and time stamp to inherit the value of previous topic.  Update must not be performed without inheritance of the header’s time stamp. Yet, when combining 2 topic together, either topic’s header time stamp can be inherited. 
 *Time stamp of two topics header will be the same by synchronization.
@@ -97,10 +101,12 @@ http://qiita.com/amayaw9/items/6e55b91c28cdc8d32cf2
 7.  Make effective use of inline. Few lines of function maybe expanded to inline.  However, it may lead to the increase of the footprint. Caution!
 
 ###Bad Example;###
-`callback() {
+```
+callback() {
     start_time = clock_get_time(); // Particle size and degree of abstraction is small 
     compute_xxxx(); // Particle size and degree of abstraction is large
-}`
+}
+```
 8.  Naming functions, such as get and set, shall not have processing code described.
 Programmer shall not describe time consuming processs to get or set.  Only the acquisition and storage of value should be performed by get and set. Another idea is to be able to provide hint/estimate for processing time by the name and heavy function should use computeXXXX. 
 
