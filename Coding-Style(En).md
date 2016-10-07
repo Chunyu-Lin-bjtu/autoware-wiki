@@ -29,10 +29,10 @@ Must read (at least once) http://qiita.com/shirakawa4756/items/55b509fb56cb1bb0c
 If time allows, strongly advised http://www.textdrop.net/google-styleguide-ja/cppguide.xml
 
 Other recommendations for reading 
-・Effective C++ (recommend)
-・ReadableCode (recommend)
-・CODE COMPLETE 
-・C++ Coding Standards
+*Effective C++ (recommend)
+*ReadableCode (recommend)
+*CODE COMPLETE 
+*C++ Coding Standards
  
 ##ROS specific coding Notes
 
