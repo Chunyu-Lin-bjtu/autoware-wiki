@@ -47,7 +47,7 @@ while(ros::ok()) {
 ```
 - Node combining two or more topics, to publish at the stage of uniform two topics.
 For example, if you subscribe to A,B topic, do not publish in the call back function of A, which is updated only A topic.  Both A,B topic being updated and pair must be made in order to perform publish.   
-###SAMPLE CODE###
+ ###SAMPLE CODE### 
 ```
 A_callback(A_msg) {
     if (is_b_callback == true){ // When A topic has been updated already 
