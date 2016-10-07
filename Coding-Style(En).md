@@ -45,9 +45,9 @@ while(ros::ok()) {
     loop.sleep();
 }
 ```
-
 3. Node combining two or more topics, to publish at the stage of uniform two topics.
-For example, if you subscribe to A,B topic, do not publish in the call back function of A, which is updated only A topic.  Both A,B topic being updated and pair must be made in order to perform publish.   SAMPLE CODE 
+For example, if you subscribe to A,B topic, do not publish in the call back function of A, which is updated only A topic.  Both A,B topic being updated and pair must be made in order to perform publish.   
+***SAMPLE CODE*** 
 ```
 A_callback(A_msg) {
     if (is_b_callback == true){ // When A topic has been updated already 
@@ -109,4 +109,3 @@ callback() {
 ```
 8.  Naming functions, such as get and set, shall not have processing code described.
 Programmer shall not describe time consuming processs to get or set.  Only the acquisition and storage of value should be performed by get and set. Another idea is to be able to provide hint/estimate for processing time by the name and heavy function should use computeXXXX. 
-
