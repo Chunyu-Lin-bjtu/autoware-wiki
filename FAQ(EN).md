@@ -1,4 +1,7 @@
-#How To Update PCL?
+#Where is install script?
+https://github.com/NavIV/automation-scripts
+
+#How to update PCL?
 Update PCL for using fast PCL
 ```
 sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl
