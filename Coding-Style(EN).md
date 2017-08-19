@@ -3,14 +3,14 @@
 ## INDEX
 
 ### ROS specific coding Notes
-1.  Not to “publish” in random period.
-2.  Node combining two or more topics, to publish at the stage of uniform two topics. 
-3.  Always put a header in the topic and time stamp to inherit the value of previous topic. 
-4.  Do not use of the service. 
+1. Not to “publish” in random period.
+2. Node combining two or more topics, to publish at the stage of uniform two topics. 
+3. Always put a header in the topic and time stamp to inherit the value of previous topic. 
+4. Do not use of the service. 
 5.　Not to topic large data. If unavoidable, use the “nodelet”. 
-6.  Interdict the use of “MultiThreadSpin”.
-7.  Interdict the usage for launch file output=”screen” 
-8.  Avoid using “tf” as much as possible.
+6. Interdict the use of “MultiThreadSpin”.
+7. Interdict the usage for launch file output=”screen” 
+8. Avoid using “tf” as much as possible.
 
 ### Notes for the general embedded and real-time systems.
 1.  Do not use wide variety of the library such as the chrono.
