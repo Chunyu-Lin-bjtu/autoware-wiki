@@ -6,19 +6,19 @@
 1. Not to “publish” in random period.
 2. Node combining two or more topics, to publish at the stage of uniform two topics. 
 3. Always put a header in the topic and time stamp to inherit the value of previous topic. 
-4. Do not use of the service. 
-5.　Not to topic large data. If unavoidable, use the “nodelet”. 
+4. Do not use of the service.
+5. Not to topic large data. If unavoidable, use the “nodelet”. 
 6. Interdict the use of “MultiThreadSpin”.
 7. Interdict the usage for launch file output=”screen” 
 8. Avoid using “tf” as much as possible.
 
-### Notes for the general embedded and real-time systems.
-1.  Do not use wide variety of the library such as the chrono.
-2.  For a functional argument, deploy the pointer and const reference pointer as much as possible. 
-3.  Use the reference argument as a result of the function.
-4.  Avoid dynamic partitioning, such as malloc and new. 
-5.  If the size of vector is roughly estimable, use reserve. 
-6.  Avoid monster function that spans more than 50 lines. 
+### Notes for general embedded and real-time systems.
+1. Do not use wide variety of the library such as the chrono.
+2. For a functional argument, deploy the pointer and const reference pointer as much as possible. 
+3. Use the reference argument as a result of the function.
+4. Avoid dynamic partitioning, such as malloc and new. 
+5. If the size of vector is roughly estimable, use reserve. 
+6. Avoid monster function that spans more than 50 lines. 
 7.  Make effective use of inline.
 8.  Naming functions, such as get and set, shall not have processing code described.
 
