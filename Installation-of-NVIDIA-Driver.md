@@ -1,4 +1,4 @@
-Installation of NVIDIA GPU Driver and CUDA
+Installation of NVIDIA Driver
 ========================================
 
 
