@@ -1,8 +1,8 @@
-#Coding rules and notes related to Real-Time. 
+# Coding rules and notes related to Real-Time. 
 
-##INDEX
+## INDEX
 
-###ROS specific coding Notes
+### ROS specific coding Notes
 1.  Not to “publish” in random period.
 2.  Node combining two or more topics, to publish at the stage of uniform two topics. 
 3.  Always put a header in the topic and time stamp to inherit the value of previous topic. 
@@ -12,7 +12,7 @@
 7.  Interdict the usage for launch file output=”screen” 
 8.  Avoid using “tf” as much as possible.
 
-###Notes for the general embedded and real-time systems.
+### Notes for the general embedded and real-time systems.
 1.  Do not use wide variety of the library such as the chrono.
 2.  For a functional argument, deploy the pointer and const reference pointer as much as possible. 
 3.  Use the reference argument as a result of the function.
@@ -22,8 +22,8 @@
 7.  Make effective use of inline.
 8.  Naming functions, such as get and set, shall not have processing code described.
 
-###Fine coding conventions
-※Appreciate if any collaborator can add, as needed.
+### Fine coding conventions
+Appreciate if any collaborator can add, as needed.
 
 Must read (at least once) http://qiita.com/shirakawa4756/items/55b509fb56cb1bb0c9a4
 If time allows, strongly advised http://www.textdrop.net/google-styleguide-ja/cppguide.xml
@@ -34,7 +34,7 @@ Other recommendations for reading
 * CODE COMPLETE
 * C++ Coding Standards
  
-##ROS specific coding Notes
+## ROS specific coding Notes
 
 -  Not to “publish” in random period.
 -  Basicaly, the topic must publish once updated, In other words, there is a need to publics hin the callback.
@@ -48,7 +48,7 @@ while(ros::ok()) {
 - Node combining two or more topics, to publish at the stage of uniform two topics.
 For example, if you subscribe to A,B topic, do not publish in the call back function of A, which is updated only A topic.  Both A,B topic being updated and pair must be made in order to perform publish.   
 
-###SAMPLE CODE### 
+### SAMPLE CODE 
 ```
 A_callback(A_msg) {
     if (is_b_callback == true){ // When A topic has been updated already 
@@ -83,7 +83,7 @@ B_callback(B_msg) {
 
 - Avoid using “tf” as much as possible. For getting location information by using current_pose.  tf library and ROS are separated (not exactly devided, however), it is difficult to secure real-time.  To unify as much as possible to the topic-base, avoid using tf. In addition, tf is very effective when there’s many joints such as arm robot, but not very effective if determined statically coordinate relationship such as automatic driving operation.  
 
-##Notes for the general embedded and real-time systems.
+## Notes for general embedded and real-time systems.
 -  Do not use wide variety of the library such as the chrono. It will greatly reduces the portability of the RTOS. Do not use them, such as chrono, but utilise ros::WallTime.
 
 -  For a functional argument, deploy the pointer and const reference pointer as much as possible.  int or double is not necessary to use a const call by reference, but the vector or array should use a const call by reference. It reduces the memory consumption and at the same time, it will reduce overhead of the function call.
@@ -101,7 +101,7 @@ http://qiita.com/amayaw9/items/6e55b91c28cdc8d32cf2
  
 -  Make effective use of inline. Few lines of function maybe expanded to inline.  However, it may lead to the increase of the footprint. Caution!
 
-###Bad Example###
+### Bad Example
 ```
 callback() {
     start_time = clock_get_time(); // Particle size and degree of abstraction is small 
