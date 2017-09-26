@@ -21,11 +21,11 @@
 1.8　Check the standing position at a short distance (about 5 m).<br>
 　　　Hold the checkerboard in portrait orientation ([Note:1](#note1)) and the checkerboard is completely<br>
 　　　positioned at the center-lower end, center-upper end, lower-right end, upper-right end,<br>
-　　　lower-left end, upper-left end position of the camera image screen (within the reach of your hand)<br>
+　　　lower-left end, upper-left end position of the camera image screen (within your reach)<br>
 　　　check the range shown in the camera image and the Velodyne point cloud image.<br>
 　　　It is good to set a coin on the ground for the standing position.<br>
-　　　*If the camera image or Velodyne point cloud image of the checkerboard is missing, it can<br>
-　　　　not be used for calibration.<br>
+　　　*If the camera image or Velodyne point cloud image of the checkerboard is missing,<br>
+　　　　it can not be used for calibration.<br>
 　　　*For accurate calibration, it is necessary to record many poses of checkerboard in the widest<br>
 　　　　possible area within the camera and Velodyne's field of view.
 
@@ -70,8 +70,8 @@
 
 　　![fig. 3.2](https://github.com/CPFL/Autoware/wiki/images_Calibration/fig3_2.png)
 
-3.3　To change Pattern Size and Pattern Number, after changing the value, click (X) on<br>
-　　　the upper left to temporarily exit and restart the Calibration Tool Kit.<br>
+3.3　To change Pattern Size and Pattern Number, after changing the value, click (X)<br>
+　　　on the upper left to temporarily exit and restart the Calibration Tool Kit.<br>
 　　　*The setting values of Autoware standard checkerboard are as follows.<br>
 　　　　- Pattern Size： 0.108 X 0.108<br>
 　　　　- Pattern Number： 6 X 8
@@ -91,11 +91,11 @@
 
 3.6　The upper-left Camera Image Panel displays the current camera image.<br>
 　　　Adjust the image position so that the checkerboard is at the center of the panel.<br>
-　　　Confirm that the checkerboard is a near-center-lower-front pose, otherwise release ROSBAG Pause<br>
-　　　and Pause again in the near-center-lower-front.<br>
+　　　Confirm that the checkerboard is a near-center-lower-front pose, otherwise release<br>
+　　　ROSBAG Pause and Pause again in the near-center-lower-front.<br>
 　　　*The operation on the Camera Image Panel is as follows.<br>
 　　　　- With the scrollbar or the cursor keys, the image moves vertically and horizontally.<br>
-　　　　- With the mouse wheel, the image moves up and down。
+　　　　- With the mouse wheel, the image moves up and down.
 
 　　![fig. 3.6](https://github.com/CPFL/Autoware/wiki/images_Calibration/fig3_6.png)
 
@@ -116,20 +116,20 @@
 
 　　![fig. 3.7.2](https://github.com/CPFL/Autoware/wiki/images_Calibration/fig3_7_2e.png)
 
-　　　Key operation of viewpoint movement in Point Cloud Image Panel<br>
+　　　Key operation of viewpoint movement in Point Cloud Image Panel.<br>
 　　　Please release Num Lock.<br>
 　　　Adjust the amount of viewpoint movement with the mouse wheel.<br>
 　　　*As the viewpoint moves, the image moves in the opposite direction.
 
 　　![fig. 3.7.3](https://github.com/CPFL/Autoware/wiki/images_Calibration/fig3_7_3e.png)
 
-　　　Key operation of viewpoint rotation in Point Cloud Image Panel<br>
-　　　*As the viewpoint rotates, the image moves in the opposite direction.。
+　　　Key operation of viewpoint rotation in Point Cloud Image Panel.<br>
+　　　*As the viewpoint rotates, the image moves in the opposite direction.
 
 　　![fig. 3.7.4](https://github.com/CPFL/Autoware/wiki/images_Calibration/fig3_7_4e.png)
 
-　　　Mouse operation on Point Cloud Image Panel<br>
-　　　(For point cloud extraction/cancellation, only the Captured Point Cloud Image Panel)
+　　　Mouse operation on Point Cloud Image Panel.<br>
+　　　(For point cloud extraction/cancellation, only the Captured Point Cloud Image Panel.)
 
 　　　The red, green and blue origin mark at the center of the Point Cloud Image Panel<br>
 　　　represents the position and direction of Velodyne (red=forward, green=left, blue=up).<br>
@@ -141,15 +141,15 @@
 　　　(4) Hold "w" and rotate the viewpoint upwards to see the point clouds on the checkerboard.<br>
 　　　(5) ↑, ↓, ←, →, PgUp, PgDn, a, d, w, s key to correct the checkerboard to a viewable position.<br>
 　　　　　At this time, if you adjust not only the middle-lower, but also the right, left, upper<br>
-　　　　　and lower pose to the position where the checker board can be seen, the later operation<br>
-　　　　　becomes easy.
+　　　　　and lower pose to the position where the checker board can be seen, the later<br>
+　　　　　operation becomes easy.
 
 　　![fig. 3.7.5](https://github.com/CPFL/Autoware/wiki/images_Calibration/fig3_7_5.png)
 
 3.8　Press the Grab button to capture the camera image and Velodyne point clouds.<br>
 　　　When fail to capture, you can cancel with the Remove button.<br>
-　　　*If the checkerboard image is missing and the intersection of the checker can not be<br>
-　　　　acquired, Grab can not be done.
+　　　*If the checkerboard image is missing and the intersection of the checker can not<br>
+　　　　be acquired, Grab can not be done.
 
 3.9　The lower-left Grabbed Camera Image Panel displays the captured camera image.<br>
 　　　A tab of "Image_0" has been created.<br>
@@ -177,12 +177,12 @@
 3.11　Visually check that the cursor (circle) is placed at the center of the checkerboard,<br>
 　　　the circles overlap in parallel with the checkerboard face, and the line perpendicular to<br>
 　　　the circle is perpendicular to the checkerboard face, then left click to extract point cloud.<br>
-　　　Make sure that the extracted checkerboard point clouds displayed in red are in the center of<br>
-　　　the checkerboard.<br>
+　　　Make sure that the extracted checkerboard point clouds displayed in red are in the center<br>
+　　　of the checkerboard.<br>
 　　　If extraction fails, cancel with right click and extract with left click again.<br>
 　　　The diameter of the green circle is the actual size (see [※2](#annotation2)), it is a size inversely<br>
-　　　proportional to the distance from the viewpoint, and displayed so as to be parallel to the<br>
-　　　point group in the circle.
+　　　proportional to the distance from the viewpoint, and displayed so as to be parallel to<br>
+　　　the point cloud in the circle.
 
 　　![fig. 3.11](https://github.com/CPFL/Autoware/wiki/images_Calibration/fig3_11.png)
 
@@ -224,8 +224,9 @@
 　　　of each of "Image_0-59"<br>
 　　　in the Grabbed Camera Image Panel on the lower-left.<br>
 　　　If the accuracy of the overlapping position is not good, correct the position of the<br>
-　　　extracted point cloud of "Velodyne_0-59" of the lower-right Grabbed Point Cloud Image Panel,<br>
-　　　(cancel by right click, and re-extract with left click), then try again Calibrate->Project.
+　　　extracted point cloud of "Velodyne_0-59" of the lower-right Grabbed Point Cloud Image<br>
+　　　Panel, (cancel by right click, and re-extract with left click), then try again<br>
+　　　Calibrate button and Project button.
 
 　　![fig. 3.19](https://github.com/CPFL/Autoware/wiki/images_Calibration/fig3_19.png)
 
@@ -271,7 +272,7 @@
 
 　　　　![fig. A2](https://github.com/CPFL/Autoware/wiki/images_Calibration/a2_1.gif)
 
-　　　The worst case is when the scanline is in the center of the green circle. (see left figure)<br>
+　*The worst case is when the scanline is in the center of the green circle. (see left figure)<br>
 　　In this case, if there is no next scanline within half the diameter of the circle,<br>
 　　it will not be detected as a plane.<br>
 　　Condition for including two scanlines at least: half of the circle diameter > scanline interval
