@@ -1,10 +1,16 @@
+## Checkout 
+
+The presented demo corresponds to Autoware Version 1.6. Please checkout this version:
+
+`git checkout tags/1.6.0`
+
 ## Sample 3D Map Data
 
-XXX
+YYY
 
 ## Sample ROSBAG Data
 
-YYY
+ZZZ
 
 ## ROSBAG STORE
 
