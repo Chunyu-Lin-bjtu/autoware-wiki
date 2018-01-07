@@ -1,0 +1,1 @@
+![Autoware Official Logo](https://github.com/CPFL/Autoware/blob/master/docs/images/autoware_logo_1.png)
