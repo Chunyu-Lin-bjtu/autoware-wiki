@@ -1,5 +1,5 @@
 **You must follow the rules described below when you contribute to Autoware.**
-Please read all of them before you start coding.
+Please read all of them carefully before you start coding.
 You are now part of the open-source community.
 You need to understand our rules.
 Thank you for your time.
