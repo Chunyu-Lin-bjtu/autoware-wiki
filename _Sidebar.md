@@ -1,1 +1,1 @@
-![Autoware](https://github.com/CPFL/Autoware/raw/master/docs/images/autoware_logo_1.png?height=54&width=320)
+![Autoware Offical Logo](https://github.com/CPFL/Autoware/raw/master/docs/images/autoware_logo_1.png?height=54&width=320)
