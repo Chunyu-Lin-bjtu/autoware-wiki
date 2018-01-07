@@ -20,6 +20,7 @@ Autoware can also be used for products and services. [Tier IV](http://www.tier4.
 
 ### Mandatory Part
 
+0. [Coding Rules](https://github.com/CPFL/Autoware/wiki/Coding-Rules) (**Must Read**)
 1. [Installation](https://github.com/CPFL/Autoware/wiki/Installation)
 1. [Demo Data](https://github.com/CPFL/Autoware/wiki/Demo-Data)
 1. [Sensing](https://github.com/CPFL/Autoware/wiki/Sensing)
