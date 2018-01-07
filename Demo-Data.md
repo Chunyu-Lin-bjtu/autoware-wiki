@@ -12,5 +12,5 @@ Tier IV provides a lot of ROSBAG files at [ROSBAG STORE](https://rosbag.tier4.jp
 
 ***
 
-[[Prev >>](https://github.com/CPFL/Autoware/wiki/Installation)]
+[[<< Prev](https://github.com/CPFL/Autoware/wiki/Installation)]
 [[Next >>](https://github.com/CPFL/Autoware/wiki/Sensing)]
