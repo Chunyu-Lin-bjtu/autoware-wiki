@@ -1,3 +1,5 @@
+**You must follow all the rules below when you contribute to Autoware.**
+
 ## Pull Request
 
 XXX
