@@ -1,4 +1,7 @@
-**You must follow all the rules below when you contribute to Autoware.**
+**You must follow all the following rules when you contribute to Autoware.**
+Please consider that you are now part of the open-source community.
+You are supposed to understand our rules.
+Thank you for your time.
 
 ## Pull Request
 
