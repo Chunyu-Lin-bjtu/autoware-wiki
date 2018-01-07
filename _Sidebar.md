@@ -1,1 +1,1 @@
-![Autoware](http://en.tier4.jp/_/rsrc/1452224778734/home/autoware_logo.png?height=54&width=320)
+![Autoware](https://github.com/CPFL/Autoware/raw/master/docs/images/autoware_logo_1.png?height=54&width=320)
