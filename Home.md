@@ -18,6 +18,7 @@ Autoware can also be used for products and services. [Tier IV](http://www.tier4.
 
 ## Autoware Wiki
 
-1. (Installation)[https://github.com/CPFL/Autoware/wiki/Installation]
-1. (Calibration)[https://github.com/CPFL/Autoware/wiki/Calibration]
-1. (FAQ)[https://github.com/CPFL/Autoware/wiki/FAQ]
+1. [Installation](https://github.com/CPFL/Autoware/wiki/Installation)
+1. [ROSBAG Demo](https://github.com/CPFL/Autoware/wiki/ROSBAG-Demo)
+1. [Calibration](https://github.com/CPFL/Autoware/wiki/Calibration)
+1. [FAQ](https://github.com/CPFL/Autoware/wiki/FAQ)
