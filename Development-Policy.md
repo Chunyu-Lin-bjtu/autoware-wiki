@@ -2,6 +2,10 @@
 
 XXX
 
-## Coding Standards
+## Branching Model
 
 YYY
+
+## Coding Standards
+
+ZZZ
