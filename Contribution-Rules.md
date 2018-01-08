@@ -283,24 +283,20 @@ B_callback(B_msg) {
 
 - Avoid using “tf” as much as possible. For getting location information by using current_pose.  tf library and ROS are separated (not exactly devided, however), it is difficult to secure real-time.  To unify as much as possible to the topic-base, avoid using tf. In addition, tf is very effective when there’s many joints such as arm robot, but not very effective if determined statically coordinate relationship such as automatic driving operation.  
 
-## Notes for general embedded and real-time systems.
--  Do not use wide variety of the library such as the chrono. It will greatly reduces the portability of the RTOS. Do not use them, such as chrono, but utilise ros::WallTime.
+## Notes for generic embedded and real-time systems.
 
--  For a functional argument, deploy the pointer and const reference pointer as much as possible.  int or double is not necessary to use a const call by reference, but the vector or array should use a const call by reference. It reduces the memory consumption and at the same time, it will reduce overhead of the function call.
+* Do not use a wide variety of libraries. It will decrease portability of RTOS. For example, use ros::WallTime rather than the chrono library. However, what about the boost library? It remains as an open question...
 
--  Use the reference argument as a result of the function.  Pass by return value, the speed is significantly slower.  Therefore, including call by reference and pointer, these return value for passing the result to argument should be used.  Pointer, careful attention has to be paid to the scope of the contents of the data.  Basically, return value may use for the error, such as success or failure.
-http://nonbiri-tereka.hatenablog.com/entry/2014/02/18/091945
+* For function arguments, use pointers and const calls by reference as much as possible. It is not necessary to use them for int or double arguments, but for vector or array arguments, you should use const calls by reference. It saves memory footprint, and also reduces overhead of the function call.
 
--  Avoid dynamic partitioning, such as malloc and new. malloc and new will cause memory leak to happen.  In addition, It should be avoided as much as possible in order to prevent it difficult to estimate the use size of the resource.
+* Use the reference argument when you return from the function. A direct return value will degrade performance. However, be careful about the scope of pointer and so on. Basically, you may want to use a direct return value just for error numbers or Boolean results.
 
--  If the size of vector is roughly estimable, use reserve. Capacity shortage in the vector, allocate twice the area.  From the experiences, when shortage occur on a large vector, it requires large amount of time to secure, therefore, it is recommended to use the reserve to allocate area in advance.
-http://qiita.com/amayaw9/items/6e55b91c28cdc8d32cf2
+* Avoid dynamic partitioning, such as malloc and new. malloc and new could cause memory leaks. In addition, they make unclear the amount of used resources.
 
--  Avoid monster function that spans more than 50 lines. Basically, any function should be kept around 20-30 lines. In addition, bear in mind the particle size of the processing in the function to align.
-*I remember reading in “Effective C++”, sophisticated code method is average of 14 lines.
+* If the size of vector is roughly estimated, use reserve. The vector allocates memory regions twice in case of capacity shortage. It will require a large amount of time to allocate memory regions twice, you had better to use reserve so that the required memory regions can be allocated tightly in advance.
+
+* Avoid a monster function that spans more than 50 lines. Basically, any function should be kept around 20-30 lines of code. In addition, bear in mind that the granularity of coding within the function should be well balanced. According to [Effective C++](https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/1491903996/ref=sr_1_2?ie=UTF8&qid=1515426637&sr=8-2&keywords=effective+C%2B%2B), a method or function of sophisticated code has only 14 lines on average.
  
--  Make effective use of inline. Few lines of function maybe expanded to inline.  However, it may lead to the increase of the footprint. Caution!
-
 ### Bad Example
 ```
 callback() {
@@ -310,26 +306,12 @@ callback() {
 ```
 * Use inline effectively. Such a function that has a single line of code, for instance, should be inline. However, inline functions will enlarge footprint. So be careful about using too many inline functions.
 
-* Naming functions, such as get and set, shall not have processing code described.
-Programmer shall not describe time consuming processs to get or set.  Only the acquisition and storage of value should be performed by get and set. Another idea is to be able to provide hint/estimate for processing time by the name and heavy function should use computeXXXX. 
- 
-* getやsetなどの命名に処理コードを記述しない。getやsetに時間のかかる処理を記述してはいけない。getやsetは値の取得や格納のみを行うべき。名前から処理時間をある程度推定できるようにするべきであり、処理が重たい関数にはcomputeHogeHogeを利用する。 
+* Function naming should correspond to the function code. For example, do not write heavy code in get() or set(), because these functions are supposed to just get or set some values. Function naming should imply what the function is and what is the cost of processing time. If you want to create a time-consuming function, for example, probably function naming such as compute_xxx is suitable. 
 
-## 参考文献
+## C++ Books
 
-C++11(14, 17)には型推論等便利な機能が多く加わっているので, C++11以降の内容が
-記載されている本を一読することを推奨する.
-
-- [リーダブルコード](https://www.oreilly.co.jp/books/9784873115658/)
-- [プログラミング作法](http://ascii.asciimw.jp/books/books/detail/4-7561-3649-4.shtml)
-- [Code Complete上巻](http://ec.nikkeibp.co.jp/item/books/589000.html)
-- [Code Complete下巻](http://ec.nikkeibp.co.jp/item/books/589100.html)
-- [C++11/14 コア言語](http://asciidwango.jp/post/128762444830/c-1114-コア言語)
-- [C++ポケットリファレンス](http://gihyo.jp/book/2015/978-4-7741-7408-2)
-- [C++のためのAPIデザイン](http://www.sbcr.jp/products/4797369151.html)
-- Effective C++
-- C++ Coding Standards
-- プログラミング言語C++第4版(C++をもっと知りたくなったあなたに）
+C++ 11/14/17 has introduced many useful capabilities, e.g., type inference.
+You may want to review C++ 11 through the popular books: [[Amazon links](https://www.amazon.com/s/ref=nb_sb_noss_2/135-5470609-2801335?url=search-alias%3Daps&field-keywords=C%2B%2B+11)]
 
 [[Home](https://github.com/CPFL/Autoware/wiki/)]
 [[Next >>](https://github.com/CPFL/Autoware/wiki/Overview)]
