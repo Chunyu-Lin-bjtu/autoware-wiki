@@ -4,7 +4,8 @@ Thank you for your time.
 
 ## To Begin With
 
-Please join [Autoware Slack](https://autoware-developer.slack.com/) and say hello to the community. You can also post your message on [Autoware Googlegroups](mailto:autoware@googlegroups.com).
+Please join Autoware Slack at [https://autoware-developer.slack.com/](https://autoware-developer.slack.com/) and say hello to the community. You can also post your message on Autoware Googlegroups at [autoware@googlegroups.com](mailto:autoware@googlegroups.com). To subscribe Autoware Googlegroups, please click the "Apply to Join Group" button at [https://groups.google.com/d/forum/autoware](https://groups.google.com/d/forum/autoware). If you don't have a Google account, please instead send an email to [autoware+subscribe@googlegroups.com](mailto:autoware+subscribe@googlegroups.com). To contribute, apparently, you need to create a GitHub account if you don't have one yet: [[Join GitHub](https://github.com/join)].
+
 
 ## Pull Request
 
