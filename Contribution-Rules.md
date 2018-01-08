@@ -198,39 +198,23 @@ C++言語, 無名 namespaceでラップする(ファイルローカルの static
 class, structであれば privateにする.
 C言語では staticを指定し, スコープをファイルローカルにする
 
-## Notes and Tips for Real-Time Applications. 
+## Notes for Timing Constraints 
 
-### Fine coding conventions
-Appreciate if any collaborator can add, as needed.
+* Do not publish topics in random periods.
 
-Must read (at least once) http://qiita.com/shirakawa4756/items/55b509fb56cb1bb0c9a4
-If time allows, strongly advised http://www.textdrop.net/google-styleguide-ja/cppguide.xml
-
-Other recommendations for reading 
-* Effective C++ (recommend)
-* ReadableCode (recommend)
-* CODE COMPLETE
-* C++ Coding Standards
- 
-## ROS specific coding Notes
-
--  Not to “publish” in random period.
--  Basicaly, the topic must publish once updated, In other words, there is a need to publics hin the callback.
-Following is bad example of coding.
+* Basically, topics must be published once updated. That is to say, you should publish topics in callback functions.
+The following is a bad example of coding.
 ```
 while(ros::ok()) {
-    publisher.publish(hogehoge);
+    publisher.publish(xxx);
     loop.sleep();
 }
 ```
-- Node combining two or more topics, to publish at the stage of uniform two topics.
-For example, if you subscribe to A,B topic, do not publish in the call back function of A, which is updated only A topic.  Both A,B topic being updated and pair must be made in order to perform publish.   
-
-### SAMPLE CODE 
+* If a node has two or more topics, it has to publish them timely when all of them are ready. For example, if you subscribe to A and B topics, do not publish in the callback function associated with A, where only A is updated. You should wait for both A and B to be updated. The following is sample code:   
 ```
 A_callback(A_msg) {
-    if (is_b_callback == true){ // When A topic has been updated already 
-        publish(hogehoge); // publish the data
+    if (is_b_callback == true) { // If A was updated 
+        publish(xxx); // publish the topic
         is_a_callback = false;
         is_b_callback = false;
         return;
@@ -239,7 +223,7 @@ A_callback(A_msg) {
 }
 B_callback(B_msg) {
     if (is_a_callback == true){
-        publish(hogehoge);
+        publish(xxx);
         is_a_callback = false;
         is_b_callback = false;
         return;
@@ -248,8 +232,7 @@ B_callback(B_msg) {
 }
 ```
 
-- Always put a header in the topic and time stamp to inherit the value of previous topic.  Update must not be performed without inheritance of the header’s time stamp. Yet, when combining 2 topic together, either topic’s header time stamp can be inherited. 
-*Time stamp of two topics header will be the same by synchronization.
+* Always put a header in the topic, and inherit the time stamp from the preceding topic. Do not update the header's time stamp without inheritance. If a node has two or more topics, you can inherit the time stamp from any of these, because their time stamps are supposed to be synchronized.
  
 -  Do not use of the service.  When the service and topic are mixed, real-time estimate becomes difficult.  Basically, it should be carried out in a topic-based.  In non-real-time portion not involved in the recognition, judgment and control of the automated driving operation may utilise the service. 
 
@@ -261,7 +244,7 @@ B_callback(B_msg) {
 
 - Avoid using “tf” as much as possible. For getting location information by using current_pose.  tf library and ROS are separated (not exactly devided, however), it is difficult to secure real-time.  To unify as much as possible to the topic-base, avoid using tf. In addition, tf is very effective when there’s many joints such as arm robot, but not very effective if determined statically coordinate relationship such as automatic driving operation.  
 
-## Notes and Tips for Embedded Programming.
+## Notes for Embedded Environments
 
 * Do not use a wide variety of libraries. It will decrease portability of RTOS. For example, use ros::WallTime rather than the chrono library. However, what about the boost library? It remains as an open question...
 
