@@ -69,7 +69,7 @@ We introduce [Travis CI](https://travis-ci.org/) to automate the above test and 
 
 You must have your own preference and fashion in coding, but please respect our coding standards as well. No need to force yourself to change your coding style, though the following standards are preferred in Autoware.
 
-### ROS Coding
+### ROS C++ Coding
 
 First of all, please understand and obey the ROS coding standards, when you add new code to Autoware.
 
@@ -85,15 +85,14 @@ You might be interested in using [ROS clang-format](https://github.com/davetcole
 ```
 sudo apt-get install clang-format-x.x
 ```
+* Locate the .clang-format file at the top directory.
+* Apply clang-format to the target source file:
+```
+clang-format -i filename
+```
 
-- プロジェクトのトップディレクトリに .clang-formatファイルを置く
-- `clang-format -i filename`とすると .clang-formatに従いフォーマットしてくれる.
-
-`clang-format -i`だとファイルは上書きされるので, 実行前に "git commit"を
-しておくと安全である.
-
-システム全体に適用するには以下のようなシェルスクリプトを実行すればよい
-
+Be careful that `clang-format -i` will overwrite the file. It is safe to do "git commit" before applying clang-format.
+If you want to apply clang-format to the entire system, run the following script:
 ```sh
 for file in $(git ls-files | \grep -E '\.(c|cpp|h|hpp)$' | \grep -v -- '#')
 do
@@ -101,14 +100,15 @@ do
 done
 ```
 
-### ROS Pythonコーディング規約
+### ROS Python Coding
 
-- http://wiki.ros.org/PyStyleGuide
+In addition to C++, you will often use Python in ROS. There is also a coding style guide for Python recommended in ROS.
 
-PEP8準拠をチェックするツールは [pep8](https://pypi.python.org/pypi/pep8)などで機械的に行えばよい.
-現状の ROSは Python2.5をターゲットとしているようだが, Ubuntu 16.04以降では
-デフォルトの Pythonのバージョンが 3になるので, 今後の保守を考えると,
-Python3準拠で書いておいた方が良いと思う.
+* [ROS Python Coding Style](http://wiki.ros.org/PyStyleGuide)
+
+You can use [pep8](https://pypi.python.org/pypi/pep8) as a tool to check PEP8-compliant coding.
+Many existing ROS programs use Python 2.5, but Ubuntu 16.04 or later versions will use Python 3 by default.
+Considering maintenance of coding in the future, Python 3 is preferred in Autoware.
 
 ## ライブラリ化における注意点
 - パッケージ間の依存関係を不必要に増やさない. 循環依存は絶対作らない
