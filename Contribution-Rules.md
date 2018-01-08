@@ -4,7 +4,7 @@ Thank you for your time.
 
 ## To Begin With
 
-Please join [Autoware Slack](https://autoware-developer.slack.com/) and say hello to the community. You can also post your message onto [Autoware Googlegroups](autoware@googlegroups.com).
+Please join [Autoware Slack](https://autoware-developer.slack.com/) and say hello to the community. You can also post your message on [Autoware Googlegroups](mailto:autoware@googlegroups.com).
 
 ## Pull Request
 
