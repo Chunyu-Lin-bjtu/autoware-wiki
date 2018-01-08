@@ -79,8 +79,13 @@ First of all, please understand and obey the ROS coding standards, when you add 
 
 You might be interested in using [ROS clang-format](https://github.com/davetcoleman/roscpp_code_format) that helps you to comply with the ROS C++ coding standards automatically in terms of styles, such as indent size and brackets space.
 
-#### 利用方法
-- clang-formatをインストールする(Ubuntuだとパッケージあり). 新しいバージョンが良い
+#### How to use clang-format
+
+* Install clang-format. A newer version is better. Ubuntu has a package:
+```
+sudo apt-get install clang-format-x.x
+```
+
 - プロジェクトのトップディレクトリに .clang-formatファイルを置く
 - `clang-format -i filename`とすると .clang-formatに従いフォーマットしてくれる.
 
