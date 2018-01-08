@@ -22,7 +22,7 @@ Autoware can also be used for products and services. [Tier IV](http://www.tier4.
 
 1. [Contribution Rules](https://github.com/CPFL/Autoware/wiki/Contribution-Rules) (**Must Read**)
 1. [Overview](https://github.com/CPFL/Autoware/wiki/Overview)
-1. [Modules](https://github.com/CPFL/Autoware/wiki/Modules)
+1. [Packages](https://github.com/CPFL/Autoware/wiki/Packages)
 
 ### Users Guide (Mandatory)
 
