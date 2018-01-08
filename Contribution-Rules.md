@@ -54,20 +54,16 @@ Reference for the git-flow model
 
 ## Pull Request
 
-1. A design article should be posted for every feature or bug. 
-1. Every feature/bug implementation needs to be thoroughly reviewed (at least two reviewers).
-1. A unit test program needs to be submitted so that the reviewers or others can check if the implementation logic is correct.
-1. an integration test  
-4. If applicable we also write a SIL test (with data or simulation) and 
-5. HIL test. 
-6. For all the tests we also compute coverage (using gcov) so we know which code gets tested and how often. 
-7. In addition we use coverity and PClint and cppcheck to run static code analysis. 
-8. We also run cpplint for style enforcement. 
-9. Now running of all of this is automated through gitlab CI and we have regular Debian and docker release for intel64, qnx and ARM64.
+When you are ready to send a pull request from your branch, please follow:
 
-## Branching Model
+1. A design article should be posted with a GitHub comment for every feature or bug. 
+1. Every feature/bug implementation needs to be thoroughly reviewed (at least two reviewers). You can specify your favorite or appropriate reviewers by @accountname.
+1. A sample program for the unit test needs to be submitted so that the reviewers or others can check if the implementation logic is correct.
+1. The integration test with the [demo data](https://github.com/CPFL/Autoware/wiki/Demo-Data) needs to be passed.  
+1. Coding style enforcement must be applied: e.g., [cpplint](https://github.com/google/styleguide/tree/gh-pages/cpplint).
+1. The reviewers would further run static code analysis: e.g., [cppcheck](http://cppcheck.sourceforge.net/).
 
-YYY
+We introduce [Travis CI](https://travis-ci.org/) to automate the above test and deploy steps.
 
 ## Coding Standards
 
