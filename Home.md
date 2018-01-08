@@ -18,9 +18,14 @@ Autoware can also be used for products and services. [Tier IV](http://www.tier4.
 
 ## Autoware Wiki
 
-### Mandatory Part
+### Developers Guide
 
-0. [Contribution Rules](https://github.com/CPFL/Autoware/wiki/Contribution-Rules) (**Must Read**)
+1. [Contribution Rules](https://github.com/CPFL/Autoware/wiki/Contribution-Rules) (**Must Read**)
+1. [Overview](https://github.com/CPFL/Autoware/wiki/Overview)
+1. [Modules](https://github.com/CPFL/Autoware/wiki/Modules)
+
+### Users Guide (Mandatory)
+
 1. [Installation](https://github.com/CPFL/Autoware/wiki/Installation)
 1. [Demo Data](https://github.com/CPFL/Autoware/wiki/Demo-Data)
 1. [Sensing](https://github.com/CPFL/Autoware/wiki/Sensing)
@@ -31,7 +36,7 @@ Autoware can also be used for products and services. [Tier IV](http://www.tier4.
 1. [Control](https://github.com/CPFL/Autoware/wiki/Control)
 1. [Actuation](https://github.com/CPFL/Autoware/wiki/Actuation)
 
-### Optional Part
+### Users Guide (Optional)
 
 1. [Mapping](https://github.com/CPFL/Autoware/wiki/Mapping)
 1. [Calibration](https://github.com/CPFL/Autoware/wiki/Calibration)
