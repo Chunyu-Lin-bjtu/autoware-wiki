@@ -198,29 +198,7 @@ C++言語, 無名 namespaceでラップする(ファイルローカルの static
 class, structであれば privateにする.
 C言語では staticを指定し, スコープをファイルローカルにする
 
-# Coding rules and notes related to Real-Time. 
-
-## INDEX
-
-### ROS specific coding Notes
-1. Not to “publish” in random period.
-2. Node combining two or more topics, to publish at the stage of uniform two topics. 
-3. Always put a header in the topic and time stamp to inherit the value of previous topic. 
-4. Do not use of the service.
-5. Not to topic large data. If unavoidable, use the “nodelet”. 
-6. Interdict the use of “MultiThreadSpin”.
-7. Interdict the usage for launch file output=”screen” 
-8. Avoid using “tf” as much as possible.
-
-### Notes for general embedded and real-time systems.
-1. Do not use wide variety of the library such as the chrono.
-2. For a functional argument, deploy the pointer and const reference pointer as much as possible. 
-3. Use the reference argument as a result of the function.
-4. Avoid dynamic partitioning, such as malloc and new. 
-5. If the size of vector is roughly estimable, use reserve. 
-6. Avoid monster function that spans more than 50 lines. 
-7.  Make effective use of inline.
-8.  Naming functions, such as get and set, shall not have processing code described.
+## Notes and Tips for Real-Time Applications. 
 
 ### Fine coding conventions
 Appreciate if any collaborator can add, as needed.
@@ -283,7 +261,7 @@ B_callback(B_msg) {
 
 - Avoid using “tf” as much as possible. For getting location information by using current_pose.  tf library and ROS are separated (not exactly devided, however), it is difficult to secure real-time.  To unify as much as possible to the topic-base, avoid using tf. In addition, tf is very effective when there’s many joints such as arm robot, but not very effective if determined statically coordinate relationship such as automatic driving operation.  
 
-## Notes for generic embedded and real-time systems.
+## Notes and Tips for Embedded Programming.
 
 * Do not use a wide variety of libraries. It will decrease portability of RTOS. For example, use ros::WallTime rather than the chrono library. However, what about the boost library? It remains as an open question...
 
