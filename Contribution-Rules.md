@@ -110,51 +110,25 @@ You can use [pep8](https://pypi.python.org/pypi/pep8) as a tool to check PEP8-co
 Many existing ROS programs use Python 2.5, but Ubuntu 16.04 or later versions will use Python 3 by default.
 Considering maintenance of coding in the future, Python 3 is preferred in Autoware.
 
-## ライブラリ化における注意点
-- パッケージ間の依存関係を不必要に増やさない. 循環依存は絶対作らない
-- そもそもライブラリ化する必要があるかを検討する
-- 他パッケージの msgファイルから生成されたヘッダファイルを includeしない
-- テストしやすいように書く
+### Notes for Library Development
 
-### パッケージ間の依存関係を不必要に増やさない
+* Algorithms should be implemented in libraries. For example, the normal distributions transform (NDT) algorithm is desired to be implemented as something like libndt_xxx. Packaging as a library, this algorithm implementation can also be used for other applications apart from ROS or Autoware. This is a spirit of open source.
 
-パッケージ間の依存は少ない方が望ましい. 特に循環参照が発生してしまうと,
-ビルドができない状態に陥ってしまう.
+* Do not make unnecessary dependencies among libraries. In particular, never make circular dependencies. This jeopardizes the entire build system.
 
-### そもそもライブラリ化する必要があるかを検討する
+* Do not include header files generated from msg files of other packages.
 
-汎用的なもの以外は切り出さない方がいい. パッケージ間の依存を返って高めてしまう可能性がある.
-別パッケージにするほど有用かをまず考える. 単に関数の切り出しなら, 同じパッケージ内にライブラリを
-作成した方が良い.
+* Keep every library independent and general. Creating too many libraries is also a bad idea.
 
-### 他パッケージの msgファイルから生成されたヘッダファイルを includeしない
+* Provide a sample program to test the functions of library. 
 
-msgファイルから生成されたヘッダファイルを includeすると, ライブラリがその msgを持つ
-パッケージに依存してしまう. 結果そのライブラリをリンクするパッケージも, その msgを持つ
-パッケージに依存してしまうことになってしまう.
+### Notes for Design and Implementation
 
-メッセージとして受け取ったデータの処理をライブラリに切り出したい場合は,
-メッセージに含まれるデータ型(std::vector<double>等)を渡すようにする.
-もしくは別途定義したメッセージの型に依存しない class, structに移し替える.
+#### Global Variables
 
-## 現在のライブラリの実装で気になったところ(2016年 3月 30日現在)
+We should not use global variables unless they are really needed. Instead, we should use classes or structs to hold variables. Even for libraries, we do not recommend using global variables. In C++, you can use methods. In C, you can use pointers or references for function arguments.
 
-下記のような設計, 実装は推奨されない.
-
-### グローバル変数の多用しすぎている点
-
-ライブラリ側でグローバル変数で状態を保存するのでなく, classや構造体に状態を持たせた
-方がよい(errnoのように真に大域的なグローバル変数は例外であるが, そのような変数が
-必要になることはほとんどない).
-
-C++であればメソッドとして実装, C言語であれば引数でポインタを渡すように実装すればよい.
-
-またグローバル変数を使う関数の場合は, 複数スレッドを使った場合, 値の取得, 更新に
-おいて問題が発生する可能性がある(スレッドセーフ). ROSではユーザの見えないところで
-スレッドが使われる可能性もあるため, 極力グローバル変数を使わないことが望ましい.
-必要な場合は複数スレッドからのアクセスがあるかを考慮し, その可能性がある場合は
-排他制御を行う必要性を検討する.
-
+Besides in using global variables, you should take care of thread-safe implementation for multi-threaded programs as global variables may be accessed simultaneously among threads. In ROS, particularly, there are many other threads running in background (e.g., polling threads for subscribing to topics). Thus, you should avoid using global variable as much as possible, though you can use mutual exclusion to ensure thread-safe implementation if you really need global variables.
 
 ### ライブラリ関数の引数がない or 戻り値が void型
 
