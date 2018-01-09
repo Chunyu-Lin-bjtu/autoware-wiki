@@ -1,15 +1,17 @@
-Docker Setup
---------------------------------------------------
-You first need to build the Docker environment. If the following installation process does not work for you, please check Docker's installation website(<https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/>).
+# Docker Setup
+
+   You first need to build the Docker environment. If the following installation process does not work for you,please check [Docker's installation website](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
+
 ###   Old Docker Cleanup
    ```bash
    $ sudo apt-get remove docker docker-engine docker.io
    ```
    You are ready to move on the next step if all Docker packages are removed.
-###  Docker CE Installation
-This time you may want to install Docker using the repository, though there are several other ways to install Docker.
 
-1. Repository Setup
+###  Docker CE Installation
+   This time you may want to install Docker using the repository, though there are several other ways to install Docker.
+
+####  Step 1: Repository Setup
 
    Do update on apt-get.
    ```bash
@@ -36,7 +38,7 @@ This time you may want to install Docker using the repository, though there are 
    ``` bash
    $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
    ```
-2. Docker CE Installation
+   #### Step 2: Docker CE Installation
 
    Update on apt-get.
    ``` bash
@@ -46,7 +48,7 @@ This time you may want to install Docker using the repository, though there are 
    ``` bash
    $ sudo apt-get install docker-ce
    ``` 
-   Validate the installation succeeded.
+   Validate the installation succeeded.v
    ``` bash
    $ sudo docker run hello-world
    ``` 
@@ -77,23 +79,24 @@ Autoware Docker Setup
 You can build the Autoware runtime environment using nvidia-docker. You may choose either to use the configuration of Docker Hub "as is" or to modify-then-recompile Dockerfile.
 
 ### Case 1: Using Docker Hub "As Is"
-Move to the docker directory in Autoware.
+   Move to the docker directory in Autoware.
    ``` bash
    $ cd Autoware/docker
    ``` 
-Modify the last sentence of run.sh in that directory: autoware-$1 --> autoware/autoware:1.6.0-kinetic
-Run run.sh kinetic if you use Ubuntu 16.04, assuming that the default path is "/home/$USER/shared_dir".
+   Modify the last sentence of run.sh in that directory: autoware-$1 --> <font color="Red">autoware/autoware:1.6.0-kinetic</font>
+
+   Run run.sh kinetic if you use Ubuntu 16.04, assuming that the default path is "/home/$USER/shared_dir".
    ``` bash
    $ sh run.sh kinetic
    ``` 
-If you want to use your own path, run build.sh kinetic with the path argument.
+   If you want to use your own path, run build.sh kinetic with the path argument.
    ``` bash
    $ sh run.sh kinetic {SHARED_DIR_PATH}
    ``` 
-Replace "kinetic" with "indigo" if you use Ubuntu 14.04.
+   Replace "kinetic" with "indigo" if you use Ubuntu 14.04.
 
 ### Case 2: Using modify-then-recompile Dockerfile
-1. Autoware Docker Build
+#### Step 1: Autoware Docker Build
 
    Move to the docker directory in Autoware.
    ``` bash
@@ -107,8 +110,8 @@ Replace "kinetic" with "indigo" if you use Ubuntu 14.04.
    ``` bash
    $ sh build.sh indigo
    ``` 
-2. Autoware Docker Run
-
+#### Step2: Autoware Docker Run
+    
    Run run.sh kinetic if you use Ubuntu 16.04, assuming that the default path is "/home/$USER/shared_dir".
    ``` bash
    $ sh run.sh kinetic
@@ -118,5 +121,4 @@ Replace "kinetic" with "indigo" if you use Ubuntu 14.04.
    $ sh run.sh kinetic {SHARED_DIR_PATH}
    ``` 
    Replace "kinetic" with "indigo" if you use Ubuntu 14.04.
-
-
+    
