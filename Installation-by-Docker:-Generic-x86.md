@@ -1,5 +1,5 @@
 # Overview
-This page guides you to install and run Autoware on the Intel processor using Docker.
+This page guides you to install and run Autoware on the Intel x86 processor (64 bits) using Docker. If you are looking for the NVIDIA DRIVE PX Docker, please visit [here](https://github.com/CPFL/Autoware/wiki/Installation-by-Docker:-DRIVE-PX2).
 
 # Outline
 * Docker Setup
