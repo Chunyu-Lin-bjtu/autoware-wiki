@@ -45,7 +45,7 @@ This page guides you to install and run Autoware on the Intel x86 processor (64 
    ``` bash
    $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
    ```
-   #### Step 2: Docker CE Installation
+### Step 2: Docker CE Installation
 
    Update on apt-get.
    ``` bash
