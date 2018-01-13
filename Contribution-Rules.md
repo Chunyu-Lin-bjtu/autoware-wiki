@@ -190,9 +190,9 @@ B_callback(B_msg) {
 
 * Do not use "MultiThreadSpin". It is not preferable from the point of view of real-time scheduling, because timing estimates and resource allocation become more difficult. 
 
-- Interdict the usage for launch file output=”screen”  It is OK for debugging use, however, output=”screen” described file should NEVER be pushed to Git. Other person’s terminal information will be leaked. Basically, do not check rgt, but check  ROS_INFO and ROS_DEBUG from node. 
+* Do not use `output="screen"`. It is okay for the debugging purpose, however, please remove `output="screen"` before you commit to the "develop" branch - you never want to annoy your colleagues by flooding terminal information. To monitor information, basically, we prefer ROS_INFO and ROS_DEBUG to rqt, but rqt is definitely useful for the debugging purpose. So you can use it, but just be noted that you should remove it before you commit to the "develop" branch.
 
-- Avoid using “tf” as much as possible. For getting location information by using current_pose.  tf library and ROS are separated (not exactly devided, however), it is difficult to secure real-time.  To unify as much as possible to the topic-base, avoid using tf. In addition, tf is very effective when there’s many joints such as arm robot, but not very effective if determined statically coordinate relationship such as automatic driving operation.  
+* Avoid using "tf" as much as possible. For example, you can obtain the local position from the "current_pose" topic, and do not really need to use "tf". In fact, the "tf" library and ROS are disjoint (very often used together, though). Using "tf" makes timing estimates more difficult. Instead of "tf", use "topic" as much as possible. Frankly speaking, "tf" is useful for applications such as arm robots with many joints, which require dynamic transformation of coordinates, but is not very useful for self-driving vehicles because transformation of coordinates can be often statically determined. 
 
 ## Notes for Embedded Platforms
 
