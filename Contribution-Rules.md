@@ -134,24 +134,13 @@ Besides in using global variables, you should take care of thread-safe implement
 
 Function calls without arguments or without return values (i.e., void types) are difficult to test, because the results of function calls are all indirect and not visible from the function callees. Therefore we should make functions declared with specific arguments and meaningful return values so that a unique set of arguments always leads to the same result.
 
-### ネーミング
+#### Naming
 
-現在のライブラリ関数のネーミングには以下の問題がある
-- 名前が単純すぎて理解が難しい
-- 名前が単純すぎてシンボル名重複が発生しうる
+Function names must represent what these functions do. For example, "init()" or "destroy()" is not an appropriate name, because they do not tell what they initialize or destroy. Such a short and simple function name may also likely cause symbol name conflicts among multiple libraries. Function naming should be discussed when new libraries are added to Autoware. The following are some tips to solve this function naming problem.
 
-例えば fusionライブラリには `init`, `destroy`と名前付けされた関数が存在するが,
-これだけ見ると何に関する初期化, 終了処理なのかがわからない. また名前が
-ありふれているためシンボル名が重複してしまう可能性も高い.
+1. Use a library name as prefix. For example, if the "fusion" library wants to export "init()" or "destroy()", they should be named as "fusion_init()" or "fusion_destroy()".
 
-#### 解決案
-1. ライブラリの prefixを使う
-2. namespaceを使う
-
-##### ライブラリの prefixを使う
-
-上記で挙げた fusionライブラリの場合, `fusion_init`, `fusion_destroy`とする.
-こうすることで少なくとも fusionに関する処理ということはわかる.
+1. Use namespace.
 
 ##### namespaceを使う
 
