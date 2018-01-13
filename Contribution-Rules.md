@@ -130,12 +130,9 @@ We should not use global variables unless they are really needed. Instead, we sh
 
 Besides in using global variables, you should take care of thread-safe implementation for multi-threaded programs as global variables may be accessed simultaneously among threads. In ROS, particularly, there are many other threads running in background (e.g., polling threads for subscribing to topics). Thus, you should avoid using global variable as much as possible, though you can use mutual exclusion to ensure thread-safe implementation if you really need global variables.
 
-### ライブラリ関数の引数がない or 戻り値が void型
+#### Arguments and Return Values
 
-ライブラリ関数の引数がない or 戻り値が void型ということは副作用のために
-関数呼び出しを行うことになる. このような関数はテストしづらく, 理解もしづらい.
-ライブラリ関数(not クラスメソッド)については副作用のない関数型スタイルで
-あることが望ましい. つまり引数が同一であれば結果が一意になる関数.
+Function calls without arguments or without return values (i.e., void types) are difficult to test, because the results of function calls are all indirect and not visible from the function callees. Therefore we should make functions declared with specific arguments and meaningful return values so that a unique set of arguments always leads to the same result.
 
 ### ネーミング
 
