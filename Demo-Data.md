@@ -1,9 +1,3 @@
-## Checkout 
-
-The presented demo corresponds to Autoware Version 1.6. Please checkout this version:
-
-`$ git checkout tags/1.6.0`
-
 ## Sample 3D Map Data
 
 Download the sample pointcloud/vector map data from [here](http://db3.ertl.jp/autoware/sample_data/sample_moriyama_data.tar.gz).
@@ -20,4 +14,4 @@ Tier IV provides a lot of other ROSBAG data at [ROSBAG STORE](https://rosbag.tie
 
 [[Home](https://github.com/CPFL/Autoware/wiki/)]
 [[<< Prev](https://github.com/CPFL/Autoware/wiki/Installation)]
-[[Next >>](https://github.com/CPFL/Autoware/wiki/Sensing)]
+[[Next >>](https://github.com/CPFL/Autoware/wiki/Demo-Run)]
