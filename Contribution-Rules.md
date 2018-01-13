@@ -182,17 +182,17 @@ B_callback(B_msg) {
 
 * Always put a header in the topic, and inherit the time stamp from the preceding topic. Do not update the header's time stamp without inheritance. If a node has two or more topics, you can inherit the time stamp from any of these, because their time stamps are supposed to be synchronized.
  
--  Do not use of the service.  When the service and topic are mixed, real-time estimate becomes difficult.  Basically, it should be carried out in a topic-based.  In non-real-time portion not involved in the recognition, judgment and control of the automated driving operation may utilise the service. 
+* Do not use both "service" and "topic" at the same time. If they co-exist, timing estimates become more difficult. In most cases, you should use "topic" rather than "service". However, you may use "service" for utility and interface packages, which do not require real-time performance unlike perception, planning, and control packages.
 
-- Not to topic large data. If unavoidable, use the “nodelet”.  Big data requires few msec to serialize-deserialize, for that reason, large data, such as graphics should utilise the nodelet and invalidate serialize-deserialize. 
+* Do not use "topic" for the large size of data, but use "nodelet" in this case. Large topic data, such as images and pointcloud scans, would sacrifice a few milliseconds to serialize and deserialize.
 
-- Interdict the use of “MultiThreadSpin”.  When MultiThreadSpin is used, from the point of view of real-time scheduling, it is not preferable because it will become rapidly more complex. You shall not use the MultiThreadSpin in the processing that requires real-time process.
+* Do not use "MultiThreadSpin". It is not preferable from the point of view of real-time scheduling, because timing estimates and resource allocation become more difficult. 
 
 - Interdict the usage for launch file output=”screen”  It is OK for debugging use, however, output=”screen” described file should NEVER be pushed to Git. Other person’s terminal information will be leaked. Basically, do not check rgt, but check  ROS_INFO and ROS_DEBUG from node. 
 
 - Avoid using “tf” as much as possible. For getting location information by using current_pose.  tf library and ROS are separated (not exactly devided, however), it is difficult to secure real-time.  To unify as much as possible to the topic-base, avoid using tf. In addition, tf is very effective when there’s many joints such as arm robot, but not very effective if determined statically coordinate relationship such as automatic driving operation.  
 
-## Notes for Embedded Environments
+## Notes for Embedded Platforms
 
 * Do not use a wide variety of libraries. It will decrease portability of RTOS. For example, use ros::WallTime rather than the chrono library. However, what about the boost library? It remains as an open question...
 
