@@ -1,5 +1,5 @@
-**You must follow the rules described below when you contribute to Autoware.**
-Please read the following carefully before you start coding.
+**You must follow the rules described below as part of the Autoware community.**
+Please read the following carefully before you start contributing to Autoware.
 Thank you for your time.
 
 ## To Begin With
@@ -8,17 +8,17 @@ Please join Autoware Slack at [https://autoware-developer.slack.com/](https://au
 
 ## Development Workflow
 
-To assure traceablity in your code, you follow this development process:
-* If you are working on a feature/modify-node, create an issue first
-* Create a branch, work on the feature/modify-node, refer in at least one commit to the issue #number
+To assure traceability in your code, please follow our development process:
+* If you are working on a feature/modify-node, create an issue first.
+* Create a branch, work on the feature/modify-node, refer in at least one commit to the issue #number.
 * Open a pull request for the given feature/modify-node and fill out the pull request template. 
 
-This will assure that you know where the feature originated from and the implementation will be linked to the feature request (or bug report). Otherwise there is absolutely no traceability.
+This will assure that you know where the feature originated from and the implemented code will be linked to the feature request (or bug report). Otherwise there is absolutely no traceability.
 Secondly, with the pull request template it will be easier for the reviewer(s) to understand the changes and we can later on convert "Steps to Reproduce" into integration tests.
 
 ## Branching Model
 
-In order to keep efficient open-source development of Autoware, we ask all developers to comply with the branching model described below.
+In order to make the development process efficient, we ask you to comply with the branching model described below.
 On this model, we mainly use six branches - master, develop, feature, release, experimental, and hotfix.
 
 ### master
@@ -67,11 +67,13 @@ We introduce [Travis CI](https://travis-ci.org/) to automate the above test and 
 
 ## Coding Standards
 
-You must have your own preference and fashion in coding, but please respect our coding standards as well. No need to force yourself to change your coding style, though the following standards are preferred in Autoware.
+The following are regarding coding standards preferred in Autoware.
+We know that you must have your own coding style, but please respect our standards in our community.
+No need to throw away your coding style, just do your best to follow our standards.
 
 ### ROS C++ Coding
 
-First of all, please understand and obey the ROS coding standards, when you add new code to Autoware.
+First of all, please understand the ROS coding standards before you add any new code to Autoware.
 
 * [ROS Developers Guide](http://wiki.ros.org/DevelopersGuide)
 
@@ -91,7 +93,7 @@ sudo apt-get install clang-format-x.x
 clang-format -i filename
 ```
 
-Be careful that `clang-format -i` will overwrite the file. It is safe to do "git commit" before applying clang-format.
+Be careful that `clang-format -i` will overwrite the file. It is safe to do "git commit" before playing with clang-format.
 If you want to apply clang-format to the entire system, run the following script:
 ```sh
 for file in $(git ls-files | \grep -E '\.(c|cpp|h|hpp)$' | \grep -v -- '#')
@@ -107,12 +109,12 @@ In addition to C++, you will often use Python in ROS. There is also a coding sty
 * [ROS Python Coding Style](http://wiki.ros.org/PyStyleGuide)
 
 You can use [pep8](https://pypi.python.org/pypi/pep8) as a tool to check PEP8-compliant coding.
-Many existing ROS programs use Python 2.5, but Ubuntu 16.04 or later versions will use Python 3 by default.
-Considering maintenance of coding in the future, Python 3 is preferred in Autoware.
+Therefore many existing ROS programs that use Python 2.5, but Ubuntu 16.04 or later versions will use Python 3 by default.
+Considering maintenance of coding in the future, thus, Python 3 is preferred in Autoware.
 
-### Notes for Library Development
+### Notes for Package and Library Development
 
-* Algorithms should be implemented in libraries. For example, the normal distributions transform (NDT) algorithm is desired to be implemented as something like libndt_xxx. Packaging as a library, this algorithm implementation can also be used for other applications apart from ROS or Autoware. This is a spirit of open source.
+* Algorithms should be implemented in libraries as much as possible. For example, the normal distributions transform (NDT) algorithm could be provided as something like libndt_xxx. Library distribution allows this algorithm module to be used for other applications than ROS or Autoware. This is a spirit of open source.
 
 * Do not make unnecessary dependencies among libraries. In particular, never make circular dependencies. This jeopardizes the entire build system.
 
