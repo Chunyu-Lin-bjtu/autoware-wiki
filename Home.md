@@ -24,7 +24,7 @@ Autoware can also be used for products and services. [Tier IV](http://www.tier4.
 1. [Overview](https://github.com/CPFL/Autoware/wiki/Overview)
 1. [Packages](https://github.com/CPFL/Autoware/wiki/Packages)
 
-### Users Guide (Mandatory)
+### Users Guide
 
 1. [Installation](https://github.com/CPFL/Autoware/wiki/Installation)
 1. [Demo Data](https://github.com/CPFL/Autoware/wiki/Demo-Data)
