@@ -136,18 +136,11 @@ Function calls without arguments or without return values (i.e., void types) are
 
 #### Naming
 
-Function names must represent what these functions do. For example, "init()" or "destroy()" is not an appropriate name, because they do not tell what they initialize or destroy. Such a short and simple function name may also likely cause symbol name conflicts among multiple libraries. Function naming should be discussed when new libraries are added to Autoware. The following are some tips to solve this function naming problem.
+Function names must represent what these functions do. For example, `init()` or `destroy()` is not an appropriate name, because they do not tell what they initialize or destroy. Such a short and simple function name may also likely cause symbol name conflicts among multiple libraries. Function naming should be discussed when new libraries are added to Autoware. The following are some tips to solve this function naming problem.
 
-1. Use a library name as prefix. For example, if the "fusion" library wants to export "init()" or "destroy()", they should be named as "fusion_init()" or "fusion_destroy()".
+1. Use a library name as prefix. For example, if the `fusion` library wants to export `init()` or `destroy()`, they should be named as `fusion_init()` or `fusion_destroy()`.
 
-1. Use namespace.
-
-##### namespaceを使う
-
-全体を `namespace autoware::fusion {}`(もしくは `autoware`)でラップする. 利用するときは
-`autoware::fusion::init`, `autoware::fusion_init`等になる. システム全体が namespaceを
-使っているのであればこの方法が望ましいと思う(特に Autowareのパッケージを一部だけ
-切り出し, 別プロジェクトで使うというケースがある場合).
+1. Use namespace. You can wrap the entire code of the `fusion` library by `namespace autoware::fusion {}`. This way, we can identify these functions by `autoware::fusion::init()` or `autoware::fusion_init()`. In fact, Autoware is desired to identify all the libraries, packages, and topics by namespace so that partial pieces of Autoware can be used safely in other projects.
 
 ## export, 非 exportシンボル
 
