@@ -9,6 +9,20 @@ We strongly recommend you using our Docker environments: [[Generic x86](https://
 * More than 30GB of SSD
 * NVIDIA GTX/Tegra GPU
 
+## Checkout 
+
+If you are a standard user of Autoware, please checkout the "master" branch.
+
+`$ git checkout master`
+
+If you want to use the latest capability of Autoware, please checkout the "develop" branch.
+
+`$ git checkout develop`
+
+If you want to run the demo, please checkout the Version 1.6 release.
+
+`$ git checkout tags/1.6.0`
+
 ***
 
 [[Home](https://github.com/CPFL/Autoware/wiki/)]
