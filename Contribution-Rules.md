@@ -8,18 +8,18 @@ Please join Autoware Slack at [https://autoware-developer.slack.com/](https://au
 
 ## Development Workflow
 
-To assure traceablity in our code we follow this development process:
+To assure traceablity in your code, you follow this development process:
 * If you are working on a feature/modify-node, create an issue first
 * Create a branch, work on the feature/modify-node, refer in at least one commit to the issue #number
 * Open a pull request for the given feature/modify-node and fill out the pull request template. 
 
-This will assure that we know where the feature originated from and the implementation will be linked to the feature request (or bug report). Otherwise there is absolutely no traceability.
+This will assure that you know where the feature originated from and the implementation will be linked to the feature request (or bug report). Otherwise there is absolutely no traceability.
 Secondly, with the pull request template it will be easier for the reviewer(s) to understand the changes and we can later on convert "Steps to Reproduce" into integration tests.
 
 ## Branching Model
 
 In order to keep efficient open-source development of Autoware, we ask all developers to comply with the branching model described below.
-On this model, we maily use six branches - master, develop, feature, release, experimental, and hotfix.
+On this model, we mainly use six branches - master, develop, feature, release, experimental, and hotfix.
 
 ### master
 
@@ -126,13 +126,13 @@ Considering maintenance of coding in the future, Python 3 is preferred in Autowa
 
 #### Global Variables
 
-We should not use global variables unless they are really needed. Instead, we should use classes or structs to hold variables. Even for libraries, we do not recommend using global variables. In C++, you can use methods. In C, you can use pointers or references for function arguments.
+You should not use global variables unless they are really needed. Instead, you should use classes or structs to hold variables. Even for libraries, you do not recommend using global variables. In C++, you can use methods. In C, you can use pointers or references for function arguments.
 
 Besides in using global variables, you should take care of thread-safe implementation for multi-threaded programs as global variables may be accessed simultaneously among threads. In ROS, particularly, there are many other threads running in background (e.g., polling threads for subscribing to topics). Thus, you should avoid using global variable as much as possible, though you can use mutual exclusion to ensure thread-safe implementation if you really need global variables.
 
 #### Arguments and Return Values
 
-Function calls without arguments or without return values (i.e., void types) are difficult to test, because the results of function calls are all indirect and not visible from the function callees. Therefore we should make functions declared with specific arguments and meaningful return values so that a unique set of arguments always leads to the same result.
+Function calls without arguments or without return values (i.e., void types) are difficult to test, because the results of function calls are all indirect and not visible from the function callees. Therefore you should make functions declared with specific arguments and meaningful return values so that a unique set of arguments always leads to the same result.
 
 #### Naming
 
@@ -140,16 +140,11 @@ Function names must represent what these functions do. For example, `init()` or 
 
 1. Use a library name as prefix. For example, if the `fusion` library wants to export `init()` or `destroy()`, they should be named as `fusion_init()` or `fusion_destroy()`.
 
-1. Use namespace. You can wrap the entire code of the `fusion` library by `namespace autoware::fusion {}`. This way, we can identify these functions by `autoware::fusion::init()` or `autoware::fusion_init()`. In fact, Autoware is desired to identify all the libraries, packages, and topics by namespace so that partial pieces of Autoware can be used safely in other projects.
+1. Use namespace. You can wrap the entire code of the `fusion` library by `namespace autoware::fusion {}`. This way, you can identify these functions by `autoware::fusion::init()` or `autoware::fusion_init()`. In fact, Autoware is desired to identify all the libraries, packages, and topics by namespace so that partial pieces of Autoware can be used safely in other projects.
 
-## export, 非 exportシンボル
+### Export Symbols
 
-exportするシンボルを明確にする. 現在の実装では不必要に多くのシンボルが export
-されている. 他パッケージから参照しない関数は exportしないようにする.
-
-C++言語, 無名 namespaceでラップする(ファイルローカルの static指定は非推奨).
-class, structであれば privateにする.
-C言語では staticを指定し, スコープをファイルローカルにする
+You should clarify what symbols are exported, and should not export those that would not be used or referenced by other packages and libraries. If you want not to export symbols, please use unnamed namespace or private members in classes in C++. In C, whereas, please use `static` that protects the corresponding symbols in local files.
 
 ## Notes for Timing Constraints 
 
