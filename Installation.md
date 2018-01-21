@@ -1,6 +1,6 @@
 ## Autoware Installation Is Easy
 
-We strongly recommend you using our Docker environments: [[Generic x86](https://github.com/CPFL/Autoware/wiki/Installation-by-Docker:-Generic-x86)][[DRIVE PX2](https://github.com/CPFL/Autoware/wiki/Installation-by-Docker:-DRIVE-PX2)]. For more details, please visit [Autoware Docker](https://github.com/CPFL/Autoware/wiki/Docker). Otherwise, you can follow the instruction provided by [README.md](https://github.com/CPFL/Autoware/blob/master/README.md).
+We strongly recommend you using [Autoware Docker](https://github.com/CPFL/Autoware/wiki/Docker) : [[Generic x86](https://github.com/CPFL/Autoware/wiki/Installation-by-Docker:-Generic-x86)][[DRIVE PX2](https://github.com/CPFL/Autoware/wiki/Installation-by-Docker:-DRIVE-PX2)]. Otherwise, you can follow the instruction provided by [README.md](https://github.com/CPFL/Autoware/blob/master/README.md).
 
 ## Spec Recommendation
 
