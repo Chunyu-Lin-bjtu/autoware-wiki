@@ -5,10 +5,10 @@ We strongly recommend you using our Docker environments: [[Generic x86](https://
 ## Spec Recommendation
 
 * Generic x86
- * Multi-core (four to eight cores) CPU
- * 16GB to 32GB of main memory
- * More than 30GB of SSD
- * NVIDIA GTX GeForce GPU
+    * Multi-core (four to eight cores) CPU
+    * 16GB to 32GB of main memory
+    * More than 30GB of SSD
+    * NVIDIA GTX GeForce GPU
 * NVIDIA DRIVE
 
 ## Checkout 
