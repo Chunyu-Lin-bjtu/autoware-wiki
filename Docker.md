@@ -20,3 +20,7 @@ We provide Docker environments for the NVIDIA DRIVE platform with support from N
 If you are using the DRIVE PX2 platform, you can choose Docker with or without NVIDIA DriveWorks. With NVIDIA DriveWorks, you may leverage NVIDIA self-driving capabilities, such as line detection and object detection using DriveNet. Without DriveWorks, on the other hand, all self-driving capabilities are covered by Autoware, thus for example object detection is based on SSD or YOLO2. For more details, try it our yourself.
 
 [Get DRIVE PX2 Docker](https://github.com/CPFL/Autoware/wiki/Installation-by-Docker:-DRIVE-PX2)
+
+### DRIVE Xavier
+
+Coming soon.
