@@ -13,7 +13,7 @@ The supported, but not limited to, computing environments are as follows:
 
 ## NVIDIA DRIVE
 
-We provide Docker environments for the NVIDIA DRIVE platform with support from NVIDIA Corporation. To access any of the following environments, you should have signed their NDA/SLA to access NVIDIA DevZone and, in some case, have been authorized to access more details of NVIDIA DriveWorks SDK.
+We provide Docker environments for the NVIDIA DRIVE platform with support from NVIDIA Corporation. To access any of the following environments, you should have signed their NDA/SLA to access NVIDIA DevZone and, in some case, should have been authorized to access internal details of NVIDIA DriveWorks SDK.
 
 ### DRIVE PX2
 
