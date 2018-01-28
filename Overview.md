@@ -1,3 +1,5 @@
+![Autoware Overview](https://github.com/CPFL/Autoware/blob/master/docs/images/autoware_overview.png)
+
 ## Supported Sensors
 
 Autoware supports LiDAR, Camera, IMU, and GPS as primary sensors. The following are examples of those that have been already verified through the field testing. Technically speaking, if not verified, almost all types of LiDAR, Camera, IMU, and GPS would be available in Autoware.
@@ -17,9 +19,11 @@ _You may combine multiple units of the above LiDAR sensors through TF, providing
 
 ### Camera
 
-* PointGrey (FLIR) Grasshopper 3 (USB/GigE)
-* PointGrey (FLIR) Flea 2/3 (USB/GigE)
-* PointGrey (FLIR) Blackfly 2 (USB3/GigE)
-* Baumer VLG-22 (USB3/GigE)
-* Baumer VCXU-24 (USB3/GigE)
+* PointGrey (FLIR) Grasshopper 3 (USB/GigE) [[link](https://www.ptgrey.com/grasshopper3-usb3-vision-cameras)]
+* PointGrey (FLIR) Flea 2/3 (USB/GigE) [[link](https://www.ptgrey.com/flea3-gige-vision-cameras)]
+* PointGrey (FLIR) Blackfly (USB3/GigE) [[link](https://www.ptgrey.com/blackfly-usb3-vision-cameras)]
+* Baumer VLG-22C (USB3/GigE) [[link](https://www.baumer.com/sg/en/product-overview/image-processing-identification/industrial-cameras/long-term-availability/visiline-series/ams-cmosis-sensors/vlg-22c/p/24060)]
+* Baumer VCXU-24C (USB3/GigE) [[link](https://www.baumer.com/us/en/product-overview/image-processing-identification/industrial-cameras/cx-series/usb-3-0-interface/vcxu-24c/p/23796)]
 * Generic UVC Webcam (USB2/3)
+
+_You may use multiple units of the above camera sensors together but they should be configured separately for individual purposes, such as object detection and traffic light recognition, as Autoware does not support concatenating multiple images into a single large image._
