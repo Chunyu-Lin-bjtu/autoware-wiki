@@ -8,7 +8,7 @@ Autoware is _ROS-based open-source software_, enabling self-driving mobility to 
 
 * Coding
 
-Autoware is managed by Github at [https://github.com/cpfl/Autoware](https://github.com/cpfl/Autoware). You are always welcome to fork it and send your contribution as a pull request to the repository. Whenever you contribute to coding of Autoware modules, however, please respect and follow our [Contribution Rules](https://github.com/CPFL/Autoware/wiki/Contribution-Rules) so that the repository can keep organized. To install Autoware, we strongly recommend you using [Autoware Docker](https://github.com/CPFL/Autoware/wiki/Docker). Otherwise, you can follow the instruction provided by [README.md](https://github.com/CPFL/Autoware/blob/master/README.md).
+Autoware is managed by Github at [https://github.com/cpfl/Autoware](https://github.com/cpfl/Autoware). You are always welcome to fork it and send your contribution as a pull request to the repository. Whenever you contribute to coding of Autoware modules, however, please respect and follow the [Contribution Rules](https://github.com/CPFL/Autoware/wiki/Contribution-Rules) so that the repository can keep organized. To install Autoware, we strongly recommend you using [Autoware Docker](https://github.com/CPFL/Autoware/wiki/Docker). Otherwise, you can follow the instruction provided by [README.md](https://github.com/CPFL/Autoware/blob/master/README.md).
 
 * Field testing
 
