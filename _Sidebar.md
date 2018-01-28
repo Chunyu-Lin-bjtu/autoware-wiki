@@ -5,8 +5,7 @@
 ### Users Guide
 
 1. [Installation](https://github.com/CPFL/Autoware/wiki/Installation)
-1. [Demo Data](https://github.com/CPFL/Autoware/wiki/Demo-Data)
-1. [Demo Run](https://github.com/CPFL/Autoware/wiki/Demo-Run)
+1. [Demo](https://github.com/CPFL/Autoware/wiki/Demo)
 
 ### Developers Guide
 
