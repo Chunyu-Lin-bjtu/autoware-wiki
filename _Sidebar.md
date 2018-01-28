@@ -1,7 +1,5 @@
 ![Autoware Offical Logo](https://github.com/CPFL/Autoware/raw/master/docs/images/autoware_logo_1.png?height=54&width=320)
 
-[Home](https://github.com/CPFL/Autoware/wiki)
-
 ### Developers Guide
 
 1. [Contribution Rules](https://github.com/CPFL/Autoware/wiki/Contribution-Rules) (**Must Read**)
