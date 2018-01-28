@@ -15,19 +15,14 @@ To install Autoware, we strongly recommend using [Autoware Docker](https://githu
 
 After the installation, please be sure to checkout an _appropriate_ branch for your objective.
 
-If you are a standard user of Autoware, please checkout the "master" branch.
+* If you are a standard user of Autoware, please checkout the "master" branch.
 
 `$ git checkout master`
 
-If you want to use the latest capability of Autoware, please checkout the "develop" branch.
+* If you want to use the latest capability of Autoware, please checkout the "develop" branch.
 
 `$ git checkout develop`
 
-If you want to run the demo, please checkout the Version 1.6 release.
+* If you want to run the demo, please checkout the Version 1.6 release.
 
 `$ git checkout tags/1.6.0`
-
-***
-
-[[Home](https://github.com/CPFL/Autoware/wiki/)]
-[[Next >>](https://github.com/CPFL/Autoware/wiki/Demo-Data)]
