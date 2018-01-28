@@ -1,10 +1,10 @@
 ## Supported Sensors
 
-Autoware supports LiDAR, Camera, IMU, and GPS as primary sensors. The following are examples of those that have been already verified through the field testing. Technically speaking, if not verified, almost all types of LiDAR, Camera, IMU, and GPS are available in Autoware.
+Autoware supports LiDAR, Camera, IMU, and GPS as primary sensors. The following are examples of those that have been already verified through the field testing. Technically speaking, if not verified, almost all types of LiDAR, Camera, IMU, and GPS would be available in Autoware.
 
 ### LiDAR
 
-* VELODYNE HDL-64E (S1/S2/S3)
+* VELODYNE HDL-64E (S1/S2/S3) [[link](http://velodynelidar.com/hdl-64e.html)]
 * VELODYNE HDL-32E
 * VELODYNE VLP-16 (Standard/Hi-Res)
 * HOKUYO YVT-35LX (3D-URG)
