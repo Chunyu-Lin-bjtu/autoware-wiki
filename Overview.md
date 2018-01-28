@@ -5,11 +5,13 @@ Autoware supports LiDAR, Camera, IMU, and GPS as primary sensors. The following 
 ### LiDAR
 
 * VELODYNE HDL-64E (S1/S2/S3) [[link](http://velodynelidar.com/hdl-64e.html)]
-* VELODYNE HDL-32E
-* VELODYNE VLP-16 (Standard/Hi-Res)
-* HOKUYO YVT-35LX (3D-URG)
-* HOKUYO UTM-30LX (TOP-URG)
-* SICK LMS511
+* VELODYNE HDL-32E [[link](http://velodynelidar.com/hdl-32e.html)]
+* VELODYNE VLP-16 [[link](http://velodynelidar.com/vlp-16.html)]
+* VELODYNE VLP-16 Lite [[link](http://velodynelidar.com/vlp-16-lite.html)]
+* VELODYNE VLP-16 Hi-Res [[link](http://velodynelidar.com/vlp-16-hi-res.html)]
+* HOKUYO YVT-35LX (3D-URG) [[link](https://www.hokuyo-aut.co.jp/search/single.php?serial=165)]
+* HOKUYO UTM-30LX (TOP-URG) [[link](http://www.senteksolutions.com/products/scanning-laser-rangefinders/utm-30lx)]
+* SICK LMS511 [[link](https://www.sick.com/us/en/detection-and-ranging-solutions/2d-lidar-sensors/lms5xx/lms511-10100-pro/p/p215941)]
 
 ### Camera
 
