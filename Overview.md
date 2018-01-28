@@ -13,6 +13,8 @@ Autoware supports LiDAR, Camera, IMU, and GPS as primary sensors. The following 
 * HOKUYO UTM-30LX (TOP-URG) [[link](http://www.senteksolutions.com/products/scanning-laser-rangefinders/utm-30lx)]
 * SICK LMS511 [[link](https://www.sick.com/us/en/detection-and-ranging-solutions/2d-lidar-sensors/lms5xx/lms511-10100-pro/p/p215941)]
 
+You may combine multiple units of the above LiDAR sensors through TF, providing rich fused pointcloud data for more precise object detection, tracking, and localization.
+
 ### Camera
 
 * PointGrey (FLIR) Grasshopper 3 (USB/GigE)
