@@ -5,11 +5,8 @@
 Autoware is _ROS-based open-source software_, enabling self-driving mobility to be deployed in open city areas. It provides, but not limited to, the following modules. 
 
 _Localization_ is achieved by **3D maps** and **SLAM** algorithms in combination with **GNSS** and **IMU** sensors. 
-
 _Detection_ uses **cameras** and **LiDARs** with **sensor fusion** algorithms and **deep neural networks**. 
-
 _Prediction_ and _Planning_ are based on **probabilistic robotics** and **rule-based systems**, partly using **deep neural networks** as well. 
-
 The output of Autoware to the vehicle is a twist of **velocity** and **angular velocity** (also **curvature**). This is a part of _Control_, though the major part of _Control_ is supposed to reside in the **by-ware** controller of the vehicle, where **PID** and **MPC** algorithms are often adopted. 
 
 All in all, Autoware provides a complete software stack for self-driving technology. Join Autoware now, and your contribution will be loved by the world.
