@@ -1,8 +1,6 @@
-## Autoware Installation Is Easy
+To install Autoware, we strongly recommend [Autoware Docker](https://github.com/CPFL/Autoware/wiki/Docker). Otherwise, you can follow the instruction provided by [README.md](https://github.com/CPFL/Autoware/blob/master/README.md).
 
-To install Autoware, we strongly recommend you using [Autoware Docker](https://github.com/CPFL/Autoware/wiki/Docker) : [[Generic x86](https://github.com/CPFL/Autoware/wiki/Installation-by-Docker:-Generic-x86)][[DRIVE PX2](https://github.com/CPFL/Autoware/wiki/Installation-by-Docker:-DRIVE-PX2)]. Otherwise, you can follow the instruction provided by [README.md](https://github.com/CPFL/Autoware/blob/master/README.md).
-
-## Spec Recommendation
+### Spec Recommendation
 
 * Generic x86
     * Intel Core i7 (preferred), Core i5, Atom
@@ -13,9 +11,9 @@ To install Autoware, we strongly recommend you using [Autoware Docker](https://g
     * DRIVE PX2, DRIVE Xavier (on the way)
     * More than 30GB of SSD
 
-## Checkout 
+### Checkout 
 
-After the installation, please be sure to checkout an appropriate branch for your objective.
+After the installation, please be sure to checkout an _appropriate_ branch for your objective.
 
 If you are a standard user of Autoware, please checkout the "master" branch.
 
