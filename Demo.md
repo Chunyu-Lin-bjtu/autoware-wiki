@@ -1,3 +1,7 @@
+Please checkout the release version 1.6.1 for this demo.
+
+`$ git checkout tags/1.6.1
+
 ## Demo data
 
 This demo will require 3D map and ROSBAG data. Please download the following sample demo data before running the demo.
