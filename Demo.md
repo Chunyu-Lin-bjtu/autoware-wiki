@@ -12,4 +12,10 @@ Once the demo goes well, you can visit [ROSBAG STORE](https://rosbag.tier4.jp) t
 
 ## Demo run
 
+You run the demo through the Quick Start tab on Autoware Runtime Manager, using the preinstalled launch scripts. Please follow the steps below:
+
+1. Load the sample ROSBAG data.
+
+1. Load the preinstalled scripts.
+
 Please follow the instruction video below:
