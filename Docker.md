@@ -9,7 +9,7 @@ The preferred computing environments are listed as follows:
 * More than 30GB of SSD
 * NVIDIA GTX GeForce GPU (980M or higher performance)
 
-[>> Install to Generic x86](https://github.com/CPFL/Autoware/wiki/Installation-by-Docker:-Generic-x86)
+[>> Install to Generic x86](https://github.com/CPFL/Autoware/wiki/Generic-x86-Docker)
 
 ## NVIDIA DRIVE
 
