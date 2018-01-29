@@ -12,7 +12,7 @@ Once the demo goes well, you can visit [ROSBAG STORE](https://rosbag.tier4.jp) t
 
 ## Demo run
 
-Autoware provide a set of the preinstalled launch scripts for the demo. Please follow the steps below:
+Autoware provide a set of the preinstalled roslaunch scripts for the demo. Please follow the steps below:
 
 1. Go to the Simulation tab of Autoware Runtime Manager, and load the sample ROSBAG data.
 
@@ -20,6 +20,6 @@ Autoware provide a set of the preinstalled launch scripts for the demo. Please f
 
 1. Launch RViz.
 
-1. Go to the Quick Start tab of Autoware Runtime Manager, and load the preinstalled scripts one by one.
+1. Go to the Quick Start tab of Autoware Runtime Manager, and load the preinstalled roslaunch scripts one by one.
 
 Please follow the instruction video below:
