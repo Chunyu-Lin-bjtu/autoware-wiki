@@ -6,6 +6,7 @@
 
 1. [Installation](https://github.com/CPFL/Autoware/wiki/Installation)
 1. [Demo](https://github.com/CPFL/Autoware/wiki/Demo)
+1. [Field Test](https://github.com/CPFL/Autoware/wiki/Field-Test)
 
 ### Developers Guide
 
