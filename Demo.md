@@ -1,6 +1,6 @@
 Please checkout the release version 1.6.1 for this demo.
 
-`$ git checkout tags/1.6.1
+`$ git checkout tags/1.6.1`
 
 ## Demo data
 
