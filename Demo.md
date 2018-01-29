@@ -1,6 +1,6 @@
 ## Demo data
 
-This demo will require 3D map and ROSBAG data. Please download them before running the demo.
+This demo will require 3D map and ROSBAG data. Please download the following sample demo data before running the demo.
 
 1. Download the sample 3D pointcloud/vector map data. [[link](http://db3.ertl.jp/autoware/sample_data/sample_moriyama_data.tar.gz)]
 
