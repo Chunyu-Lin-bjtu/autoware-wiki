@@ -23,4 +23,4 @@ After the installation, please be sure to checkout an _appropriate_ branch for y
 
 `$ git checkout develop`
 
-* If you want to run the demo, please refer to [Autoware Demo](https:https://github.com/CPFL/Autoware/wiki/Demo).
+* If you want to run the demo, please refer to [Autoware Demo](https://github.com/CPFL/Autoware/wiki/Demo).
