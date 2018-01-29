@@ -18,6 +18,8 @@ Autoware provide a set of the preinstalled launch scripts for the demo. Please f
 
 1. Play the loaded ROSBAG data, and immediately pause it once.
 
+1. Launch RViz.
+
 1. Go to the Quick Start tab of Autoware Runtime Manager, and load the preinstalled scripts one by one.
 
 Please follow the instruction video below:
