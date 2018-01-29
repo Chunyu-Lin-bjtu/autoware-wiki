@@ -1,6 +1,6 @@
 ![Autoware.AI](https://www.autoware.ai/static/img/autoware_web_img.png)
 
-### Welcome to the Autoware Wiki
+## Welcome to the Autoware Wiki
 
 Autoware is _ROS-based open-source software_, enabling self-driving mobility to be deployed in open city areas. It provides, but not limited to, the following modules. 
 
@@ -11,9 +11,14 @@ The output of Autoware to the vehicle is a twist of **velocity** and **angular v
 
 All in all, Autoware provides a complete software stack for self-driving technology. Join Autoware now, and your contribution will be loved by the world.
 
-### Getting started
+## Getting started
 
-### How to contribute
+You can easily install Autoware using Docker and run the demo using ROSBAG.
+
+1. [Installation](https://github.com/CPFL/Autoware/wiki/Installation)
+1. [Demo](https://github.com/CPFL/Autoware/Demo)
+
+## How to contribute
 
 * Coding
 
