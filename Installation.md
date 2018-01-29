@@ -23,6 +23,6 @@ After the installation, please be sure to checkout an _appropriate_ branch for y
 
 `$ git checkout develop`
 
-* If you want to run the demo, please checkout the Version 1.6 release.
+* If you want to run the demo, please checkout the release version 1.6.1.
 
-`$ git checkout tags/1.6.0`
+`$ git checkout tags/1.6.1
