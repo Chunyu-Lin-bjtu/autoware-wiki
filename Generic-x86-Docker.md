@@ -1,24 +1,24 @@
-# Overview
-This page guides you to install and run Autoware on the Intel x86 processor (64 bits) using Docker. If you are looking for the NVIDIA DRIVE PX Docker, please visit [here](https://github.com/CPFL/Autoware/wiki/Installation-by-Docker:-DRIVE-PX2).
+This page guides you to install and run Autoware on the Intel x86 processor (64 bits) using Docker. If you are using other platforms, such as NVIDIA DRIVE, please check if they are supported by [Autoware Docker](https://github.com/CPFL/Autoware/wiki/Docker).
 
-# Outline
-* Docker Setup
-* NVIDIA Docker Setup
-* Autoware Docker Setup
+## Outline
 
-# Docker Setup
+1. Docker Setup
+1. NVIDIA Docker Setup
+1. Autoware Docker Setup
+
+## Docker Setup
    You first need to build the Docker environment. If the following installation process does not work for you,please check [Docker's installation website](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
 
-##   Old Docker Cleanup
+###   Old Docker Cleanup
    ```bash
    $ sudo apt-get remove docker docker-engine docker.io
    ```
    You are ready to move on the next step if all Docker packages are removed.
 
-##  Docker CE Installation
+###  Docker CE Installation
    This time you may want to install Docker using the repository, though there are several other ways to install Docker.
 
-###  Step 1: Repository Setup
+####  Step 1: Repository Setup
 
    Do update on apt-get.
    ```bash
@@ -45,7 +45,7 @@ This page guides you to install and run Autoware on the Intel x86 processor (64 
    ``` bash
    $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
    ```
-### Step 2: Docker CE Installation
+#### Step 2: Docker CE Installation
 
    Update on apt-get.
    ``` bash
@@ -60,7 +60,7 @@ This page guides you to install and run Autoware on the Intel x86 processor (64 
    $ sudo docker run hello-world
    ``` 
 
-# NVIDIA Docker Setup
+## NVIDIA Docker Setup
 
 You need to install Docker Plugin provided by NVIDIA in order to access NVIDIA GPUs from Docker Container.
 
@@ -81,11 +81,11 @@ Check if the nvidia-docker service runs.
    $ sudo nvidia-docker run --rm nvidia/cuda nvidia-smi
    ``` 
 
-# Autoware Docker Setup
+## Autoware Docker Setup
 
 You can build the Autoware runtime environment using nvidia-docker. You may choose either to use the configuration of Docker Hub "as is" or to modify-then-recompile Dockerfile.
 
-## Case 1: Using Docker Hub "As Is"
+### Case 1: Using Docker Hub "As Is"
    Move to the docker directory in Autoware.
    ``` bash
    $ cd Autoware/docker
@@ -102,8 +102,8 @@ You can build the Autoware runtime environment using nvidia-docker. You may choo
    ``` 
    Replace "kinetic" with "indigo" if you use Ubuntu 14.04.
 
-## Case 2: Using modify-then-recompile Dockerfile
-### Step 1: Autoware Docker Build
+### Case 2: Using modify-then-recompile Dockerfile
+#### Step 1: Autoware Docker Build
 
    Move to the docker directory in Autoware.
    ``` bash
@@ -117,7 +117,7 @@ You can build the Autoware runtime environment using nvidia-docker. You may choo
    ``` bash
    $ sh build.sh indigo
    ``` 
-### Step2: Autoware Docker Run
+#### Step2: Autoware Docker Run
     
    Run run.sh kinetic if you use Ubuntu 16.04, assuming that the default path is "/home/$USER/shared_dir".
    ``` bash
@@ -128,8 +128,3 @@ You can build the Autoware runtime environment using nvidia-docker. You may choo
    $ sh run.sh kinetic {SHARED_DIR_PATH}
    ``` 
    Replace "kinetic" with "indigo" if you use Ubuntu 14.04.
-
-***
-
-[[Home](https://github.com/CPFL/Autoware/wiki/)]
-    
