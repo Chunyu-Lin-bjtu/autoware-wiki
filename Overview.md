@@ -27,3 +27,9 @@ _You may use multiple units of the above camera sensors together but they should
 * SICK LMS511 [[link](https://www.sick.com/us/en/detection-and-ranging-solutions/2d-lidar-sensors/lms5xx/lms511-10100-pro/p/p215941)]
 
 _You may combine multiple units of the above LiDAR sensors through TF, providing rich fused pointcloud data for more precise object detection, tracking, and localization._
+
+### IMU
+
+* Memsic VG440
+* Xsens MTi-300
+* MicroStrain 3DM-GX5-15
