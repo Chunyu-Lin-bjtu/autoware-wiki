@@ -6,9 +6,9 @@ Please checkout the release version 1.6.1 for this demo.
 
 This demo will require 3D map and ROSBAG data. Please download the following sample demo data before running the demo.
 
-1. Download the sample 3D pointcloud/vector map data. [[link](http://db3.ertl.jp/autoware/sample_data/sample_moriyama_data.tar.gz)]
+1. Download the sample 3D pointcloud/vector map data. [[link](https://www.autoware.ai/sample/sample_moriyama_data.tar.gz)]
 
-1. Download the sample ROSBAG data (**LiDAR**: VELODYNE HDL-32E, **Camera**: PointGrey Grasshopper 3, **GNSS**: JAVAD GPS RTK Delta 3).  [[link](http://db3.ertl.jp/autoware/sample_data/sample_moriyama_150324.tar.gz)]
+1. Download the sample ROSBAG data (**LiDAR**: VELODYNE HDL-32E, **Camera**: PointGrey Grasshopper 3, **GNSS**: JAVAD GPS RTK Delta 3).  [[link](https://www.autoware.ai/sample/sample_moriyama_150324.tar.gz)]
 
 #### Want more data?
 
