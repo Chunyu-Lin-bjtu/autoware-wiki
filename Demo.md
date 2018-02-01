@@ -27,3 +27,5 @@ Autoware provide a set of the preinstalled roslaunch scripts for the demo. Pleas
 1. Go to the Quick Start tab of Autoware Runtime Manager, and load the preinstalled roslaunch scripts one by one.
 
 Please follow the instruction video below:
+
+[![Quick Start](http://img.youtube.com/vi/0luGF0-2nqc/mqdefault.jpg)](https://www.youtube.com/watch?v=0luGF0-2nqc)
