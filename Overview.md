@@ -2,7 +2,7 @@
 
 ## Sensing
 
-Autoware supports Camera, LiDAR, IMU, and GPS as primary sensors. The following are examples of those that have been already verified through the field testing. Technically speaking, if not verified, almost all types of Camera, LiDAR, IMU, and GPS would be available in Autoware.
+Autoware supports Camera, LiDAR, IMU, and GPS as primary sensors. The following are examples of those that have been already verified with Autoware through the field testing. Technically speaking, if not verified, almost all types of Camera, LiDAR, IMU, and GPS should be available for Autoware, as far as sensor driver software is provided.
 
 ### Camera
 
@@ -30,6 +30,8 @@ _You may combine multiple units of the above LiDAR sensors through TF, providing
 
 ### IMU
 
-* Memsic VG440
-* Xsens MTi-300
-* MicroStrain 3DM-GX5-15
+* Memsic VG440 [[link](http://www.aceinna.com//VG440CA-200|400)]
+* Xsens MTi-300 [[link](https://www.xsens.com/products/mti-100-series/)]
+* MicroStrain 3DM-GX5-15 [[link](http://www.microstrain.com/inertial/3dm-gx5-15)]
+
+_Currently, advanced users of Autoware are not very in favor of IMU, because SLAM-based localization augmented by 3D maps and odometers is pretty reliable without IMU. However, we believe IMU is still useful in some scenario and Autoware supports an interface to add IMU data to localization modules._
