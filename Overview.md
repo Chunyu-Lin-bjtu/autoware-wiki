@@ -2,7 +2,7 @@
 
 ## Sensing
 
-Autoware supports Camera, LiDAR, IMU, and GPS as primary sensors. The following are examples of those that have been already verified with Autoware through the field testing. Technically speaking, if not verified, almost all types of Camera, LiDAR, IMU, and GPS should be available for Autoware, as far as sensor driver software is provided.
+Autoware supports Camera, LiDAR, IMU, and GPS as primary sensors. The following are examples of those already verified with Autoware through field testing. Technically speaking, if not verified, almost all types of Camera, LiDAR, IMU, and GPS should be available for Autoware, as far as sensor driver software is provided.
 
 ### Camera
 
@@ -13,7 +13,7 @@ Autoware supports Camera, LiDAR, IMU, and GPS as primary sensors. The following 
 * Baumer VCXU-24C (USB3/GigE) [[link](https://www.baumer.com/us/en/product-overview/image-processing-identification/industrial-cameras/cx-series/usb-3-0-interface/vcxu-24c/p/23796)]
 * Generic UVC Webcam (USB2/3)
 
-_You may use multiple units of the above camera sensors together but they should be configured separately for individual purposes, such as object detection and traffic light recognition, as Autoware does not support concatenating multiple images into a single large image._
+_Multiple Camera sensors are supported, however they should be configured separately for individual purposes. Please verify the documentation on ROS on using namespaces or name for each instance. Autoware separates each camera for a purpose such as object detection and traffic light recognition. Inherently, Autoware does not support concatenating multiple images into a single large image._
 
 ### LiDAR
 
@@ -27,13 +27,13 @@ _You may use multiple units of the above camera sensors together but they should
 * SICK LMS511 [[link](https://www.sick.com/us/en/detection-and-ranging-solutions/2d-lidar-sensors/lms5xx/lms511-10100-pro/p/p215941)]
 * PIONEER 3D LiDAR (yet to be released) [[link](http://global.pioneer/en/news/press/2017/pdf/1130-1.pdf)]
 
-_You may combine multiple units of the above LiDAR sensors through TF, providing rich fused pointcloud data for more precise object detection, tracking, and localization._
+_You may combine multiple units of the above LiDAR sensors through TF, providing rich fused pointcloud data for more precise object detection, tracking, and localization. Please check Velodyne's documentation on how to use multiple sensors in the same network._
 
 ### RADAR
 
 * Delphi ESR [[link](https://autonomoustuff.com/product/delphi-esr-2-5-24v/)]
 
-_Autoware sensing is mainly based on LiDAR scanners but milliwave RADAR is also available for the purpose of long-distance object tracking._
+_Autoware sensing is mainly based on LiDAR scanners. Milliwave RADAR drivers are also available for the purpose of long-distance object tracking. However, its integration to the perception package is still a work in progress._
 
 ### IMU
 
@@ -42,7 +42,7 @@ _Autoware sensing is mainly based on LiDAR scanners but milliwave RADAR is also 
 * MicroStrain 3DM-GX5-15 [[link](http://www.microstrain.com/inertial/3dm-gx5-15)]
 * Novatel IGM S1 IMU [[link](https://www.novatel.com/products/span-gnss-inertial-systems/span-imus/span-mems-imus/imu-igm-s1/)]
 
-_Currently, advanced users of Autoware are not very in favor of IMU, because SLAM-based localization augmented by 3D maps and odometers is pretty reliable without IMU. However, we believe IMU is still useful in some scenario and Autoware supports an interface to add IMU data to localization modules._
+_Currently, advanced users of Autoware are not in favor of IMU, because SLAM-based localization augmented by 3D maps and odometers is reliable enough without the use of an IMU. However, we believe IMU is still useful in some scenarios, therefore Autoware supports IMU drivers and data integration into the localization modules._
 
 ### GPS/GNSS
 
@@ -52,4 +52,4 @@ _Currently, advanced users of Autoware are not very in favor of IMU, because SLA
 * Leica Viva GS25 [[link](https://leica-geosystems.com/products/gnss-systems/receivers/leica-viva-gs10-gs25)]
 * Applanix APX-15 UAV [[link](https://www.applanix.com/products/dg-uavs.htm)]
 
-_GPS/GNSS receivers typically generate NMEA-compliant sentence (text), which is entirely supported by Autoware, via the serial interface. Therefore, we believe that virtually all GPS/GNSS products would be available for Autoware with the existing nmea2tfpose node._
+_GPS/GNSS receivers typically generate NMEA-compliant sentences (text strings), which is entirely supported by Autoware, via the serial interface. Therefore, we believe that as long as the device is NMEA compliant, virtually all GPS/GNSS products, would be compatible for Autoware with the existing nmea2tfpose node._
