@@ -33,9 +33,10 @@ This page guides you to install and run Autoware on the NVIDIA DRIVE PX2 platfor
 ### Docker Image Installation
 Download [install_autoware_drivepx2_docker.sh](https://github.com/CPFL/Autoware/blob/master/docker/nvidia/install_autoware_drivepx2_docker.sh) to your favorite directory, and change the current directory.
 
-`$ sudo ./install_autoware_drivepx2_docker.sh`
-
-`$ source ~/.bashrc`
+   ```bash
+   $ sudo ./install_autoware_drivepx2_docker.sh
+   $ source ~/.bashrc
+   ```
 
 If you use another shell, please add "/usr/local/autoware/bin" to ${PATH}.
 
