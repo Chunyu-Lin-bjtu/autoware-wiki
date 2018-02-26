@@ -25,28 +25,25 @@ This page guides you to install and run Autoware on the NVIDIA DRIVE PX2 platfor
    ``` 
 
 ## Autoware Setup
-Please first contact Autoware Developers Group at autoware@googlegroups.com to get the script files for your favorite configuration (see Case 1 and Case 2 below).
 
-### Case 1: Autoware with NVIDIA DriveWorks
-#### Step 1: Run Setup Script.
-Run setup_with_driveworks.sh that you obtained.  
-Use apt-get as follows if you cannot find the curl command.
-   ```bash
-   $ sudo apt-get install curl
-   ``` 
-#### Step 2: Run Installation Script.
-Run install_with_driveworks.sh that you obtained.
-### Case 2: Autoware without NVIDIA DriveWorks
-#### Step 1: Run Setup Script.
-Run setup_without_driveworks.sh that you obtained.  
-Use apt-get as follows if you cannot find the curl command.
+### Requirements
+- 15 GB of free space (7GB temporarily used)
+- CUDA9.0 installed
 
-#### Step 2: Run Installation Script.
-Run install_without_driveworks.sh that you obtained.
+### Docker Image Installation
+Download [install_autoware_drivepx2_docker.sh](https://github.com/CPFL/Autoware/blob/master/docker/nvidia/install_autoware_drivepx2_docker.sh) to your favorite directory, and change the current directory.
 
-### Autoware Test
-You should face xterm after running the installation script. Please finally run start_autoware.sh that is located in the current directory.
-   ```bash
-   $ ./start_autoware.sh
-   ``` 
+`$ sudo ./install_autoware_drivepx2_docker.sh`
+
+`$ source ~/.bashrc`
+
+If you use another shell, please add "/usr/local/autoware/bin" to ${PATH}.
+
+### How To Run
+`$ autoware-docker`
+
+You should be now in the Autoware Docker container. To launch Autoware, run:
+
+`$ ~/start_autoware.sh`
+ 
 Autoware should be now running successfully.
