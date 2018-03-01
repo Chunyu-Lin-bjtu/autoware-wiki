@@ -48,3 +48,8 @@ You should be now in the Autoware Docker container. To launch Autoware, run:
 `$ ~/start_autoware.sh`
  
 Autoware should be now running successfully.
+
+### How Autoware and DriveWorks Interact
+![flow_gmsl](https://raw.githubusercontent.com/CPFL/Autoware/master/docker/nvidia/docs/autoware_driveworks_overview.png)
+![flow_gmsl](https://raw.githubusercontent.com/CPFL/Autoware/master/docker/nvidia/docs/flow_gmsl.png)
+![flow_tensorrt](https://raw.githubusercontent.com/CPFL/Autoware/master/docker/nvidia/docs/flow_tensorrt.png)
