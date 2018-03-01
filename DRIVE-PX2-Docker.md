@@ -32,7 +32,9 @@ This page guides you to install and run Autoware on the NVIDIA DRIVE PX2 platfor
 - CUDA9.0 installed
 
 ### Docker Image Installation
-Download [install_autoware_drivepx2_docker.sh](https://github.com/CPFL/Autoware/blob/master/docker/nvidia/install_autoware_drivepx2_docker.sh) to your favorite directory, and change the current directory.
+Download [install_autoware_drivepx2_docker.sh](https://github.com/CPFL/Autoware/blob/master/docker/nvidia/install_autoware_drivepx2_docker.sh) to your favorite directory.
+Change the current directory, and execute the following.
+Note that your .bashrc file will be modified to add the path.
 
    ```bash
    $ sudo ./install_autoware_drivepx2_docker.sh
