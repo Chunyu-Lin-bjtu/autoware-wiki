@@ -41,7 +41,7 @@ Download [install_autoware_drivepx2_docker.sh](https://github.com/CPFL/Autoware/
 
 If you use another shell, please add "/usr/local/autoware/bin" to ${PATH}.
 
-### How To Run
+### Run
 `$ autoware-docker`
 
 You should be now in the Autoware Docker container. To launch Autoware, run:
@@ -58,6 +58,8 @@ When using DriveWorks with Autoware, we encourage you to use the DriveWorks Sens
 
 ![flow_gmsl](https://raw.githubusercontent.com/CPFL/Autoware/master/docker/nvidia/docs/autoware_driveworks_overview.png)
 
+### Basic Flow of Image Sensing with GMSL Cameras 
 ![flow_gmsl](https://raw.githubusercontent.com/CPFL/Autoware/master/docker/nvidia/docs/flow_gmsl.png)
 
+### Basic Flow of Image Recognition with TensorRT
 ![flow_tensorrt](https://raw.githubusercontent.com/CPFL/Autoware/master/docker/nvidia/docs/flow_tensorrt.png)
