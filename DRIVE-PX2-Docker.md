@@ -2,7 +2,7 @@ This page guides you to install and run Autoware on the NVIDIA DRIVE PX2 platfor
 
 1. Docker Setup
 1. Autoware Setup
-1. Package Description
+1. DriveWorks Interface
 
 ## Docker Setup
 ### Docker Package Installation
@@ -50,7 +50,11 @@ You should be now in the Autoware Docker container. To launch Autoware, run:
  
 Autoware should be now running successfully.
 
-## Package Description
+## DriveWorks Interface
+
+Autoware exposes an interface for ROS nodes to call the DriveWorks API.
+This interface is provided as the *autoware_driveworks_interface* package, where the actual codebase is protected by the binary format due to a proprietary constraint of DriveWorks.
+When using DriveWorks with Autoware, we encourage you to use the DriveWorks Sensor Abstraction Layer (SAL), which provides an universal interface for many types of sensors, such as LiDARs and cameras, to be efficiently managed on the DRIVE PX2 platform.
 
 ![flow_gmsl](https://raw.githubusercontent.com/CPFL/Autoware/master/docker/nvidia/docs/autoware_driveworks_overview.png)
 
