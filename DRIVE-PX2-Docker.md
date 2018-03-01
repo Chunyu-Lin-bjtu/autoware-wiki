@@ -2,6 +2,7 @@ This page guides you to install and run Autoware on the NVIDIA DRIVE PX2 platfor
 
 1. Docker Setup
 1. Autoware Setup
+1. Package Description
 
 ## Docker Setup
 ### Docker Package Installation
@@ -49,7 +50,10 @@ You should be now in the Autoware Docker container. To launch Autoware, run:
  
 Autoware should be now running successfully.
 
-### How Autoware and DriveWorks Interact
+## Package Description
+
 ![flow_gmsl](https://raw.githubusercontent.com/CPFL/Autoware/master/docker/nvidia/docs/autoware_driveworks_overview.png)
+
 ![flow_gmsl](https://raw.githubusercontent.com/CPFL/Autoware/master/docker/nvidia/docs/flow_gmsl.png)
+
 ![flow_tensorrt](https://raw.githubusercontent.com/CPFL/Autoware/master/docker/nvidia/docs/flow_tensorrt.png)
