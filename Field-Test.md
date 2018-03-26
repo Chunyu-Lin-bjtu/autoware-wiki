@@ -17,7 +17,7 @@ Once you make a route with waypoints, all you have to do is just to follow these
 ## To Go Beyond
 
 ### Public Road Testing
-[![Public Road Demonstration](http://img.youtube.com/vi/5DaQBZvZwAI/mqdefault.jpg)](https://www.youtube.com/watch?v=5DaQBZvZwAI)
+[![Public Road Demonstration](http://img.youtube.com/vi/npQMzH3j_d8/mqdefault.jpg)](https://www.youtube.com/watch?v=npQMzH3j_d8)
 
 ### Private Course Testing
 [![Test Field Demonstration](http://img.youtube.com/vi/zujGfJcZCpQ/mqdefault.jpg)](https://www.youtube.com/watch?v=zujGfJcZCpQ)
