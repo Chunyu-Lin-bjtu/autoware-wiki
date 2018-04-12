@@ -55,3 +55,8 @@ Yes. You can reduce the file size using voxel grid filter. It is in the Map tab.
 ### My map size is over 1GB. I get an error saying "a message of over a gigabyte was predicted in tcpros. that seems highly unlikely, so I'll assume protocol synchronization is lost". What should I do?
 Due to ROS specification, if messages over 1GB is published, the error you mentioned occurs. ndt_mapping node publishes all the point cloud previously built, so if the map becomes larger up to a certain size, the message can not be published. If you want to create wide area map, you can use approximate_ndt_mapping instead of ndt_mapping. The node loads and publishes a part of the map, so the error above does not occur.
 
+### What is the difference between ndt_mapping and approximate_NDT_mapping?
+ndt_mapping loads all the pointcloud as map where approximate_ndt_mapping loads a portion of the current map and outputs PCDs only at certain distances. If you are going to create narrow range of map, use ndt_mapping. If you are going to create long distance of map, it is better to use approximate_ndt_mapping. The sample Moriyama map is created in another method called MMS(Mobile Mapping system) which is the product of Aisan Technology.
+
+### I followed the instructions in the manual. I pressed the mapping button. It loads all the pcl files but is stuck on this step for a long time. I never get "OK".How do I generate the map?
+This happens when you don't have the rosbag simulation or any have incoming velodyne/nmss data. Once you start simulation it should work.
