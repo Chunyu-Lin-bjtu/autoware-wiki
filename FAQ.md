@@ -46,6 +46,12 @@ ndt_localizer package depends on runtime_manager package in relation to message 
 
 ### Can I use my '.pcap' file to run autoware mapping and then save the result?
 Yes. First, convert pcap to rosbag.
-http://answers.ros.org/question/213080/ convert-raw-velodyne-vlp16-pcap-to-bagfile/
+http://answers.ros.org/question/213080/convert-raw-velodyne-vlp16-pcap-to-bagfile/
 The rosbag includes the topic, velodyne_packets, so you have to convert the topic from /velodyne_packets to /points_raw using VLP-16 driver in Sensing tab.
+
+### My map size is huge. Can I reduce the map size?
+Yes. You can reduce the file size using voxel grid filter. It is in the Map tab.
+
+### My map size is over 1GB. I get an error saying "a message of over a gigabyte was predicted in tcpros. that seems highly unlikely, so I'll assume protocol synchronization is lost". What should I do?
+Due to ROS specification, if messages over 1GB is published, the error you mentioned occurs. ndt_mapping node publishes all the point cloud previously built, so if the map becomes larger up to a certain size, the message can not be published. If you want to create wide area map, you can use approximate_ndt_mapping instead of ndt_mapping. The node loads and publishes a part of the map, so the error above does not occur.
 
