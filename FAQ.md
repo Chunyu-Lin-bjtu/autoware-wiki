@@ -22,5 +22,5 @@ In addition, root may be necessary for the execution of the USB-UVC driver.
 
 # Mapping/Localization
 
-###Why does mapping needed in the slam?
+### Why does mapping needed in the slam?
 In Autoware, localization(ndt_matching) and mapping(ndt_mapping) are completely separate functions. ndt_mapping is a function that create a map in a unknown environment from scratch so you don't need a map. On the other hand, ndt_matching is a localization function within a map so map is needed as a input of the function.
