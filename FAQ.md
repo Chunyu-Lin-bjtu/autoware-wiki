@@ -40,3 +40,7 @@ http://onlinelibrary.wiley.com/doi/10.1002/rob.20204/abstract
 ### What is the difference between ndt_mapping and lazy ndt_mapping?
 lazy_ndt_mapping does not use all points for matching while ndt_mapping uses all the points as reference. lazy_ndt_mapping uses only three previous scans as reference by default. lazy_ndt_mapping is faster than ndt_mapping, but with lower accuracy.
 
+### I just want to use ndt_mapping or icp_mapping with my own data only, instead of running Autoware everytime, but everytime I try to run ndt_mapping isolated, I get an error.
+
+ndt_localizer package depends on runtime_manager package in relation to message generation. Therefore you need to build the all packages in Autoare using ./catkin_make_release in Autoware/ros directory.
+
