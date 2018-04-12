@@ -32,3 +32,11 @@ Theoretically, larger grid sizes decrease the accuracy of localization.
 
 ### What criteria should be used to determine voxel grid size?
 Computation cost becomes smaller if you use larger voxel grid size. We use 2.0 meter by default because it keeps accuracy of localization and computation finishes in the measurement interval of scan.	
+
+### Can you explain the concept of resolution in ndt mapping or matching?
+If you want to know the concept of NDT, please refer to following paper.
+http://onlinelibrary.wiley.com/doi/10.1002/rob.20204/abstract
+
+### What is the difference between ndt_mapping and lazy ndt_mapping?
+lazy_ndt_mapping does not use all points for matching while ndt_mapping uses all the points as reference. lazy_ndt_mapping uses only three previous scans as reference by default. lazy_ndt_mapping is faster than ndt_mapping, but with lower accuracy.
+
