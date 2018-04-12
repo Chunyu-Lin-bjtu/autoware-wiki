@@ -31,7 +31,7 @@ The reason why we need to match the scan and the existing map is, it is faster a
 Theoretically, larger grid sizes decrease the accuracy of localization.
 
 ### What criteria should be used to determine voxel grid size?
-Computation cost becomes smaller if you use larger voxel grid size. We use 2.0 meter by default because it keeps accuracy of localization and computation finishes in the measurement interval of scan.	
+Computation cost becomes smaller if you use larger voxel grid size. We use 2.0 meter by default because it keeps accuracy of localization and computation finishes in the measurement interval of the scan.	
 
 ### Can you explain the concept of resolution in ndt mapping or matching?
 If you want to know the concept of NDT, please refer to the following paper.
@@ -43,4 +43,9 @@ lazy_ndt_mapping does not use all points for matching while ndt_mapping uses all
 ### I just want to use ndt_mapping or icp_mapping with my own data only, instead of running Autoware everytime, but everytime I try to run ndt_mapping isolated, I get an error.
 
 ndt_localizer package depends on runtime_manager package in relation to message generation. Therefore you need to build the all packages in Autoare using ./catkin_make_release in Autoware/ros directory.
+
+### Can I use my '.pcap' file to run autoware mapping and then save the result?
+Yes. First, convert pcap to rosbag.
+http://answers.ros.org/question/213080/ convert-raw-velodyne-vlp16-pcap-to-bagfile/
+The rosbag includes the topic, velodyne_packets, so you have to convert the topic from /velodyne_packets to /points_raw using VLP-16 driver in Sensing tab.
 
