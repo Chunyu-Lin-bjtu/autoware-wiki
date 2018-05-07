@@ -60,3 +60,8 @@ ndt_mapping loads all the pointcloud as map where approximate_ndt_mapping loads 
 
 ### I followed the instructions in the manual. I pressed the mapping button. It loads all the pcl files but is stuck on this step for a long time. I never get "OK".How do I generate the map?
 This happens when you don't have the rosbag simulation or any have incoming velodyne/nmss data. Once you start simulation it should work.
+
+### When I run `./catkin_make_release` I get the error: `-- Could not find the required component 'XXXXXXXX'.`
+You have missing dependencies. Solutions:
+1. Execute on Autoware base directory the following command: `~/Autoware$ git submodule update --init`.
+1. Execute `rosdep` inside the `ros` directory: `~/Autoware/ros$ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO`
