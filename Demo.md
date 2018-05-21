@@ -2,6 +2,8 @@ Please checkout the release version 1.7.0 for this demo.
 
 `$ git checkout tags/1.7.0`
 
+Launch files for Quick Start are moved to [Autoware/docs/quick_start](https://github.com/CPFL/Autoware/tree/master/docs/quick_start) from version 1.7.0.
+
 ## Demo data
 
 This demo will require 3D map and ROSBAG data. Please download the following sample demo data before running the demo.
