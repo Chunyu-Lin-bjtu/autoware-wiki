@@ -1,6 +1,6 @@
-Please checkout the release version 1.6.1 for this demo.
+Please checkout the release version 1.7.0 for this demo.
 
-`$ git checkout tags/1.6.1`
+`$ git checkout tags/1.7.0`
 
 ## Demo data
 
@@ -28,4 +28,4 @@ Autoware provide a set of the preinstalled roslaunch scripts for the demo. Pleas
 
 Please follow the instruction video below:
 
-[![Quick Start](http://img.youtube.com/vi/0luGF0-2nqc/mqdefault.jpg)](https://www.youtube.com/watch?v=0luGF0-2nqc)
+[![Quick Start](http://img.youtube.com/vi/OWwtr_71cqI/mqdefault.jpg)](https://www.youtube.com/watch?v=OWwtr_71cqI)
