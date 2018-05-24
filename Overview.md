@@ -1,4 +1,4 @@
-![Autoware Overview](https://github.com/CPFL/Autoware/blob/master/docs/images/autoware_overview.png)
+![Autoware Version 2.x Overview](https://github.com/CPFL/Autoware/blob/master/docs/images/autoware_overview.png)
 
 ## Sensing
 
@@ -53,3 +53,21 @@ _Currently, advanced users of Autoware are not in favor of IMU, because SLAM-bas
 * Applanix APX-15 UAV [[link](https://www.applanix.com/products/dg-uavs.htm)]
 
 _GPS/GNSS receivers typically generate NMEA-compliant sentences (text strings), which is entirely supported by Autoware, via the serial interface. Therefore, we believe that as long as the device is NMEA compliant, virtually all GPS/GNSS products, would be compatible for Autoware with the existing nmea2tfpose node._
+
+## Computing/Perception
+
+The perception capability of Autoware is composed of Localization, Detection, and Prediction. Localization is achieved by 3D maps and SLAM algorithms in combination with GNSS and IMU sensors. Detection uses cameras and LiDARs with sensor fusion algorithms and deep neural networks. Prediction is based on the results of Localization and Detection. The following are the highlighted packages and functions provided by Autoware.
+
+### Localization
+
+* **lidar_localizer** computes the (_x, y, z, roll, pitch, yaw_) position of the ego vehicle in the global coordinate, using the scanned data from LiDAR and the pre-installed 3D map information. We recommend the Normal Distributions Transform (NDT) algorithm for the LiDAR scan matching with the 3D map, while the Iterative Closet Point (ICP) algorithm is also supported.  
+* **gnss_localizer** transforms the NMEA message from a GNSS receiver to the (_x, y, z, roll, pitch, yaw_) position. This result can be used as the position of the ego vehicle alone, while it can also be used to initialize and complement the result of **lidar_localizer**.
+* **dead_reckoner** mainly uses an IMU sensor to predict the next-frame position of the ego-vehicle and also interpolate the result of **lidar_localizer** and **gnss_localizer**. 
+
+### Detection
+
+### Prediction
+
+## Computing/Decision
+
+## Computing/Planning
