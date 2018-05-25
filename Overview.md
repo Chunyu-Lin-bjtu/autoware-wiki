@@ -66,6 +66,13 @@ The perception capability of Autoware is composed of Localization, Detection, an
 
 ### Detection
 
+* **lidar_detector** provides LiDAR-based object detection capabilities. The basic performance comes from the Euclidean Clustering algorithm, which finds clusters of the LiDAR scan (point cloud) above the ground. To classify the clusters, DNN-based algorithms are also supported, such as VoxelNet and LMNet.
+* **lidar_tracker** identifies moving objects detected by **lidar_detector** on a time basis. The result of tracking can be used for prediction of the object behavior and estimation of the object velocity. The tracking algorithm is based on the Kalman Filters. Another variant supports the Particle Filters as well. 
+* **vision_detector** provides vision-based object detection capabilities. The main algorithms include SSD and Yolo (v2 & v3), which are both designed to perform single DNNs for real-time performance. Multiple classes of detection are supported, such as cars and passengers.
+* **vision_tracker** is currently not actively used but it implements the Kalman Filters to predict the next-frame position of moving objects detected by **vision_detector**.
+* **fusion_detector**
+* **fusion_tracker**
+
 ### Prediction
 
 ## Computing/Decision
