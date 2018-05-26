@@ -19,6 +19,7 @@ _Multiple Camera sensors are supported, however they should be configured separa
 
 * VELODYNE HDL-64E (S1/S2/S3) [[link](http://velodynelidar.com/hdl-64e.html)]
 * VELODYNE HDL-32E [[link](http://velodynelidar.com/hdl-32e.html)]
+* VELODYNE VLP-32C [[link](http://velodynelidar.com/vlp-32c.html)]
 * VELODYNE VLP-16 [[link](http://velodynelidar.com/vlp-16.html)]
 * VELODYNE VLP-16 Lite [[link](http://velodynelidar.com/vlp-16-lite.html)]
 * VELODYNE VLP-16 Hi-Res [[link](http://velodynelidar.com/vlp-16-hi-res.html)]
@@ -27,7 +28,7 @@ _Multiple Camera sensors are supported, however they should be configured separa
 * SICK LMS511 [[link](https://www.sick.com/us/en/detection-and-ranging-solutions/2d-lidar-sensors/lms5xx/lms511-10100-pro/p/p215941)]
 * PIONEER 3D LiDAR (yet to be released) [[link](http://global.pioneer/en/news/press/2017/pdf/1130-1.pdf)]
 
-_You may combine multiple units of the above LiDAR sensors through TF, providing rich fused pointcloud data for more precise object detection, tracking, and localization. Please check Velodyne's documentation on how to use multiple sensors in the same network._
+_You may combine multiple units of the above LiDAR scanners through TF, providing rich fused pointcloud data for more precise object detection, tracking, and localization. Please check Velodyne's documentation on how to use multiple sensors in the same network._
 
 ### RADAR
 
@@ -70,8 +71,8 @@ The perception capability of Autoware is composed of Localization, Detection, an
 * **lidar_tracker** identifies moving objects detected by **lidar_detector** on a time basis. The result of tracking can be used for prediction of the object behavior and estimation of the object velocity. The tracking algorithm is based on the Kalman Filters. Another variant supports the Particle Filters as well. 
 * **vision_detector** provides vision-based object detection capabilities. The main algorithms include SSD and Yolo (v2 & v3), which are both designed to perform single DNNs for real-time performance. Multiple classes of detection are supported, such as cars and passengers.
 * **vision_tracker** is currently not actively used but it implements the Kalman Filters to predict the next-frame position of moving objects detected by **vision_detector**.
-* **fusion_detector**
-* **fusion_tracker**
+* **fusion_detector** uses both point cloud data from LiDAR scanners and image data from cameras to achieve more accurate object detection on the 3D coordinate. The positions of LiDAR scanner(s) and camera(s) must be calibrated in advance. The current implementation is based on the MV3D algorithm with a minor extension of the network as compared to the original algorithm.
+* **fusion_tracker** uses either the result of **fusion_detector** alone or the fused result of **lidar_detector** and **vision_detector**. In either case, the moving objects are identified on a time and continuously tracked for prediction of the object behavior and estimation of the object velocity. This package should outperform **lidar_tracker**, though it is still a work in progress.
 
 ### Prediction
 
