@@ -82,6 +82,14 @@ The perception capability of Autoware is composed of Localization, Detection, an
 
 ## Computing/Decision
 
-The decision module of Autoware bridges across the perception and the planning modules. Based on the result of perception, Autoware decides a driving behavior, represented by a finite state machine, so that an appropriate planning function can be selected.
+The decision module of Autoware bridges across the perception and the planning modules. Upon the result of perception, Autoware decides a driving behavior, represented by a finite state machine, so that an appropriate planning function can be selected. The current approach to decision making is a rule-based system.
+
+### Intelligence
+
+* **decision_maker** subscribes a large set of topics related to the result of perception, map information, and the current state in order to publish the next-moment state topic. This state change will activate an appropriate planning function.
+
+### State
+
+* **state_machine** changes the state within pre-defined rules, orchestrating with **decision_maker**.
 
 ## Computing/Planning
