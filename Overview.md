@@ -76,6 +76,10 @@ The perception capability of Autoware is composed of Localization, Detection, an
 
 ### Prediction
 
+* **moving_predictor** uses the result of object tracking described above to predict the future trajectories of neighbor moving objects, such as cars and passengers.
+* **collision_predictor** uses the result of **moving_predictor** to predict if the ego vehicle is involved in possible collision against the moving objects. The waypoint trajectory and the velocity information of the ego vehicle is also required as input data in addition to the result of object tracking.
+* **cutin_predictor** uses the same pieces of information as **collision_predictor** to predict if neighbor cars cut in the front of the ego vehicle.  
+
 ## Computing/Decision
 
 ## Computing/Planning
