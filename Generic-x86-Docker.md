@@ -93,11 +93,11 @@ You can build the Autoware runtime environment using nvidia-docker. You may choo
 
    Run run.sh kinetic if you use Ubuntu 16.04, assuming that the default path is "/home/$USER/shared_dir".
    ``` bash
-   $ sh run.sh kinetic
+   $ sudo sh run.sh kinetic
    ``` 
    If you want to use your own path, run build.sh kinetic with the path argument.
    ``` bash
-   $ sh run.sh kinetic {SHARED_DIR_PATH}
+   $ sudo sh run.sh kinetic {SHARED_DIR_PATH}
    ``` 
    Replace "kinetic" with "indigo" if you use Ubuntu 14.04.
 
@@ -110,20 +110,20 @@ You can build the Autoware runtime environment using nvidia-docker. You may choo
    ``` 
    Run build.sh kinetic if you use Ubuntu 16.04.
    ``` bash
-   $ sh build.sh kinetic
+   $ sudo sh build.sh kinetic
    ``` 
    Otherwise, run build.sh indigo for Ubuntu 14.04. We do not support other versions of Ubuntu at this moment.
    ``` bash
-   $ sh build.sh indigo
+   $ sudo sh build.sh indigo
    ``` 
 #### Step2: Autoware Docker Run
     
    Run run.sh kinetic if you use Ubuntu 16.04, assuming that the default path is "/home/$USER/shared_dir".
    ``` bash
-   $ sh run.sh kinetic
+   $ sudo sh run.sh kinetic
    ``` 
    If you want to use your own path, run build.sh kinetic with the path argument.
    ``` bash
-   $ sh run.sh kinetic {SHARED_DIR_PATH}
+   $ sudo sh run.sh kinetic {SHARED_DIR_PATH}
    ``` 
    Replace "kinetic" with "indigo" if you use Ubuntu 14.04.
