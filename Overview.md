@@ -93,3 +93,18 @@ The decision module of Autoware bridges across the perception and the planning m
 * **state_machine** changes the state within pre-defined rules, orchestrating with **decision_maker**.
 
 ## Computing/Planning
+
+The last piece of computing in Autoware is a planning module. The role of this module is to make plans of global mission and local (temporal) motion based on the results of the perception and the decision modules. A global mission is often determined when the ego vehicle starts or restarts, while a local motion is updated according to state changes. For example, the velocity of the ego vehicle is planned to become zero in front of an object with a safety margin or at a stop line if the state of Autoware is set to "stop". Another example is that the trajectory of the ego vehicle is planned to bypass an obstacle if the state of Autoware is set to "avoid". The primary packages included in the planning module are the following.
+
+### Mission
+
+* **route_planner**
+* **lane_planner**
+* **way_planner**
+* **waypoint_maker**
+
+### Motion
+* **velocity_planner**
+* **astar_planner**
+* **adas_lattice_planner**
+* **waypoint_follower**
