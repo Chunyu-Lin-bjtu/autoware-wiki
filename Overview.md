@@ -100,7 +100,7 @@ The last piece of computing in Autoware is a planning module. The role of this m
 
 * **route_planner** searches for a global route to the destination. The route is represented by a set of intersections in the road network.
 * **lane_planner** determines which lanes to be used along with the route published by **route_planner**. The lanes are represented by an array of waypoints, i.e., multiple waypoints, each of which corresponds to a single lane, are published by this packange.
-* **waypoint_planner**
+* **waypoint_planner** can be alternatively used to generate a set of waypoints to the destination. This package differs from **lane_planner** in that it publishes a single stroke of waypoints rather than an array of waypoints. 
 * **waypoint_maker**
 
 ### Motion
