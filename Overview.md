@@ -104,7 +104,7 @@ The last piece of computing in Autoware is a planning module. The role of this m
 * **waypoint_maker** is a utility tool to save and load hand-made waypoints. To save waypoints to the specified file, you drive a vehicle manually while localization is activated, and Autoware records waypoints of the driving path with velocity information. The recorded waypoints can be loaded later on from the specified file to have the motion planning module subscribe them to follow that path.
 
 ### Motion
-* **velocity_planner**
+* **velocity_planner** updates a velocity plan on the waypoints subscribed from either **lane_planner**,  **waypoints_planner**, or *waypoints_maker** so as to speed down/up against surrounding vehicles and road features such as stop lines and traffic lights. Note that the velocity information embedded in the given waypoints is static, while this package updates a velocity plan according to driving scenes. 
 * **astar_planner**
 * **adas_lattice_planner**
 * **waypoint_follower**
