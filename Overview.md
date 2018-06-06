@@ -99,9 +99,9 @@ The last piece of computing in Autoware is a planning module. The role of this m
 ### Mission
 
 * **route_planner** searches for a global route to the destination. The route is represented by a set of intersections in the road network.
-* **lane_planner** determines which lanes to be used along with the route published by **route_planner**. The lanes are represented by an array of waypoints, i.e., multiple waypoints, each of which corresponds to a single lane, are published by this packange.
+* **lane_planner** determines which lanes to be used along with the route published by **route_planner**. The lanes are represented by an array of waypoints, i.e., multiple waypoints, each of which corresponds to a single lane, are published by this package.
 * **waypoint_planner** can be alternatively used to generate a set of waypoints to the destination. This package differs from **lane_planner** in that it publishes a single stroke of waypoints rather than an array of waypoints. 
-* **waypoint_maker**
+* **waypoint_maker** is a utility tool to save and load hand-made waypoints. To save waypoints to the specified file, you drive a vehicle manually while localization is activated, and Autoware records waypoints of the driving path with velocity information. The recorded waypoints can be loaded later on from the specified file to have the motion planning module subscribe them to follow that path.
 
 ### Motion
 * **velocity_planner**
