@@ -105,6 +105,6 @@ The last piece of computing in Autoware is a planning module. The role of this m
 
 ### Motion
 * **velocity_planner** updates a velocity plan on the waypoints subscribed from either **lane_planner**,  **waypoints_planner**, or *waypoints_maker** so as to speed down/up against surrounding vehicles and road features such as stop lines and traffic lights. Note that the velocity information embedded in the given waypoints is static, while this package updates a velocity plan according to driving scenes. 
-* **astar_planner**
-* **adas_lattice_planner**
+* **astar_planner** implements the Hybrid-State A* search algorithm to generate a feasible trajectory from the current position to the specified position. This package can be used for obstacle avoidance and sharp turns on the given waypoints as well as routing in free space such as parking lots.
+* **adas_lattice_planner** implements the State Lattice planning algorithm to generate multiple feasible trajectories ahead of the current position based on spline curves and a pre-defined parameter table. This package can be used mostly for obstacle avoidance and lane changes.
 * **waypoint_follower**
