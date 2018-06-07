@@ -11,6 +11,7 @@ Autoware supports Camera, LiDAR, IMU, and GPS as primary sensors. The following 
 * PointGrey (FLIR) Blackfly (USB3/GigE) [[link](https://www.ptgrey.com/blackfly-usb3-vision-cameras)]
 * Baumer VLG-22C (USB3/GigE) [[link](https://www.baumer.com/sg/en/product-overview/image-processing-identification/industrial-cameras/long-term-availability/visiline-series/ams-cmosis-sensors/vlg-22c/p/24060)]
 * Baumer VCXU-24C (USB3/GigE) [[link](https://www.baumer.com/us/en/product-overview/image-processing-identification/industrial-cameras/cx-series/usb-3-0-interface/vcxu-24c/p/23796)]
+* Allied Vision Camera Mako G-319C (PoE GigE) [[link](https://www.alliedvision.com/en/products/cameras/detail/Mako%20G/G-319.html)]
 * Generic UVC Webcam (USB2/3)
 
 _Multiple Camera sensors are supported, however they should be configured separately for individual purposes. Please verify the documentation on ROS on using namespaces or name for each instance. Autoware separates each camera for a purpose such as object detection and traffic light recognition. Inherently, Autoware does not support concatenating multiple images into a single large image._
