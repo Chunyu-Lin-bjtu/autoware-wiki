@@ -1,6 +1,6 @@
 ![Autoware Version 2.0 Overview](https://github.com/CPFL/Autoware/blob/master/docs/images/autoware_overview.png)
 
-This page describes an overview of Autoware based on the Version 2.0 design and implementation. For more details, you may refer to [the specification of Autoware(https://github.com/CPFL/Autoware/wiki/Specification)].
+This page describes an overview of Autoware based on the Version 2.0 design and implementation. For more details, you may refer to [[the specification of Autoware](https://github.com/CPFL/Autoware/wiki/Specification)].
 
 ## Sensing
 
