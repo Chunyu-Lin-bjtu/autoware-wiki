@@ -30,7 +30,7 @@
 [![Yolo2](http://img.youtube.com/vi/gG_ojWOmDO0/mqdefault.jpg)](https://youtu.be/gG_ojWOmDO0)
 
 ### Detection with Yolo3
-[![Yolo v3 Autoware](https://img.youtube.com/vi/pO4vM4ehI98/0.jpg)](https://www.youtube.com/watch?v=pO4vM4ehI98)
+[![Yolo v3 Autoware](https://img.youtube.com/vi/pO4vM4ehI98/mqdefault.jpg)](https://www.youtube.com/watch?v=pO4vM4ehI98)
 
 ### Detection with DPM
 [![DPM](http://img.youtube.com/vi/P_BFQNbudlg/mqdefault.jpg)](https://youtu.be/P_BFQNbudlg)
