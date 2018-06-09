@@ -1,13 +1,3 @@
-## Demo Videos
-
-### Public Road Demonstration
-[![Public Road Demonstration](http://img.youtube.com/vi/5DaQBZvZwAI/mqdefault.jpg)](https://www.youtube.com/watch?v=5DaQBZvZwAI)
-
-### Test Field Demonstration
-[![Test Field Demonstration](http://img.youtube.com/vi/zujGfJcZCpQ/mqdefault.jpg)](https://www.youtube.com/watch?v=zujGfJcZCpQ)
-
-## Instructional Videos
-
 ### Quick Start
 [![Quick Start](http://img.youtube.com/vi/NDNcy0C-Has/mqdefault.jpg)](https://www.youtube.com/watch?v=NDNcy0C-Has)
 
