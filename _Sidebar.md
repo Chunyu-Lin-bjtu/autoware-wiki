@@ -9,6 +9,7 @@
     1. [Source](https://github.com/CPFL/Autoware/blob/master/README.md)
 1. [Demo](https://github.com/CPFL/Autoware/wiki/Demo)
 1. [Field Test](https://github.com/CPFL/Autoware/wiki/Field-Test)
+1. [Videos](https://github.com/CPFL/Autoware/wiki/videos)
 
 ### Developers Guide
 
