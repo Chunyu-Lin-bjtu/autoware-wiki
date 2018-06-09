@@ -6,7 +6,7 @@
 
 1. [Installation](https://github.com/CPFL/Autoware/wiki/Installation)
     1. [Docker](https://github.com/CPFL/Autoware/wiki/Docker)
-    1. [Source](https://github.com/CPFL/Autoware/blob/master/README.md)
+    1. [Source](https://github.com/CPFL/Autoware/wiki/Source-Build)
 1. [Demo](https://github.com/CPFL/Autoware/wiki/Demo)
 1. [Field Test](https://github.com/CPFL/Autoware/wiki/Field-Test)
 1. [Videos](https://github.com/CPFL/Autoware/wiki/videos)
