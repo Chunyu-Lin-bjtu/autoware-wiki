@@ -111,3 +111,7 @@ The last piece of computing in Autoware is a planning module. The role of this m
 * **astar_planner** implements the Hybrid-State A* search algorithm that generates a feasible trajectory from the current position to the specified position. This package can be used for obstacle avoidance and sharp turns on the given waypoints as well as routing in free space such as parking lots.
 * **adas_lattice_planner** implements the State Lattice planning algorithm that generates multiple feasible trajectories ahead of the current position based on spline curves, a pre-defined parameter table, and the ADAS Map (a.k.a., Vector Map) information. This package can be used mostly for obstacle avoidance and lane changes.
 * **waypoint_follower** implements the Pure Pursuit algorithm that generates a twisted set of velocity and angular velocity (or just angle) to move the ego vehicle by uniform circular motion to a target waypoint over the given waypoints. This package should be used in combination with **velocity_planner**, **astar_planner**, and/or **adas_lattice_planner**. The published twisted set of velocity and angular velocity (or just angle) will be read by a vehicle controller or a by-wire interface, and finally the ego vehicle is controlled autonomously.
+
+## Actuation
+
+Autoware has been installed to a number of vehicles.
