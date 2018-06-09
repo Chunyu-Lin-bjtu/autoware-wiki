@@ -114,4 +114,4 @@ The last piece of computing in Autoware is a planning module. The role of this m
 
 ## Actuation
 
-Autoware has been installed to a number of vehicles.
+Autoware has been installed and tested with a number of by-wired vehicles. Examples of "Powered by Autoware" are listed [here](https://autoware.ai/join/).
