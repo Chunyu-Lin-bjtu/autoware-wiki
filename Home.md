@@ -16,7 +16,7 @@ All in all, Autoware provides a complete software stack for self-driving technol
 You can easily install Autoware using Docker and run the demo using ROSBAG.
 
 1. [Installation](https://github.com/CPFL/Autoware/wiki/Installation)
-1. [Demo](https://github.com/CPFL/Autoware/Demo)
+1. [Demo](https://github.com/CPFL/Autoware/wiki/Demo)
 
 ## How to contribute
 
