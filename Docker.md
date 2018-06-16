@@ -24,3 +24,9 @@ If you are using the DRIVE PX2 platform, you can choose Docker with or without N
 #### DRIVE Xavier
 
 Coming soon.
+
+## 96Boards
+
+#### Syn Quencer E
+
+Coming soon.
