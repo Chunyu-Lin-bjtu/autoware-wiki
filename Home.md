@@ -32,6 +32,5 @@ Autoware is widely used in research and development of self-driving technology. 
 
 Autoware can also be used for products and services. [Tier IV](http://www.tier4.jp) offers a compact self-driving development kit, called [AI Pilot](http://tier4.jp/en/computers.php), where cameras, LiDAR, GPS/IMU, and computers (DRIVE PX2, R-Cars, etc.) are all integrated in a package. [AutonomouStuff](https://autonomoustuff.com/) distributes [by-wire vehicles](https://autonomoustuff.com/product/astuff-automotive/), where Autoware can be preinstalled as an option. [ZMP](https://www.zmp.co.jp) also distributes Autoware-preinstalled vehicles. [Aisan Technology](http://www.aisantec.co.jp/english/) provides high-definition/accuracy/resolution 3D maps that use the mapping format supported by Autoware (see [videos](https://www.youtube.com/channel/UClndQXbGrlo_cWR7tzu5LOQ)). We appreciate these companies selecting Autoware as a commercial solution, and hope to see more and more companies adopting Autoware in production.
 
-****
-Maintained by: @shinpei0208
 ***
+Maintained by: [shinpei0208](https://github.com/shinpei0208)
