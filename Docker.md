@@ -29,6 +29,6 @@ Coming soon.
 
 #### Syn Quencer E
 
-The main memory should be upgraded to 16GB to 32GB.
+The preferred main memory size is 16GB to 32GB.
 
 [>> Install to Syn Quencer E](https://github.com/CPFL/Autoware/wiki/Syn-Quencer-E-Docker)
