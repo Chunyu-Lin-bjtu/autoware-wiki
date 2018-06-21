@@ -31,4 +31,4 @@ Coming soon.
 
 The main memory should be upgraded to 16GB to 32GB.
 
-[>> Install to ](https://github.com/CPFL/Autoware/wiki/Syn-Quencer-E-Docker)
+[>> Install to Syn Quencer E](https://github.com/CPFL/Autoware/wiki/Syn-Quencer-E-Docker)
