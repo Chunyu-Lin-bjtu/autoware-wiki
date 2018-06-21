@@ -1,4 +1,4 @@
-To install Autoware, we strongly recommend using our Docker environments. The supported version of Autoware is newer than 1.6.0. In case that you do not want to use Docker for installation, please follow the instruction provided by [README.md](https://github.com/CPFL/Autoware/blob/master/README.md).
+To install Autoware, we strongly recommend using our Docker environments. The supported version of Autoware is newer than 1.6.0. In case that you do not want to use Docker for installation, please follow the instruction provided by [Source Build](https://github.com/CPFL/Autoware/wiki/Source-Build).
 
 ## Generic x86 (64 bits)
 
@@ -29,4 +29,6 @@ Coming soon.
 
 #### Syn Quencer E
 
-Coming soon.
+The main memory should be upgraded to 16GB to 32GB.
+
+[>> Install to ](https://github.com/CPFL/Autoware/wiki/Syn-Quencer-E-Docker)
