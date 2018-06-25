@@ -47,9 +47,7 @@ sub   4096R/F273FCD8 2017-02-22
 
 Install the repository.
 ```
-$ echo "deb [arch=armhf] https://download.docker.com/linux/debian \
-     $(lsb_release -cs) stable" | \
-    sudo tee /etc/apt/sources.list.d/docker.list
+$ echo "deb [arch=armhf] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list
 ```
 
 #### Step 2: Docker CE Installation
