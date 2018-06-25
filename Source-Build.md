@@ -57,7 +57,7 @@ Several DNN-based nodes, such as RCNN, SSD, and Yolo, are not automatically buil
 
 To build these nodes please follow the respective node's README
 [RCNN](ros/src/computing/perception/detection/lib/image/librcnn/README.md)
-[SSD](ros/src/computing/perception/detection/packages/cv_tracker/nodes/ssd/README.md)
+[SSD](ros/src/computing/perception/detection/vision_detector/packages/vision_ssd_detect/README.md)
 [Yolo2](ros/src/computing/perception/detection/packages/cv_tracker/nodes/yolo2/README.md)
 [Yolo3](ros/src/computing/perception/detection/packages/yolo3_detector/README.md)
 
