@@ -107,7 +107,8 @@ You can build the Autoware runtime environment using nvidia-docker. You may choo
 
    Move to the docker directory in Autoware.
    ``` bash
-   $ cd Autoware/docker
+   $ git clone https://github.com/CPFL/Autoware.git
+   $ cd Autoware/docker/generic
    ``` 
    Run build.sh kinetic if you use Ubuntu 16.04.
    ``` bash
