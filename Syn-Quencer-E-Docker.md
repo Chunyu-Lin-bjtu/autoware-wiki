@@ -66,5 +66,14 @@ Validate the installation succeeded.
 $ sudo docker run armhf/hello-world
 ```
 
-## Autoware Dockewr Setup
+## Autoware Docker Setup
+You can build the Autoware runtime environment using docker. You may choose either to use the configuration of Docker Hub "as is" or to modify-then-recompile Dockerfile.
+
+### Case 1: Using Docker Hub "As Is"
+Move to the docker/96boards directory in Autoware.
+```
+$ git clone https://github.com/CPFL/Autoware.git
+$ cd Autoware/docker/96boards
+```
+
 Coming soon.
