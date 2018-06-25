@@ -84,7 +84,7 @@ Check if the nvidia-docker service runs.
 You can build the Autoware runtime environment using nvidia-docker. You may choose either to use the configuration of Docker Hub "as is" or to modify-then-recompile Dockerfile.
 
 ### Case 1: Using Docker Hub "As Is"
-   Move to the docker directory in Autoware.
+   Move to the docker/generic directory in Autoware.
    ``` bash
    $ git clone https://github.com/CPFL/Autoware.git
    $ cd Autoware/docker/generic
