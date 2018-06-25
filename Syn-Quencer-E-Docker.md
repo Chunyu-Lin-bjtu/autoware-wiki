@@ -2,14 +2,20 @@
 
 This page guides you to install and run Autoware on the Syn Quacer E using Docker.
 
+1. Debian Setup
 1. Docker Setup
 1. Autoware Docker Setup
 
+## Debian Setup
+
+You first install Debian according to [SynQuacer(TM) E-Series Assembly Instructions](http://www.socionext.com/en/download/catalog/MN04-00002-2E.pdf).
+
 ## Docker Setup
 
-You first need to build the Docker environment. If the following installation process does not work for you, please check [Docker's installation website](https://docs.docker.com/install/linux/docker-ce/debian/).
+You need to build the Docker environment. If the following installation process does not work for you, please check [Docker's installation website](https://docs.docker.com/install/linux/docker-ce/debian/).
 
 ### Old Docker Cleanup
+
 ```
 $ sudo apt-get remove docker docker-engine docker.io
 ```
@@ -17,9 +23,11 @@ $ sudo apt-get remove docker docker-engine docker.io
 You are ready to move on the next step if all Docker packages are removed.
 
 ### Docker CE Installation
+
 This time you may want to install Docker using the repository, though there are several other ways to install Docker.
 
 #### Step 1: Repository Setup
+
 Do update on apt-get.
 ```
 $ sudo apt-get update
@@ -51,6 +59,7 @@ $ echo "deb [arch=armhf] https://download.docker.com/linux/debian $(lsb_release 
 ```
 
 #### Step 2: Docker CE Installation
+
 Update on apt-get.
 ```
 $ sudo apt-get update
@@ -67,9 +76,11 @@ $ sudo docker run armhf/hello-world
 ```
 
 ## Autoware Docker Setup
+
 You can build the Autoware runtime environment using docker. You may choose either to use the configuration of Docker Hub "as is" or to modify-then-recompile Dockerfile.
 
 ### Case 1: Using Docker Hub "As Is"
+
 Move to the docker/96boards directory in Autoware.
 ```
 $ git clone https://github.com/CPFL/Autoware.git
