@@ -5,7 +5,7 @@ This page guides you to install and run Autoware on the Intel x86 processor (64 
 1. Autoware Docker Setup
 
 ## Docker Setup
-   You first need to build the Docker environment. If the following installation process does not work for you,please check [Docker's installation website](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
+   You first need to build the Docker environment. If the following installation process does not work for you, please check [Docker's installation website](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
 
 ###   Old Docker Cleanup
    ```bash
@@ -53,7 +53,7 @@ This page guides you to install and run Autoware on the Intel x86 processor (64 
    ``` bash
    $ sudo apt-get install docker-ce
    ``` 
-   Validate the installation succeeded.v
+   Validate the installation succeeded.
    ``` bash
    $ sudo docker run hello-world
    ``` 
