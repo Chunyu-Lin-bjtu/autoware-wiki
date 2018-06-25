@@ -56,10 +56,9 @@ $ ./catkin_make_release
 Several DNN-based nodes, such as RCNN, SSD, and Yolo, are not automatically built.
 
 To build these nodes please follow the respective node's README
-[RCNN](ros/src/computing/perception/detection/lib/image/librcnn/README.md)
-[SSD](ros/src/computing/perception/detection/vision_detector/packages/vision_ssd_detect/README.md)
-[Yolo2](ros/src/computing/perception/detection/packages/cv_tracker/nodes/yolo2/README.md)
-[Yolo3](ros/src/computing/perception/detection/packages/yolo3_detector/README.md)
+[SSD](https://github.com/CPFL/Autoware/tree/master/ros/src/computing/perception/detection/vision_detector/packages/vision_ssd_detect/README.md)
+[Yolo2](https://github.com/CPFL/Autoware/tree/master/ros/src/computing/perception/detection/vision_detector/packages/vision_yolo2_detect/README.md)
+[Yolo3](https://github.com/CPFL/Autoware/tree/master/ros/src/computing/perception/detection/vision_detector/packages/vision_yolo3_detect/README.md)
 
 Also be careful when changing files under `ros/src/sensing/drivers/lidar/packages/velodyne`. There is **subtree**.
 The original repository is [here](https://github.com/CPFL/velodyne). If you change those files from this
