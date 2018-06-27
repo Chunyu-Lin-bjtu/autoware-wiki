@@ -31,4 +31,4 @@ Coming soon.
 
 The preferred main memory size is 16GB to 32GB.
 
-[>> Install to SynQuencer E](https://github.com/CPFL/Autoware/wiki/SynQuencer-E-Docker)
+[>> Install to SynQuacer E](https://github.com/CPFL/Autoware/wiki/SynQuacer-E-Docker)
