@@ -8,6 +8,7 @@ This page guides you to install and run Autoware on the SynQuacer E using Docker
 
 ## Attention
 
+* The performance is not optimized for SynQuacer E.
 * Yolo2 is not built.
 * Checkout develop branch for Docker scripts.
 
