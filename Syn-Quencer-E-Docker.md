@@ -2,7 +2,6 @@
 
 This page guides you to install and run Autoware on the Syn Quacer E using Docker. The outline of this page is as follows.
 
-1. Attention
 1. Debian Setup
 1. Docker Setup
 1. Autoware Docker Setup
@@ -92,4 +91,40 @@ $ git clone https://github.com/CPFL/Autoware.git
 $ cd Autoware/docker/96boards
 ```
 
-Coming soon.
+Modify the last sentence of run.sh in that directory: autoware-$1 --> autoware/autoware:1.7.0-kinetic-96boards (*comment out does not work, need to modify)
+
+Run run.sh kinetic, assuming that the default path is "/home/$USER/shared_dir".
+```
+$ sudo sh run.sh kinetic
+```
+
+If you want to use your own path, run build.sh kinetic with the path argument.
+```
+$ sudo sh run.sh kinetic {SHARED_DIR_PATH}
+```
+
+### Case 2: Using modify-then-recompile Dockerfile
+#### Step 1: Autoware Docker Build
+
+Move to the docker directory in Autoware.
+```
+$ git clone https://github.com/CPFL/Autoware.git
+$ cd Autoware/docker/96boards
+```
+
+Run build.sh kinetic.
+```
+$ sudo sh build.sh kinetic
+```
+
+#### Step2: Autoware Docker Run
+
+Run run.sh kinetic, assuming that the default path is "/home/$USER/shared_dir".
+```
+$ sudo sh run.sh kinetic
+```
+
+If you want to use your own path, run build.sh kinetic with the path argument.
+```
+$ sudo sh run.sh kinetic {SHARED_DIR_PATH}
+```
