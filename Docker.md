@@ -27,7 +27,7 @@ Coming soon.
 
 ## 96Boards
 
-#### SynQuencer E
+#### SynQuacer E
 
 The preferred main memory size is 16GB to 32GB.
 
