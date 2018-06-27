@@ -1,6 +1,6 @@
 *Under construction.*
 
-This page guides you to install and run Autoware on the Syn Quacer E using Docker. The outline of this page is as follows.
+This page guides you to install and run Autoware on the SynQuacer E using Docker. The outline of this page is as follows.
 
 1. Debian Setup
 1. Docker Setup
