@@ -91,7 +91,9 @@ You can build the Autoware runtime environment using docker. You may choose eith
 Move to the docker/96boards directory in Autoware.
 ```
 $ git clone https://github.com/CPFL/Autoware.git
-$ cd Autoware/docker/96boards
+$ cd Autoware
+$ git checkout develop
+$ cd docker/96boards
 ```
 
 Modify the last sentence of run.sh in that directory: autoware-$1 --> autoware/autoware:1.7.0-kinetic-96boards (*comment out does not work, need to modify)
@@ -112,7 +114,9 @@ $ sudo sh run.sh kinetic {SHARED_DIR_PATH}
 Move to the docker directory in Autoware.
 ```
 $ git clone https://github.com/CPFL/Autoware.git
-$ cd Autoware/docker/96boards
+$ cd Autoware
+$ git checkout develop
+$ cd docker/96boards
 ```
 
 Run build.sh kinetic.
