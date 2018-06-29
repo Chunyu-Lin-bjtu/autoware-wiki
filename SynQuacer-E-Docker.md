@@ -11,6 +11,7 @@ This page guides you to install and run Autoware on the SynQuacer E using Docker
 * The performance is not optimized for SynQuacer E.
 * Yolo2 is not built.
 * Checkout develop branch for Docker scripts.
+* Indigo is not supported now ([#1356](https://github.com/CPFL/Autoware/pull/1356)).
 
 ## Debian Setup
 
