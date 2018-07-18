@@ -1,4 +1,4 @@
-**Draft and In progress**
+**Draft memo and In progress**
 
 SDP 7.0 on WMWare x86_64
 
@@ -149,3 +149,7 @@ rosmsg: Unsupported OS [qnx]
 rosbag: Unsupported OS [qnx]
 rosclean: Unsupported OS [qnx]
 ```
+
+Same as https://groups.google.com/forum/#!topic/ros-sig-embedded/cak1-QNevgo.
+
+I'll try to read the google groups.
