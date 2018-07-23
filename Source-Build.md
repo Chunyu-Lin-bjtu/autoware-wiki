@@ -51,8 +51,6 @@ $ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 $ ./catkin_make_release
 ```
 
-Use ./catkin_make_release_aarch64 for cross build aarch64.
-
 ### DNN-based nodes
 
 Several DNN-based nodes, such as RCNN, SSD, and Yolo, are not automatically built.
