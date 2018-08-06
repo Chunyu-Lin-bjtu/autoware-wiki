@@ -71,12 +71,12 @@ Traffic Light Recognizer
 - feat_proj
 - region_tlr
 
-<!--
 # For Localization Feedback
 
 Connector
 - can2odom
 
+<!--
 # For Localization Init
 
 Localization
