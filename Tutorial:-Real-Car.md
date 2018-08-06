@@ -1,4 +1,4 @@
-The minimum data and nodes for autonomous driving with real car are described. More detailed descriptions are work in progress.
+The minimum data and nodes for autonomous driving with a real car are described. Some typical options are also listed. You should select what you need, and should **make risk assessment** based on your purpose. More detailed descriptions are work in progress.
 
 # Mandatory
 
@@ -32,7 +32,7 @@ Planning - Motion
 - twist_filter
 
 Actuation
-- different for each car
+- different for each car type
 
 <!--
 # For ZMP Cars
@@ -43,20 +43,23 @@ Socket
 - vehicle_receiver
 -->
 
-# For Obstacle Stop
+# Obstacle Stop
+
+With this option, the car can stop short of obstacles on way points. If the obstacles are removed, the car starts running again.
 
 Sensing
 - ray_ground_filter (or ring_round_filter)
 
-Detection
-- lidar_euclidean_cluster_detect
+# Real Road
 
-# For Real Road
+With this option, the car can run on real road without traffic light. Cross walk, stop line, or etc, included in the data can be considered.
 
 Data
 - Vector Map
 
-# For Traffic Light
+# Traffic Light
+
+With this option, the car can stop when the traffic light is red.
 
 Data
 - Vector Map
