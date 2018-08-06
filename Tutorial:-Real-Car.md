@@ -2,9 +2,12 @@ The minimum data and nodes for autonomous driving with real car are described. M
 
 # Mandatory
 
+This mandatory components make a car run on a given way points. The behavior of the car is controlled only by the given data and the results of localization. It can not deal with external actions.
+
 Data
 - TF
 - Point Cloud Map
+- Way Points
 
 Sensing
 - LiDAR
@@ -55,6 +58,9 @@ Data
 
 # For Traffic Light
 
+Data
+- Vector Map
+
 Sensing
 - Camera
 
@@ -63,14 +69,12 @@ Traffic Light Recognizer
 - region_tlr
 
 <!--
-# Optional for Localization Feedback
+# For Localization Feedback
 
 Connector
 - can2odom
--->
 
-<!--
-# Optional for Localization Init
+# For Localization Init
 
 Localization
 - nmea2tfpose
