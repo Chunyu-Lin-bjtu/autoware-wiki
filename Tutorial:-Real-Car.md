@@ -1,12 +1,10 @@
-# Real Car Startup
-
-For Autoware beginners, the minimum data and nodes for autonomous driving with real car are described. More detailed descriptions are work in progress.
+The minimum data and nodes for autonomous driving with real car are described. More detailed descriptions are work in progress.
 
 # Mandatory
 
 Data
 - TF
-- PointCloud Map
+- Point Cloud Map
 
 Sensing
 - LiDAR
@@ -30,19 +28,19 @@ Planning - Motion
 - pure_pursuit
 - twist_filter
 
-# Optional for real car
-
 Actuation
 - different for each car
 
 <!--
+# For ZMP Cars
+
 Socket
 - twist_gate (automatically launched by twist_filter.launch)
 - vehicle_sender
 - vehicle_receiver
 -->
 
-# Optional for obstacle stop
+# For Obstacle Stop
 
 Sensing
 - ray_ground_filter (or ring_round_filter)
@@ -50,12 +48,12 @@ Sensing
 Detection
 - lidar_euclidean_cluster_detect
 
-# Optional for real road
+# For Real Road
 
 Data
 - Vector Map
 
-# Optional for traffic light
+# For Traffic Light
 
 Sensing
 - Camera
@@ -65,14 +63,14 @@ Traffic Light Recognizer
 - region_tlr
 
 <!--
-# Optional for localization feedback
+# Optional for Localization Feedback
 
 Connector
 - can2odom
 -->
 
 <!--
-# Optional for localization init
+# Optional for Localization Init
 
 Localization
 - nmea2tfpose
