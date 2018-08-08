@@ -115,3 +115,5 @@ The last piece of computing in Autoware is a planning module. The role of this m
 ## Actuation
 
 Autoware has been installed and tested with a number of by-wired vehicles. Examples of "Powered by Autoware" are listed [here](https://autoware.ai/join/).
+
+Autoware outputs velocity and angle/curvature. PID controller will be taken care by the vehicle's by-wire system.
