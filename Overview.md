@@ -116,4 +116,4 @@ The last piece of computing in Autoware is a planning module. The role of this m
 
 Autoware has been installed and tested with a number of by-wired vehicles. Examples of "Powered by Autoware" are listed [here](https://autoware.ai/join/).
 
-Autoware outputs velocity and angle/curvature. PID controller will be taken care by the vehicle's by-wire system.
+The computational output of Autoware is a set of velocity, angular velocity, wheel angle, and curvature. These pieces of information are sent as commands to the by-wire controller through the vehicle interface. Controlling the steering and throttle needs to be taken care of by the by-wire controller.
