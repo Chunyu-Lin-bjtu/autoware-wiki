@@ -1,4 +1,4 @@
-Design is important for readability and maintainability. It is highly recommended to follow the design rules for distributing your idea.
+Design is important for readability and maintainability. It is highly recommended to follow the design rules for distributing your idea. The outline is based on [the overview](https://github.com/CPFL/Autoware/wiki/Overview).
 
 # Namespace
 
