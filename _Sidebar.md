@@ -16,4 +16,5 @@
 
 1. [Contribution Rules](https://github.com/CPFL/Autoware/wiki/Contribution-Rules) (**Must Read**)
 1. [Overview](https://github.com/CPFL/Autoware/wiki/Overview)
+1. [Design Rules](https://github.com/CPFL/Autoware/wiki/Design-Rules)
 1. [Specification](https://github.com/CPFL/Autoware/wiki/Specification)
