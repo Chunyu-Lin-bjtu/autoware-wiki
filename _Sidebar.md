@@ -9,8 +9,10 @@
     1. [Source](https://github.com/CPFL/Autoware/wiki/Source-Build)
 1. [Demo](https://github.com/CPFL/Autoware/wiki/Demo)
 1. [Field Test](https://github.com/CPFL/Autoware/wiki/Field-Test)
+1. [Nodes' Readme List](https://github.com/CPFL/Autoware/wiki/Readme-List)
 1. [Videos](https://github.com/CPFL/Autoware/wiki/videos)
 1. [FAQ](https://github.com/CPFL/Autoware/wiki/faq)
+
 
 ### Developers Guide
 
@@ -19,4 +21,3 @@
 1. [Specification](https://github.com/CPFL/Autoware/wiki/Specification)
 1. [Design Rules](https://github.com/CPFL/Autoware/wiki/Design-Rules)
 1. [Quality Control](https://github.com/CPFL/Autoware/wiki/Quality-Control)
-1. [Nodes' Readme List](https://github.com/CPFL/Autoware/wiki/Readme-List)
