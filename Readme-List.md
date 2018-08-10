@@ -1,4 +1,4 @@
-This page is updated by tools/UpdateReadmeList.sh in CPFL/Autoware.wiki.git.
+Readme list on HEAD of master at update time. This page is updated by tools/UpdateReadmeList.sh in CPFL/Autoware.wiki.git.
 - [README.md](https://github.com/CPFL/Autoware/tree/master/README.md)
 - [ui/web/remote_monitor/README.md](https://github.com/CPFL/Autoware/tree/master/ui/web/remote_monitor/README.md)
 - [ui/watch/README.md](https://github.com/CPFL/Autoware/tree/master/ui/watch/README.md)
