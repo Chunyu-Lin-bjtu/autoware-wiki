@@ -21,3 +21,5 @@
 1. [Specification](https://github.com/CPFL/Autoware/wiki/Specification)
 1. [Design Rules](https://github.com/CPFL/Autoware/wiki/Design-Rules)
 1. [Quality Control](https://github.com/CPFL/Autoware/wiki/Quality-Control)
+1. [Release Procedure](https://github.com/CPFL/Autoware/wiki/Release-Procedure)
+
