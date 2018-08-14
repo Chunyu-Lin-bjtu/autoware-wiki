@@ -1,6 +1,4 @@
-# Node's README list 
-
-[470b04b](https://github.com/CPFL/Autoware/commit/470b04b95eee435d2bb529d978d4c91bf57f34b0) on master. This page is updated by tools/UpdateReadmeList.sh in CPFL/Autoware.wiki.git.
+Based on [470b04b](https://github.com/CPFL/Autoware/commit/470b04b95eee435d2bb529d978d4c91bf57f34b0) on master.
 
 ### Autoware's Main Readme
 - [README.md](https://github.com/CPFL/Autoware/tree/master/README.md)
