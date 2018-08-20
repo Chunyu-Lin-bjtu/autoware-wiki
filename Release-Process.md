@@ -6,7 +6,7 @@ First, all the pull requests are due on the date that is one week before the mer
 
 Second, once the pull requests are merged, a new release branch will be created. All functions must be tested on the release branch. This test process is desired to take several days. After the release branch is sufficiently tested, a new release will be announced.
 
-# Release Schedule
+### Release Schedule
 | Version | Pull Request | Merged | Release |
 |-----------|------------|------------|------------|
 | [v1.8](https://github.com/CPFL/Autoware/milestone/2) | Aug. 17th, 2018 | Aug. 24th, 2018 | Aug. 31st, 2018|
