@@ -7,7 +7,7 @@ Using `Squash and merge` is generally preferable. `catkin_generate_changelog` pu
 
 A exception is that `Create a merge commit` should be selected for merging release branches into master or develop branch to keep the history among master, develop, and release branches.
 
-Another exception is that `Create a merge commit`, `Squash and merge`, or `Rebase and merge` may be useful when some people are collaborating for one pull request. A example is to create a pull request for a feature branch.
+Another exception is that `Create a merge commit`, `Squash and merge`, or `Rebase and merge` may be useful when some people are collaborating for one pull request. An example is to create a pull request for a feature branch.
 
 ![Commit Messages on Squash and Merge](https://github.com/CPFL/Autoware/wiki/images_Maintainer-Rule/commit-messages.png)
 
