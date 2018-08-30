@@ -11,4 +11,4 @@ Another exception is that `Create a merge commit`, `Squash and merge`, or `Rebas
 
 ![Commit Messages on Squash and Merge](https://github.com/CPFL/Autoware/wiki/images_Maintainer-Rule/commit-messages.png)
 
-The second text box on `Squash and merge` that initially has all commit messages on the pull request should be deleted generally.  The strings in the first and second text boxes will be connected on the `Squash and merged` commit message. As a result, the string in the second text box will be junk in most cases.
+The second text box on `Squash and merge` that initially has all commit messages on the pull request should be deleted generally.  The strings in the first and second text boxes will be connected on the `Squash and merged` commit message. As a result, the string in the second text box will be junk in CHANGELOG.
