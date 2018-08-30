@@ -1,8 +1,6 @@
 
 ### Merge Pull Request into Develop
 
-It's not rule but principle. All maintainers should get the basis in mind.
-
 ![Merge Types](https://github.com/CPFL/Autoware/wiki/images_Maintainer-Rule/merge-types.png)
 
 Using `Squash and merge` is generally preferable. `catkin_generate_changelog` puts all commit messages into CHANGELOG. Though `Squash and merge` wipes away all history on the pull request, it should be fine because a pull request should have only one matter. If `Create a merge commit` or `Rebase and merge` is selected, CHANGELOG will have a lot of junk messages.
