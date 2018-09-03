@@ -113,5 +113,8 @@ Based on [470b04b](https://github.com/CPFL/Autoware/commit/470b04b95eee435d2bb52
 ### x86
 - [docker/generic/README.md](https://github.com/CPFL/Autoware/tree/master/docker/generic/README.md)
 
+### Arm/96Boards
+- [docker/96boards/README.md](https://github.com/CPFL/Autoware/tree/master/docker/generic/README.md)
+
 ## Quick Start
 - [docs/quick_start/README.md](https://github.com/CPFL/Autoware/tree/master/docs/quick_start/README.md)
