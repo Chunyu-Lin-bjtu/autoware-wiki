@@ -223,6 +223,3 @@ callback() {
 
 C++ 11/14/17 has introduced many useful capabilities, e.g., type inference.
 You may want to review C++ 11 through the popular books: [[Amazon links](https://www.amazon.com/s/ref=nb_sb_noss_2/135-5470609-2801335?url=search-alias%3Daps&field-keywords=C%2B%2B+11)]
-
-[[Home](https://github.com/CPFL/Autoware/wiki/)]
-[[Next >>](https://github.com/CPFL/Autoware/wiki/Overview)]
