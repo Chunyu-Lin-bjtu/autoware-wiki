@@ -3,7 +3,7 @@
 
 ![Merge Types](https://github.com/CPFL/Autoware/wiki/images_Maintainer-Rule/merge-types.png)
 
-Using `Squash and merge` is generally preferable. `catkin_generate_changelog` puts all commit messages into CHANGELOG. Though `Squash and merge` wipes away all the history of the pull requests, this is fine because a pull request should have only one matter. If `Create a merge commit` or `Rebase and merge` is applied, CHANGELOG would have a bunch of junk messages.
+Using `Squash and merge` is often preferred. `catkin_generate_changelog` puts all commit messages into CHANGELOG. `Squash and merge` wipes away all the history of the pull requests, but this is fine because an individual pull request should  not be associated with multiple topics anyway. If `Create a merge commit` or `Rebase and merge` is applied, CHANGELOG would have a bunch of junk messages.
 
 An exception is that `Create a merge commit` should be applied when merging the release branches into the master or develop branch, in order to keep the history among the master, develop, and release branches.
 
