@@ -62,6 +62,9 @@ This page guides you to install and run Autoware on the Intel x86 processor (64 
 
 You need to install Docker Plugin provided by NVIDIA in order to access NVIDIA GPUs from Docker Container.
 
+If not already installed, Install CUDA drivers for your platform: [Linux](
+https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#package-manager-installation)
+
 Download the .deb file.
    ``` bash
    $ wget https://github.com/NVIDIA/nvidia-docker/releases/download/v1.0.1/nvidia-docker_1.0.1-1_amd64.deb
@@ -78,6 +81,12 @@ Check if the nvidia-docker service runs.
    ``` bash
    $ sudo nvidia-docker run --rm nvidia/cuda nvidia-smi
    ``` 
+Note: If you run into the following error 
+```bash
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:348: starting container process caused "exec: \"nvidia-smi\": executable file not found in $PATH": unknown.
+```
+
+Try Following these nvidia-docker [instructions](https://github.com/NVIDIA/nvidia-docker)
 
 ## Autoware Docker Setup
 
