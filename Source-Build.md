@@ -23,7 +23,7 @@
 ### Install system dependencies for Ubuntu 16.04 Kinetic
 ```
 % sudo apt-get update
-% sudo apt-get install -y python-catkin-pkg python-rosdep python-wstool ros-$ROS_DISTRO-catkin libmosquitto-dev
+% sudo apt-get install -y python-catkin-pkg python-rosdep python-wstool ros-$ROS_DISTRO-catkin libmosquitto-dev gksu
 ```
 
 **NOTE: Following packages are not supported in ROS Kinetic.**
