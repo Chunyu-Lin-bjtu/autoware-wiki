@@ -77,9 +77,21 @@ Check if the nvidia-docker service exists.
    ``` bash
    $ systemctl list-units --type=service | grep -i nvidia-docker
    ``` 
-Check if the nvidia-docker service runs.
+If the above fails, check with
+   ``` bash
+   $ systemctl list-units --type=service | grep -i nvidia-docker-plugin
+   ```
+Install modprobe if even the above throws error
+   ``` bash
+   $ sudo apt-get install nvidia-modprobe
+   ```
+Check if the nvidia-docker service runs with
    ``` bash
    $ sudo nvidia-docker run --rm nvidia/cuda nvidia-smi
+   ``` 
+If the above does not run, check with
+   ``` bash
+   $ sudo nvidia-docker-plugin run --rm nvidia/cuda nvidia-smi
    ``` 
 Note: If you run into the following error 
 ```bash
