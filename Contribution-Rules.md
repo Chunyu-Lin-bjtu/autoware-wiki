@@ -10,6 +10,7 @@ Please join Autoware Slack at [https://autoware-developer.slack.com/](https://au
 
 To assure traceability in your code, please follow our development process:
 * If you are working on a feature/modify-node, create an issue first.
+* Declare the release version where the issue is targetting.
 * Create a branch, work on the feature/modify-node, refer in at least one commit to the issue #number.
 * Open a pull request for the given feature/modify-node and fill out the pull request template. 
 
