@@ -17,14 +17,13 @@ Examples:
 
 ## Topic Name
 
-/namespace/ParentComponent_DataName
+/detection/ParentComponent/DataName
 
 Examples:
-- /detection/vision_objects
-- /detection/lidar_objects
-- /detection/detected_objects
-- /detection/tracked_objects
+- /detection/lidar_detector/objects
+- /detection/image_detector/objects
+- etc...
 
 ## A Motif
 
-![A Motif](https://user-images.githubusercontent.com/38030772/43500108-dbe7a948-9589-11e8-80c7-8c5c307eabe6.png)
+![A Motif](https://user-images.githubusercontent.com/38030772/46925660-0393e380-d068-11e8-8b75-2f0586f20a17.png)
