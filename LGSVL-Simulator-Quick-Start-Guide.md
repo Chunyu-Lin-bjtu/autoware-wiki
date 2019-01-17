@@ -54,14 +54,14 @@ autoware-data/data/map/pointcloud_map_sf_portion/
 enabele voxel_grid_filter
 
 ### setup in computing tab
-enable ndt_matching,vel_pose_connect,waypoint_saver
+enable ndt_matching,vel_pose_connect
 
 ### launch LGSVL simulator and bridge.
 open simulation tab and click LGSVL simulator button.
 Input simulator Machin IP address and LGSVL Simulator Launcher Port.
 ![screenshot from 2019-01-17 16-21-57](https://user-images.githubusercontent.com/10348912/51304525-c599c780-1a7b-11e9-88c9-0f975d9bacc5.png)
 
-write config .json file like below.
+write config .json file like below and load the .json file from the UI.
 
 ```
 {
@@ -97,7 +97,12 @@ write config .json file like below.
 
 ![screenshot from 2019-01-17 16-24-41](https://user-images.githubusercontent.com/10348912/51304799-71431780-1a7c-11e9-93cc-c9a3f652290d.png)
 
-lane_rule,lane_sotp,lane_select,obstacle_void,velocity_set,pure_pursuit,twist_filter,waypoint_loader
+### Making waypoints with simulator.
+enable waypoint_saver in runtime_manager
+Drive simulated cars by using G29 Steering Wheel Controller.
+
+## Autonomous Driving with Autoware.
+enable ndt_matching,vel_pose_connect,lane_rule,lane_sotp,lane_select,obstacle_void,velocity_set,pure_pursuit,twist_filter,waypoint_loader in runtime_manager.
 
 ### demonstration
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/npTvZ09ijPA/0.jpg)](https://www.youtube.com/watch?v=npTvZ09ijPA&t=109s)
