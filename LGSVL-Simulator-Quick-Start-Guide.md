@@ -1,7 +1,11 @@
+### Required equipments
+file:///home/masaya-tier4/Pictures/Screenshot%20from%202019-01-17%2015-10-55.png
+
+
+
 ### initial setup (just first time)
 ```
-roscd lgsvl_simulator_bridge
-source quick_setup_sim.bash
+
 ```
 
 ### launch simulator and bridge
