@@ -14,20 +14,8 @@ In Assets/Scripts/VehicleInputController.cs
 ### Compile simulator with batch mode.
 See : https://github.com/lgsvl/simulator/issues/55
 
-### launch simulator and bridge
-Open simulation tab in runtime manager and click LGSVL Simulator button.
+## In Autoware linux Machine.
 
-Please choose "SanFrancisco" map and "XE_Rigged-autoware" robot for Autoware.  
-
-![Reference](https://github.com/lgsvl/simulator/issues/5)
-
-![lgsvl_simulator_bridge](media/lgsvl_simulator_bridge.png) 
-
-### launch with simulator you have built
-1. set $LGSVL_SIM_DIR_PATH
-```
-export LGSVL_SIM_DIR_PATH=<lgsvl_sim_binary_directory_path>
-```
 
 ### download pointcloud map and other datas.
 1. install git lfs
