@@ -11,6 +11,9 @@ In Assets/Scripts/VehicleInputController.cs
 
 ![image](https://user-images.githubusercontent.com/10348912/51301272-f4ab3b80-1a71-11e9-869c-02edbc86c342.png)
 
+### Compile simulator with batch mode.
+See : https://github.com/lgsvl/simulator/issues/55
+
 ### launch simulator and bridge
 Open simulation tab in runtime manager and click LGSVL Simulator button.
 
