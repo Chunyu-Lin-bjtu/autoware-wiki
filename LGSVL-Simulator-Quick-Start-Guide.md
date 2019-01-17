@@ -105,4 +105,4 @@ Drive simulated cars by using G29 Steering Wheel Controller.
 enable ndt_matching,vel_pose_connect,lane_rule,lane_sotp,lane_select,obstacle_void,velocity_set,pure_pursuit,twist_filter,waypoint_loader in runtime_manager.
 
 ### demonstration
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/npTvZ09ijPA/0.jpg)](https://www.youtube.com/watch?v=npTvZ09ijPA&t=109s)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/cBmIiR3jRvE/0.jpg)](https://www.youtube.com/watch?v=cBmIiR3jRvE&feature=youtu.be)
