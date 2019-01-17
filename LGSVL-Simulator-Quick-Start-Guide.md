@@ -1,12 +1,6 @@
 ### Required equipments
-file:///home/masaya-tier4/Pictures/Screenshot%20from%202019-01-17%2015-10-55.png
 
-
-
-### initial setup (just first time)
-```
-
-```
+![screenshot from 2019-01-17 15-10-55](https://user-images.githubusercontent.com/10348912/51299434-d4787e00-1a6b-11e9-9f74-ccc166e2ec83.png)
 
 ### launch simulator and bridge
 Open simulation tab in runtime manager and click LGSVL Simulator button.
