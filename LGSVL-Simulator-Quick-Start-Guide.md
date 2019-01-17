@@ -1,6 +1,15 @@
-### Required equipments
+# Required equipments
 
 ![screenshot from 2019-01-17 15-10-55](https://user-images.githubusercontent.com/10348912/51299434-d4787e00-1a6b-11e9-9f74-ccc166e2ec83.png)
+
+# Setup Required Software.
+## In Simulator Windows Machine
+### Install Unity
+Install Unity 2018.2.4. Windows link: https://unity3d.com/get-unity/download/archive
+### Invert LGSVL Simulator Steering Angle (I think this process removed in the future.)
+In Assets/Scripts/VehicleInputController.cs
+
+![image](https://user-images.githubusercontent.com/10348912/51301272-f4ab3b80-1a71-11e9-869c-02edbc86c342.png)
 
 ### launch simulator and bridge
 Open simulation tab in runtime manager and click LGSVL Simulator button.
