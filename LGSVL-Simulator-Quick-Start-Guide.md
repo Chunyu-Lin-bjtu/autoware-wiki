@@ -18,6 +18,16 @@ cd lgsvl_simulator_launcher
 pip install pipenv
 pipenv shell
 python app.py
+touch setting.json
+```
+edit setting.json like below.
+```
+{
+[
+  {name:stable, path:"C:\Documents\Simulator"},
+  {name:develop, path:"C:\Documents\Simulator"}
+]
+}
 ```
 
 ### Compile simulator with batch mode
