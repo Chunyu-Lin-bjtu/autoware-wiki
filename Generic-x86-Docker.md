@@ -109,20 +109,20 @@ You can build the Autoware runtime environment using nvidia-docker. You may choo
    ``` bash
    $ git clone https://github.com/CPFL/Autoware.git
    $ cd Autoware/docker/generic
-   $ ./run.sh -t latest-kinetic
    ``` 
    If you use the versions older than 1.10.0, modify the last sentence of run.sh in that directory: `autoware-$1` --> `autoware/autoware:latest-kinetic`
    (*comment out does not work, need to modify)
 
    Run run.sh kinetic if you use Ubuntu 16.04, assuming that the default path is "/home/$USER/shared_dir".
    ``` bash
-   $ sudo sh run.sh kinetic
+   $ sudo sh run.sh            # v1.10.0 and after
+   $ sudo sh run.sh kinetic    # v1.9.1 and before
    ``` 
    If you want to use your own path, run build.sh kinetic with the path argument.
    ``` bash
-   $ sudo sh run.sh kinetic {SHARED_DIR_PATH}
-   ``` 
-   Replace "kinetic" with "indigo" if you use Ubuntu 14.04.
+   $ sudo sh run.sh -s {SHARED_DIR_PATH}         # v1.10.0 and after
+   $ sudo sh run.sh kinetic {SHARED_DIR_PATH}    # v1.9.1 and before
+   ```
 
 ### Case 2: Using modify-then-recompile Dockerfile
 #### Step 1: Autoware Docker Build
@@ -135,19 +135,16 @@ You can build the Autoware runtime environment using nvidia-docker. You may choo
    Run build.sh kinetic if you use Ubuntu 16.04.
    ``` bash
    $ sudo sh build.sh kinetic
-   ``` 
-   Otherwise, run build.sh indigo for Ubuntu 14.04. We do not support other versions of Ubuntu at this moment.
-   ``` bash
-   $ sudo sh build.sh indigo
-   ``` 
+   ```
 #### Step2: Autoware Docker Run
     
    Run run.sh kinetic if you use Ubuntu 16.04, assuming that the default path is "/home/$USER/shared_dir".
    ``` bash
-   $ sudo sh run.sh kinetic
+   $ sudo sh run.sh -r "" -t autoware-kinetic    # v1.10.0 and after
+   $ sudo sh run.sh kinetic                      # v1.9.1 and before
    ``` 
    If you want to use your own path, run build.sh kinetic with the path argument.
    ``` bash
-   $ sudo sh run.sh kinetic {SHARED_DIR_PATH}
-   ``` 
-   Replace "kinetic" with "indigo" if you use Ubuntu 14.04.
+   $ sudo sh run.sh -r "" -t autoware-kinetic -s {SHARED_DIR_PATH}    # v1.10.0 and after
+   $ sudo sh run.sh kinetic {SHARED_DIR_PATH}                         # v1.9.1 and before
+   ```
