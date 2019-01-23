@@ -109,8 +109,9 @@ You can build the Autoware runtime environment using nvidia-docker. You may choo
    ``` bash
    $ git clone https://github.com/CPFL/Autoware.git
    $ cd Autoware/docker/generic
+   $ ./run.sh -t latest-kinetic
    ``` 
-   Modify the last sentence of run.sh in that directory: `autoware-$1` --> `autoware/autoware:latest-kinetic`
+   If you use the versions older than 1.10.0, modify the last sentence of run.sh in that directory: `autoware-$1` --> `autoware/autoware:latest-kinetic`
    (*comment out does not work, need to modify)
 
    Run run.sh kinetic if you use Ubuntu 16.04, assuming that the default path is "/home/$USER/shared_dir".
