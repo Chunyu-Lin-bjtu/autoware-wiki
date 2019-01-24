@@ -47,6 +47,7 @@ or if you already have a copy of the repo, run `$ git submodule update --init --
 $ cd ~/Autoware/ros/src
 $ catkin_init_workspace
 $ cd ../
+$ rosdep update
 $ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 $ ./catkin_make_release
 ```
