@@ -2,7 +2,7 @@ Autoware supports the simulators below.
 
 # LGSVL Simulator
 
-[![No Image](https://img.youtube.com/vi/NgW1P75wiuA/0.jpg)](http://www.youtube.com/watch?v=NgW1P75wiuA)
+[![No Image](https://img.youtube.com/vi/cBmIiR3jRvE/0.jpg)](http://www.youtube.com/watch?v=cBmIiR3jRvE)
 
 The quick start guide is [here.](https://github.com/CPFL/Autoware/wiki/LGSVL-Simulator-Quick-Start-Guide)
 The LGSVL Simulator is a Unity-based multi-agent simulator integrated with ROS.
