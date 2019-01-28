@@ -16,6 +16,8 @@ This demo will require 3D map and ROSBAG data. Please download the following sam
 
 `$ wget http://db3.ertl.jp/autoware/sample_data/sample_moriyama_150324.tar.gz`
 
+[Mirror](https://drive.google.com/open?id=1ZwNQIJolJ2ogzpNprh89jCj6NocLi78f)
+
 #### Want more data?
 
 Once the demo goes well, you can visit [ROSBAG STORE](https://rosbag.tier4.jp) to get more data. Please also consider your contribution to this data sharing service by uploading your ROSBAG data.
