@@ -1,17 +1,27 @@
-# Required equipments
+# Required equipment
 
-![screenshot from 2019-01-17 15-10-55](https://user-images.githubusercontent.com/10348912/51299434-d4787e00-1a6b-11e9-9f74-ccc166e2ec83.png)
+![Required equipment](https://user-images.githubusercontent.com/10348912/51299434-d4787e00-1a6b-11e9-9f74-ccc166e2ec83.png)
 
-# Setup Required Software
-## In Simulator Windows Machine
+# Software setup
+
+## Windows simulator machine
+
 ### Install Unity
-Install Unity 2018.2.4. Windows link: https://unity3d.com/get-unity/download/archive
-### Invert LGSVL Simulator Steering Angle (I think this process removed in the future.)
-In Assets/Scripts/VehicleInputController.cs
 
-![image](https://user-images.githubusercontent.com/10348912/51301272-f4ab3b80-1a71-11e9-869c-02edbc86c342.png)
+Unity **2018.2.4** is required. Download the Windows installer for this version from the [Unity download archive](https://unity3d.com/get-unity/download/archive) and execute it. Follow the instructions in the installer to install Unity.
+
+### Correct simulator steering angle
+
+The LGSVL simulator steering angle needs to be inverted. In the file `Assets/Scripts/VehicleInputController.cs`, make the following change:
+
+![LGSVL steering angle inversion](https://user-images.githubusercontent.com/10348912/51301272-f4ab3b80-1a71-11e9-869c-02edbc86c342.png)
+
+(This step will become unnecessary in a future update.)
 
 ### Setup LGSVL Simulator Launcher
+
+In a terminal, run the following commands to download and set up the LGSVL simulator launcher.
+
 ```
 git clone https://github.com/tier4/lgsvl_simulator_launcher.git
 cd lgsvl_simulator_launcher
@@ -20,7 +30,8 @@ pipenv shell
 python app.py
 touch setting.json
 ```
-edit setting.json like below.
+
+Open `setting.json` in an editor and paste in the following content.
 ```
 {
 [
@@ -31,47 +42,60 @@ edit setting.json like below.
 ```
 
 ### Compile simulator with batch mode
-See : https://github.com/lgsvl/simulator/issues/55
 
-## In Autoware linux Machine
-### Setup Autoware.
-https://github.com/CPFL/Autoware/wiki/Installation
+LGSVL **cannot** be built using the default Unity Editor build command. As described in [this LGSVL issue](https://github.com/lgsvl/simulator/issues/55), the simulator must be built using batch mode to correctly package assets.
 
-### download pointcloud map and other datas
-### install git lfs
-```
-curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
-sudo apt update
-sudo apt install git-lfs
-```
+Following the [LGSVL build instructions](https://github.com/lgsvl/simulator/blob/master/Docs/build-instructions.md), build on the command line, ensuring that the `-batchmode` option is specified and the `-buildTarget` is `Windows64`.
 
-### download data from lgsvl repo
-```
-git clone git@github.com:lgsvl/autoware-data.git
-```
+## Linux Autoware machine
 
-## Making waypoints with Autoware
+### Setup Autoware
 
-### load pointcloud data  
-![pointcloud map](https://camo.qiitausercontent.com/435d9952ed982aa1fd74f4de9b399f8dd7ed5f22/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3136303334362f36643935313234612d613866342d363166632d393631362d6530363833376433353033392e706e67)  
+Follow the [Autoware installation instructions](https://github.com/CPFL/Autoware/wiki/Installation) to install Autoware.
 
-load pointcloud data under this directory.  
-```
-autoware-data/data/map/pointcloud_map_sf_portion/
-```
+### Download data
 
-### setup in sensing tab
-enabele voxel_grid_filter
+Autoware requires a pointcloud map and other data to run. This data can be downloaded from the LGSVL Git large file store.
 
-### setup in computing tab
-enable ndt_matching,vel_pose_connect
+1. Install Git LFS by running the following commands.
 
-### launch LGSVL simulator and bridge.
-open simulation tab and click LGSVL simulator button.
-Input simulator Machin IP address and LGSVL Simulator Launcher Port.
-![screenshot from 2019-01-17 16-21-57](https://user-images.githubusercontent.com/10348912/51304525-c599c780-1a7b-11e9-88c9-0f975d9bacc5.png)
+   ```
+   curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+   sudo apt update
+   sudo apt install git-lfs
+   ```
 
-write config .json file like below and load the .json file from the UI.
+1. Download the data from the LGSVL repository
+
+   ```
+   git clone git@github.com:lgsvl/autoware-data.git
+   ```
+
+# Waypoint creation with Autoware
+
+## Prepare Autoware
+
+To make waypoints in Autoware, load a pointcloud into Autoware and then drive around in the simulator, saving the waypoints as they are created.
+
+First, Load the pointcloud data into Autoware using the Runtime Manager.
+
+![Map settings tab](https://camo.qiitausercontent.com/435d9952ed982aa1fd74f4de9b399f8dd7ed5f22/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3136303334362f36643935313234612d613866342d363166632d393631362d6530363833376433353033392e706e67)
+
+The pointcloud data can be found in the `autoware-data/data/map/pointcloud_map_sf_portion/` directory.
+
+Several settings need to be set in Autoware:
+
+- `Sensing` tab: Enable `voxel_grid_filter`
+
+- `Computing` tab: Enable `ndt_matching` and `vel_pose_connect`
+
+## Launch LGSVL simulator and bridge
+
+In the Autoware Runtime Manager, open the `Simulation` tab and click the `LGSVL simulator` button. Input the Windows simulator machine IP address and the LGSVL Simulator Launcher Port in the dialog that opens.
+
+![LGSVL simulator bridge connection settings](https://user-images.githubusercontent.com/10348912/51304525-c599c780-1a7b-11e9-88c9-0f975d9bacc5.png)
+
+Create a JSON configuration file using the below content and load this file from the UI by pressing the `Config` button.
 
 ```
 {
@@ -105,14 +129,29 @@ write config .json file like below and load the .json file from the UI.
 }
 ```
 
-![screenshot from 2019-01-17 16-24-41](https://user-images.githubusercontent.com/10348912/51304799-71431780-1a7c-11e9-93cc-c9a3f652290d.png)
+![LGSVL simulator bridge configuration file](https://user-images.githubusercontent.com/10348912/51304799-71431780-1a7c-11e9-93cc-c9a3f652290d.png)
 
-### Making waypoints with simulator.
-enable waypoint_saver in runtime_manager
-Drive simulated cars by using G29 Steering Wheel Controller.
+## Drive to make waypoints
 
-## Autonomous Driving with Autoware.
-enable ndt_matching,vel_pose_connect,lane_rule,lane_sotp,lane_select,obstacle_void,velocity_set,pure_pursuit,twist_filter,waypoint_loader in runtime_manager.
+In the Autoware Runtime Manager, enable the `waypoint_saver` setting.
 
-### demonstration
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/cBmIiR3jRvE/0.jpg)](https://www.youtube.com/watch?v=cBmIiR3jRvE&feature=youtu.be)
+Using the G29 steering wheel controller, drive simulated cars around the simulated world. Created waypoints will be saved.
+
+# Autonomous Driving with Autoware.
+
+Enable the following settings in the Autoware Runtime Manager for autonomous driving.
+
+- `ndt_matching`
+- `vel_pose_connect`
+- `lane_rule`
+- `lane_sotp`
+- `lane_select`
+- `obstacle_void`
+- `velocity_set`
+- `pure_pursuit`
+- `twist_filter`
+- `waypoint_loader`
+
+The following video shows Autoware driving the simulator.
+
+[![Autonomous driving in LGSVL demonstration video](http://img.youtube.com/vi/cBmIiR3jRvE/0.jpg)](https://www.youtube.com/watch?v=cBmIiR3jRvE&feature=youtu.be)
