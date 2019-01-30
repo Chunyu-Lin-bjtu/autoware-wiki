@@ -1,3 +1,5 @@
+*The version of Autoware provided via DRIVE PX2 Docker is 1.6.2 and not updated for a long time.*
+
 This page guides you to install and run Autoware on the NVIDIA DRIVE PX2 platform using Docker. **Note that DRIVE PX2 requires you to be a licensee of NVIDIA DRIVE and DevZone**. To complete the installation process introduced below, please contact Autoware Developers Group at autoware@googlegroups.com. For other platforms, such as Generic x86, please check [here](https://github.com/CPFL/Autoware/wiki/Docker) whether they are supported. The outline of this page is as follows:
 
 1. Docker Setup
