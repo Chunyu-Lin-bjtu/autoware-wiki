@@ -4,7 +4,7 @@
 
 ## package.xml
 ```diff
-  <license>BSD</license>
+  <license>Apache 2</license>
   <buildtool_depend>catkin</buildtool_depend>
 + <buildtool_depend>autoware_build_flags</buildtool_depend>
 ```
