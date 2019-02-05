@@ -28,9 +28,9 @@ cd lgsvl_simulator_launcher
 pip install pipenv
 pipenv shell
 python app.py
-touch setting.json
 ```
 
+create setting.json file in the lgsvl_simulator_launcher directory.
 Open `setting.json` in an editor and paste in the following content.
 ```
 {
