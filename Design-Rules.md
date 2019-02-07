@@ -14,6 +14,7 @@ Examples:
 - autoware_state_msgs
 - autoware_mission_msgs
 - autoware_motion_msgs
+- autoware_sensor_msgs
 
 ## Topic Name
 
