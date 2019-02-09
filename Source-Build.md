@@ -1,6 +1,6 @@
 ### Requirements
 
-- ROS indigo (Ubuntu 14.04) or ROS jade (Ubuntu 15.04) or ROS kinetic (Ubuntu 16.04)
+- ROS kinetic (Ubuntu 16.04)
 - OpenCV 2.4.10 or higher
 - Qt 5.2.1 or higher
 - CUDA (optional)
