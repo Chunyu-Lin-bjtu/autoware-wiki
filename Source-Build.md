@@ -7,7 +7,7 @@
 - FlyCapture2 (optional)
 - Armadillo (optional)
 
-**Please use checkout a revision before 2015/OCT/21 if you want to use Autoware on ROS Hydro or Ubuntu 13.04, 13.10.**
+**Please use 1.9.1 if you want to use ROS indigo.**
 
 ### Install system dependencies for Ubuntu 14.04 Indigo
 
