@@ -9,4 +9,4 @@ Second, once the pull requests are merged, a new release branch will be created.
 ### Release Schedule
 | Version | Pull Request | Merged | Release |
 |-----------|------------|------------|------------|
-| [v1.10](https://github.com/CPFL/Autoware/milestone/4) | Dec. 13th, 2018 | Dec. 20th, 2018 | Dec. 27th, 2018 |
+| [v1.11](https://github.com/CPFL/Autoware/issues/1813) | Feb. 28th, 2019 | Mar. 7th, 2019 | Mar. 14th, 2019 |
