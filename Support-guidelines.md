@@ -6,8 +6,7 @@ Using the correct resource, particularly the interactive forums, will ensure you
 
 ## User guide
 
-Autoware documentation is [available at our ReadTheDocs page](https://autoware.readthedocs.io/en/stable/).
-This documentation should be your first stop when learning how to use Autoware, or how a particular module works.
+N/A
 
 ## Wiki pages
 
