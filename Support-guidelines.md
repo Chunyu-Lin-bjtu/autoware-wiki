@@ -38,14 +38,18 @@ If you don't find an answer to your problem, then make a post explaining what is
   This aides people in searching for your error and makes it more likely that they will help you.
 - If you are having a problem with a GUI tool, post a screenshot or movie of the tool showing the problem.
 - Describe the environment in which you are running the software in as much detail as possible.
-  Provide the names and versions of packages you are using, your platform/OS and version, hardware used, your compiler tool chain and version (if relevant), etc.
+  Provide the names and versions of packages you are using, your platform/OS and version, hardware used, your compiler tool chain and version (if relevant), how you installed Autoware, etc.
 - If possible, post a bag file (recorded using the [rosbag tool](http://wiki.ros.org/rosbag) of your system so that others can replay your data, reproduce the problem, and find a solution faster.
+- Provide a complete and detailed set of steps to reproduce the problem.
+  If someone can reproduce your problem, they are more likely to find a way to fix it quickly.
 - If you are following a tutorial, provide a link to it and state where in the tutorial your problem occurs.
 - Make the topic of your post or bug report or feature request detailed.
   A topic that says "Problem making it go" won't attract many people to help you.
 - If you include code snippets, use the formatting function to make sure they appear correctly.
   Check the preview before you post.
 - When you have a problem, [Short, Self Contained, Correct (Compilable) Examples](http://sscce.org/) or [Minimal, Complete, and Verifiable Examples](https://stackoverflow.com/help/mcve) help us reproduce your error quickly and thus get help to you quickly.
+- Describe what you have done already to try and fix the problem or to find its cause.
+  Understanding what you have already tried will ensure others do not waste time asking if you have tried something and allow them to more rapidly identify the cause of your problem.
 
 
 # Instant chat
