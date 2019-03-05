@@ -42,7 +42,9 @@ $ git clone https://github.com/CPFL/Autoware.git --recurse-submodules
 or if you already have a copy of the repo, run `$ git submodule update --init --recursive`.
 
 2. Initialize the workspace, let rosdep to install the missing dependencies and compile.
- 
+
+#### Build with catkin
+
 ```
 $ cd ~/Autoware/ros/src
 $ catkin_init_workspace
@@ -50,6 +52,23 @@ $ cd ../
 $ rosdep update
 $ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 $ ./catkin_make_release
+```
+### Build using colcon
+
+Install colcon, and its dependencies:
+```
+$ sudo apt-get install -y python3-pip python3-setuptools
+$ sudo pip3 install -U setuptools
+$ sudo apt-get install -y python3-colcon-common-extensions
+```
+
+Compile 
+```
+$ cd ~/Autoware/ros/src
+$ rosdep update
+$ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
+$ ./colcon_release
+
 ```
 
 ### DNN-based nodes
