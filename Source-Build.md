@@ -43,17 +43,7 @@ or if you already have a copy of the repo, run `$ git submodule update --init --
 
 2. Initialize the workspace, let rosdep to install the missing dependencies and compile.
 
-#### Build with catkin
-
-```
-$ cd ~/Autoware/ros/src
-$ catkin_init_workspace
-$ cd ../
-$ rosdep update
-$ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
-$ ./catkin_make_release
-```
-### Build using colcon
+#### Build with colcon
 
 Install colcon, and its dependencies:
 ```
@@ -64,11 +54,22 @@ $ sudo apt-get install -y python3-colcon-common-extensions
 
 Compile 
 ```
-$ cd ~/Autoware/ros/src
+$ cd ~/Autoware/ros/
 $ rosdep update
 $ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 $ ./colcon_release
 
+```
+
+#### Build with catkin_make (v1.10 and below)
+
+```
+$ cd ~/Autoware/ros/src
+$ catkin_init_workspace
+$ cd ../
+$ rosdep update
+$ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
+$ ./catkin_make_release
 ```
 
 ### DNN-based nodes
