@@ -43,7 +43,7 @@ or if you already have a copy of the repo, run `$ git submodule update --init --
 
 2. Initialize the workspace, let rosdep to install the missing dependencies and compile.
 
-#### Build with colcon
+#### Build with colcon (v1.11 and above)
 
 Install colcon, and its dependencies:
 ```
