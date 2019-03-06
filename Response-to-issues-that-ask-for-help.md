@@ -1,0 +1,3 @@
+    Thanks for using Autoware and for your question. However the issue tracker is for posting confirmed bugs and feature requests.
+
+    We ask that you please ask questions on the [Autoware Discourse category](https://discourse.ros.org/c/autoware) following our support guidelines: https://github.com/CPFL/Autoware/wiki/Support-guidelines. Please pay particular attention to the information we ask you to provide.
