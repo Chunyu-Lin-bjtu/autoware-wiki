@@ -75,6 +75,7 @@ If you are not familiar with Git or any of its more complex features such as reb
    Provide as much detail about the purpose of the pull request as possible.
    Include all the design documentation to produced before you started to work on the implementation.
    If you are implementing a feature or bug fix for which there is an existing issue on the issue tracker, make sure to [include the issue number in your pull request comments](https://help.github.com/en/articles/closing-issues-using-keywords) using text such as "Fixes #42" or "Resolves #42".
+   When giving your pull request a title, do not start the name with tags such as `[Feature]` or `Fix/`. Use [issue labels](#issue-labels) instead to indicate what type of pull request it is.
 1. If you know of a contributor who is suitable to review your pull request, [request a review from them](https://help.github.com/en/articles/requesting-a-pull-request-review).
    This step is optional.
 
@@ -224,6 +225,8 @@ Issues and pull requests are [tagged with labels](https://github.com/CPFL/Autowa
 See the [labels page](https://github.com/CPFL/Autoware/labels) for a list of labels used and their meaning.
 
 If you are new to Autoware and looking for a feature or bug-fix to implement, look for those that have the [Good first issue](https://github.com/CPFL/Autoware/labels/Good%20first%20issue) label.
+
+If you are filing a new issue or making a pull request, use either the `Bug` label, for bug reports and bug fixes, or the `Enhancement` label, for new or improved features and feature requests. Do not add any labels that are identified in their description as being a Kanban column. The maintainers will add these as appropriate when initially processing the issue.
 
 
 ## Task (Kanban) board
