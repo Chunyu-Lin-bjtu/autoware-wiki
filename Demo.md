@@ -49,31 +49,31 @@ $ ./run
 5. Go to the _Simulation_ tab of Autoware Runtime Manager (ARM), and load the sample ROSBAG data, which is located in `~/.autoware`. _Show Hidden Files_ needs to be checked for the `.autoware` folder to be displayed.
 
 <p align="center">
-<img src="https://github.com/sgermanserrano/Autoware/blob/feature/update_wiki_demo/docs/images/demo_images/demo_load_rosbag.png" width="800">
+<img src="https://github.com/CPFL/Autoware/blob/develop/docs/images/demo_images/demo_load_rosbag.png" width="800">
 </p>
 
 6. Set the start time to `140`, then click _Play_ and _Pause_ just after it has started playing.
 
 <p align="center">
-<img src="https://github.com/sgermanserrano/Autoware/blob/feature/update_wiki_demo/docs/images/demo_images/demo_play_pause_rosbag.png" width="800">
+<img src="https://github.com/CPFL/Autoware/blob/develop/docs/images/demo_images/demo_play_pause_rosbag.png" width="800">
 </p>
 
 7. Launch RViz through the _RViz_ button in the bottom-right corner of the ARM and load the _default.rviz_ config provided with Autoware. To do this got to _File -> Open Config_ and navigate to _Autoware/ros/src/.config/rviz/default.rviz_. _Show Hidden Files_ needs to be checked inside _Autoware/ros/src/_ for the `.config` folder to be displayed.
 
 <p align="center">
-<img src="https://github.com/sgermanserrano/Autoware/blob/feature/update_wiki_demo/docs/images/demo_images/demo_load_rviz.png" width="800">
+<img src="https://github.com/CPFL/Autoware/blob/develop/docs/images/demo_images/demo_load_rviz.png" width="800">
 </p>
 
 8. Go to the _Quick Start_ tab of ARM, and load the preinstalled roslaunch scripts one by one. The scripts are located in _Autoware/docs/quick_start_. The scripts need to be enabled by clicking on the left button as shown in the image for the _Map_. 
 
 <p align="center">
-<img src="https://github.com/sgermanserrano/Autoware/blob/feature/update_wiki_demo/docs/images/demo_images/demo_load_map.png" width="800">
+<img src="https://github.com/CPFL/Autoware/blob/develop/docs/images/demo_images/demo_load_map.png" width="800">
 </p>
 
 Un-pausing the simulation after starting the _Map_ will show the pointcloud map in Rviz.
 
 <p align="center">
-<img src="https://github.com/sgermanserrano/Autoware/blob/feature/update_wiki_demo/docs/images/demo_images/demo_map_shown.png" width="800">
+<img src="https://github.com/CPFL/Autoware/blob/develop/docs/images/demo_images/demo_map_shown.png" width="800">
 </p>
 
 #### Video steps
