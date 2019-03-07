@@ -72,6 +72,9 @@ When posting a bug report, it is important to be as detailed and accurate as pos
 The bug report template will help you fill in the necessary information, but in general all the same advice that applies to the Discourse discussion board also applies to filing a bug report.
 You should also post a debug trace if possible, to identify where in the source code the problem occurs.
 
+When giving your bug report a title, do *not* include something in the title that indicates it is a bug report, such as starting the title with `[Bug]` or `Bug report:`.
+Instead, use [the `Bug` issue label](https://github.com/CPFL/Autoware/wiki/Contributing-to-Autoware.AI#issue-labels) to indicate that it is a bug report.
+
 *Do not post requests for help on the issue trackers.*
 They will be closed and you will be directed to the correct place to ask, slowing down the process of you getting help.
 
@@ -83,6 +86,9 @@ We want Autoware to cover as many use cases as possible, but if we don't know ab
 
 When making a feature request, it helps to know as much about what you want.
 A feature request along the lines of "I want it to turn left more" will likely be ignored, but a feature request that begins "Handle multi-lane roundabouts in countries that drive on the left..." and provides detailed use cases is likely to attract attention.
+
+When giving your feature request a title, do *not* include something in the title that indicates it is a feature request, such as starting the title with `[Feature]` or `Feature request:`.
+Instead, use [the `Enhancement` issue label](https://github.com/CPFL/Autoware/wiki/Contributing-to-Autoware.AI#issue-labels) to indicate that it is a bug report.
 
 
 # General ROS-related support
