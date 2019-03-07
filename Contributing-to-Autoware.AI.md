@@ -115,6 +115,7 @@ A pull request review will look at all aspects of the pull request.
   - Can the pull request be merged independent of any other pull requests?
     This is not an absolute requirement because sometimes multiple pull requests are needed for a complex feature, but in the majority of cases if your pull request requires other pull requests to be merged first, it will be looked at very intensively and may not be accepted.
     If you are developing a separate feature that requires another feature still in review, consider waiting for that feature to be merged before making your own pull request.
+  - Have all comments on the pull request been addressed satisfactorily?
   - Have the commits been signed for the [Developer Certificate of Origin](https://developercertificate.org/)?
 
 While performing the review, feel free to suggest changes to the code and documentation.
@@ -135,6 +136,9 @@ We recommend you do so to avoid accidentally developing new contributions from t
 
 However, a pull request cannot be merged until at least 48 hours have passed since the pull request was made.
 This gives others a chance to comment on the pull request before it gets merged.
+Similarly we prefer that a pull request not be merged until some time has elapsed since the last review was made.
+This is to give others time to respond to a review with potentially opposing opinions.
+24 hours since the last review is the current guideline.
 
 Remember, if you want your pull request merged rapidly then you should communicate your intentions to the community before you begin working.
 By doing so, you will ensure that everyone interested already knows what is going on when your pull request arrives.
@@ -151,6 +155,7 @@ When merging a pull request, make sure to follow these guidelines.
   In particular, keep an eye out for major problems such as unrelated changes included in the pull request, or a missing DCO sign-off line, or incomplete CI runs.
 - If the pull request comes from outside the Autoware organisation, then a maintainer is responsible for running the CI jobs necessary to check if the pull request can be merged.
   CI must be run on all officially supported platforms.
+- Don't merge pull requests until at least 48 hours have elapsed since the request was made, 24 hours have elapsed since the last review was made, and all comments have been addressed satisfactorily.
 - When performing the merge, squash the commits into as small a number of commits as reasonable.
   This is done to keep the repository history clean.
 
