@@ -146,7 +146,7 @@ By doing so, you will ensure that everyone interested already knows what is goin
 
 ## Merging guidelines
 
-If you are a maintainer, you are responsible for merging accepted pull requests into the main branch.
+If you are a maintainer, you are responsible for merging accepted pull requests into the master branch.
 In general there is not much involved in this work.
 When merging a pull request, make sure to follow these guidelines.
 
@@ -158,6 +158,7 @@ When merging a pull request, make sure to follow these guidelines.
 - Don't merge pull requests until at least 48 hours have elapsed since the request was made, 24 hours have elapsed since the last review was made, and all comments have been addressed satisfactorily.
 - When performing the merge, squash the commits into as small a number of commits as reasonable.
   This is done to keep the repository history clean.
+- If the pull request came from a branch on the Autoware repository, rather than from a fork, delete the branch once it has been merged.
 
 
 # Coding style
