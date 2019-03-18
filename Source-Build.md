@@ -19,7 +19,7 @@
 
 **NOTE: Please do not install ros-indigo-velodyne-pointcloud package. If it is already installed, please uninstall it.**
 
-### Install system dependencies for Ubuntu 16.04 Kinetic
+### System dependencies for Ubuntu 16.04 Kinetic
 ```
 % sudo apt-get update
 % sudo apt-get install -y python-catkin-pkg python-rosdep python-wstool ros-$ROS_DISTRO-catkin libmosquitto-dev gksu
