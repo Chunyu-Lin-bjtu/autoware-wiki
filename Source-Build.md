@@ -6,9 +6,9 @@
 - FlyCapture2 (optional)
 - Armadillo (optional)
 
-**Please use Autoware v1.9.1 if you want to use ROS indigo.**
+**Please use Autoware v1.9.1, or lower if you wish to run on ROS Indigo.**
 
-### Install system dependencies for Ubuntu 14.04 Indigo
+### System dependencies for Ubuntu 14.04 Indigo
 
 ```
 % sudo apt-get install -y  python-catkin-pkg python-rosdep python-wstool ros-$ROS_DISTRO-catkin
@@ -38,7 +38,7 @@
 $ cd $HOME
 $ git clone https://github.com/CPFL/Autoware.git --recurse-submodules
 ```
-or if you already have a copy of the repo, run `$ git submodule update --init --recursive`.
+or if you already have a copy of the repo, run `$ git submodule update --init --recursive`
 
 2. Initialize the workspace, let rosdep to install the missing dependencies and compile.
 
