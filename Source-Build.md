@@ -1,7 +1,6 @@
 ### Requirements
 
 - ROS kinetic (Ubuntu 16.04)
-- OpenCV 2.4.10 or higher
 - Qt 5.2.1 or higher
 - CUDA (optional)
 - FlyCapture2 (optional)
