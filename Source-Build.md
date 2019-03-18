@@ -74,17 +74,11 @@ $ ./catkin_make_release
 
 ### DNN-based nodes
 
-Several DNN-based nodes, such as RCNN, SSD, and Yolo, are not automatically built.
+Some DNN-based nodes, such as SSD, are not automatically built.
 
 To build these nodes please follow the respective node's README
 [SSD](https://github.com/CPFL/Autoware/tree/master/ros/src/computing/perception/detection/vision_detector/packages/vision_ssd_detect/README.md)
 **Darknet** is now included in Autoware perception.
-
-
-Also be careful when changing files under `ros/src/sensing/drivers/lidar/packages/velodyne`. There is **subtree**.
-The original repository is [here](https://github.com/CPFL/velodyne). If you change those files from this
-repository, you must use **git subtree push**. (Please never change and push code if you don't understand
-`git subtree` well).
 
 ### How to start
 
