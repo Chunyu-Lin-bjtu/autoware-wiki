@@ -17,7 +17,7 @@
 % sudo apt-get install libmosquitto-dev
 ```
 
-**NOTE: Please do not install ros-indigo-velodyne-pointcloud package. If it is already installed, please uninstall.**
+**NOTE: Please do not install ros-indigo-velodyne-pointcloud package. If it is already installed, please uninstall it.**
 
 ### Install system dependencies for Ubuntu 16.04 Kinetic
 ```
