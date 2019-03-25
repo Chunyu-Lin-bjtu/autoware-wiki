@@ -232,7 +232,7 @@ See the [labels page](https://github.com/CPFL/Autoware/labels) for a list of lab
 
 If you are new to Autoware and looking for a feature or bug-fix to implement, look for those that have the [Good first issue](https://github.com/CPFL/Autoware/labels/Good%20first%20issue) label.
 
-If you are filing a new issue or making a pull request, use either the `Bug` label, for bug reports and bug fixes, or the `Enhancement` label, for new or improved features and feature requests. Do not add any labels that are identified in their description as being a Kanban column. The maintainers will add these as appropriate when initially processing the issue.
+If you are filing a new issue or making a pull request, use either the `Bug` label, for bug reports and bug fixes, or the `Enhancement` label, for new or improved features and feature requests.
 
 
 ## Task (Kanban) board
