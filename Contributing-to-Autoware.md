@@ -48,7 +48,7 @@ If you are not familiar with Git or any of its more complex features such as reb
    If it is a bug fix, describe why you believe the bug will be corrected.
    The more detailed your design, the greater the chance your implementation will be accepted at the pull request review stage.
    If you can, it often helps to have semi-formal or formal models of your intended design's behaviour and structure.
-1. Communicate your attentions to the Autoware community (see [[#communication]], above).
+1. Communicate your attentions to the Autoware community (see [communication](#communication), above).
 1. If you have not done so already (such as for a previous feature or bug fix you developed), [fork the Autoware repository](https://guides.github.com/activities/forking/).
 1. In your new fork, create a new branch by clicking the `Branch: master` button at the top left, above the list of source files and entering the name for the new branch to create.
    **Important:** Make sure your branch begins from the `master` branch of Autoware, not another feature or bug fix branch, unless someone from the community directs you to do otherwise.
