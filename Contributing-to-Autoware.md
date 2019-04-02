@@ -54,7 +54,7 @@ If you are not familiar with Git or any of its more complex features such as reb
    **Important:** Make sure your branch begins from the `master` branch of Autoware, not another feature or bug fix branch, unless someone from the community directs you to do otherwise.
 1. Clone your fork of Autoware to your computer and then check out the branch you have created.
 1. Begin developing your feature or bug fix. Make as many commits as you feel necessary during the development.
-   Be sure to include the [Developer Certificate of Origin](https://developercertificate.org/) [sign-off line](https://github.com/probot/dco) in your commit messages.
+   **Important: Be sure to include the [Developer Certificate of Origin](https://developercertificate.org/) [sign-off line](https://github.com/probot/dco) in your commit messages.**
    - If you are committing from the command line, pass the `-s` or `--signoff` option to `git commit` to have the sign-off line automatically added to your commit message.
      Be aware that this implies your agreement with it.
    - You can add the sign-off manually by adding the following line to your commit message: `Signed-off-by: Your Name <your.email@example.com>`
