@@ -76,7 +76,7 @@ For some requests, the nature of instantaneous chat can make it easier to unders
 
 The [Autoware category](https://discourse.ros.org/c/autoware) on the ROS Discourse discussion board is available as a forum for general discussion of Autoware, such as discussing architecture choices, discussing how to implement a new feature, or announcing a new algorithm you have added.
 However, **Discourse is not an appropriate place to ask for help.**
-If you are trying to solve a problem, please use the [ROS Answers](#ROS_Answers) website.
+If you are trying to solve a problem, please use the [ROS Answers](#ros-answers) website.
 
 
 # Bug reports
