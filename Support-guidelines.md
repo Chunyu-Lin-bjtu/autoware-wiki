@@ -24,11 +24,20 @@ All contributions are welcome!
 As with any open source project, Autoware is improved as much by its users as by its developers.
 
 
-# Discourse discussion board
+# ROS Answers
 
-The [Autoware category](https://discourse.ros.org/c/autoware) on the ROS Discourse discussion board is available as a forum for general discussion of Autoware as well as for asking for help.
-It is quite likely that someone has had the same problem as you, so consider searching the category for similar questions before making a new post.
-If you don't find an answer to your problem, then make a post explaining what is wrong in as much detail as you can.
+When you have a problem that you cannot solve yourself using the documentation, your next stop should be the [ROS Answers website](https://answers.ros.org/).
+This is an Question and Answer site for ROS and software using it, such as Autoware.
+
+When using ROS Answers, it is important to act as a responsible member of the ROS community.
+Follow the [ROS guidelines about support](http://wiki.ros.org/Support), especially the [section on etiquette](http://wiki.ros.org/Support#Etiquette).
+
+Most importantly, before asking your question **conduct a search for another question with the same problem**.
+It is possible that someone else has already found the answer, so conducting a search may get you a solution to your problem much faster than asking a question and waiting for someone to respond.
+
+If you don't find an answer to your problem by searching, then [ask a new question](https://answers.ros.org/questions/ask/?tags=autoware) explaining what is wrong in as much detail as you can.
+Please provide **as much as possible** of the following information.
+The more information you provide, the sooner you will get a useful response.
 
 - Post the complete output for error messages, starting from the command that you ran.
   If the output is long, use a service such as [GitHubGists](https://gist.github.com/) and link that from your post.
@@ -61,6 +70,13 @@ Invitations are sent automatically so you will not have to wait long.
 However this is not an appropriate place to post general requests for support.
 You should only use the chat if a developer asks you to join to discuss your problem in more detail.
 For some requests, the nature of instantaneous chat can make it easier to understand the finer details of a problem.
+
+
+# Discourse discussion board
+
+The [Autoware category](https://discourse.ros.org/c/autoware) on the ROS Discourse discussion board is available as a forum for general discussion of Autoware, such as discussing architecture choices, discussing how to implement a new feature, or announcing a new algorithm you have added.
+However, **Discourse is not an appropriate place to ask for help.**
+If you are trying to solve a problem, please use the [ROS Answers](#ROS_Answers) website.
 
 
 # Bug reports
@@ -103,7 +119,7 @@ There are more appropriate venues for those, such as [Stack Overflow](https://st
 
 Do not contact the developers directly.
 Using the correct channels means everyone can see your question, and you are more likely to get a response.
-If you contact a few developers directly, that is a lot less eyes on your problem (and a lot more annoyed busy developers.), and it also means that others cannot see the solution to your problem.
+If you contact a few developers directly, that is a lot less eyes on your problem (and a lot more annoyed busy developers), and it also means that others cannot see the solution to your problem.
 
 Do not post a request for help that just says "It doesn't work."
 No one will know how to help you.
