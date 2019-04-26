@@ -27,3 +27,11 @@ Respond with above text and add the "more information needed" label and "bug" la
     If you think that this may not be a need for a new feature but is instead something that you just don't know how to do with Autoware, then consider closing this feature request and asking a question at [ROS Answers](https://answers.ros.org/questions/ask/?tags=autoware) requesting help. This may get you past your problem faster. Link to your new topic from this issue so we know where to continue the discussion.
 
 Respond with above text and add the "more information needed" label and "enhancement" label.
+
+# Discourse post asking for help
+
+    Thanks for using Autoware and for your question. Howevere ask that you please ask questions at the [ROS Answers website](https://answers.ros.org/questions/ask/?tags=autoware) following our [support guidelines]). Please pay particular attention to the information we ask you to provide.
+
+    Discourse is for news and general interest discussion. [ROS Answers](https://answers.ros.org/questions/scope:all/sort:activity-desc/tags:autoware/page:1/) provides a forum which can be filtered by tags to make sure the relevant people can find and/or answer the question, and not overload everyone with hundreds of posts.
+
+Respond with the above and close the topic.
