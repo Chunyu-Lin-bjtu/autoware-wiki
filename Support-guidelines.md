@@ -26,7 +26,7 @@ As with any open source project, Autoware is improved as much by its users as by
 
 # ROS Answers
 
-When you have a problem that you cannot solve yourself using the documentation, your next stop should be the [ROS Answers website](https://answers.ros.org/).
+When you have a problem that you cannot solve yourself using the documentation, your next stop should be the [ROS Answers website](https://answers.ros.org/questions/scope:all/sort:activity-desc/tags:autoware/page:1/).
 This is an Question and Answer site for ROS and software using it, such as Autoware.
 
 When using ROS Answers, it is important to act as a responsible member of the ROS community.
