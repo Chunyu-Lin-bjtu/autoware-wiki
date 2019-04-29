@@ -35,11 +35,15 @@ To conclude, Autoware provides a complete software stack for self-driving vehicl
 
 The original version of Autoware was officially released in August 2015 by the research group of Nagoya University directed by Prof. Shinpei Kato. Later in December 2015, [Tier IV](https://www.tier4.jp) was founded by Prof. Shinpei Kato to maintain Autoware and apply it for real self-driving vehicles. As time goes by, Autoware has become an recognized open-source project on the GitHub. In December 2018, Tier IV decided to transfer the ownership of Autoware to [The Autoware Foundation](https://www.autoware.org), which was co-founded by Tier IV, [Apex.AI](https://www.apex.ai), and [Linaro](https://www.linaro.org/). Now that Autoware is maintained by The Autoware Foundation, the roadmap, policy, and future of Autoware can be determined by the member companies rather than a particular individual company. We believe this makes Autoware be a _true_ open-source project. 
 
+### What is required to use Autoware?
+
+Autoware requires 3D map data and LiDAR sensors at minimum. They are used for most of main functional modules, such as  localization, detection, tracking, prediction, and planning. Cameras enable Autoware to recognize traffic lights in combination with 3D map data, and can also enhance detection capabilities. GNSS and IMU are also useful to complement the result of Localization. Finally, you need a car with the Autoware interface. ROSBAG and the simulators can help you in case that you don't have a car.
+
 ### How to create 3D map data?
 
 We suggest the following steps. First, you try creating small-scale 3D map data for private area testing, using the NDT mapping node provided by Autoware or using the [Autoware Tools](https://tools.tier4.jp/) (paid service). Once it goes well, you can contact a professional mapping company in your region to create large-scale 3D map data for public road testing. Examples of the mapping companies include [Aisan Technology](http://www.aisantec.co.jp/english/) and [Mandli](https://www.mandli.com/). Note that the NDT mapping node and the Autoware Tools are designed for closed environments, thus not suitable for creating large-scale 3D map data.
 
-### What car is available with Autoware?
+### Which car is available with Autoware?
 
 Autoware requires a car to have an interface exposed to receive a twist of velocity and angle produced by the Autoware's _Control_ module. Such a car often implements a by-wire controller or a mechanical controller to actuate the steering and throttle. Examples of the car providers include [AutonomouStuff](https://autonomoustuff.com/product/astuff-automotive/) and [StreetDrone](https://streetdrone.com/vehicles/).
 
