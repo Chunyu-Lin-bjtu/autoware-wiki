@@ -16,14 +16,20 @@ _Control_ defines motion of the vehicle with a twist of **velocity** and **angle
 
 To conclude, Autoware provides a complete software stack for self-driving vehicles. [Join Autoware](https://www.autoware.org/) now, and your contribution will be loved by the world.
 
-## Getting started
+## Getting Started
 
 1. [Installation](https://github.com/CPFL/Autoware/wiki/Installation)
 1. [ROSBAG Demo](https://github.com/CPFL/Autoware/wiki/ROSBAG-Demo)
 1. [Simulation Demo](https://github.com/CPFL/Autoware/wiki/Simulation-Demo)
 1. [Field Test](https://github.com/CPFL/Autoware/wiki/Field-Test)
 
-## FAQ
+## Communication Tools
+
+1. [Slack](https://autoware.herokuapp.com/) (for everybody)
+1. [ROS Discourse](https://discourse.ros.org/c/autoware) (for developers)
+1. [ROS Answer](https://answers.ros.org/questions/scope:all/sort:activity-desc/tags:autoware/page:1/) (for users)
+
+## Frequently Asked Questions
 
 ### How to create 3D map data?
 
