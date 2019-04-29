@@ -31,9 +31,13 @@ To conclude, Autoware provides a complete software stack for self-driving vehicl
 
 ## Frequently Asked Questions
 
+### History of Autoware 
+
+The original version of Autoware was officially released in August 2015 by the research group of Nagoya University directed by Prof. Shinpei Kato. Later in December 2015, [Tier IV](https://www.tier4.jp) was founded by Prof. Shinpei Kato to maintain Autoware and apply it for real self-driving vehicles. As time goes by, Autoware has become an recognized open-source project on the GitHub. In December 2018, Tier IV decided to transfer the ownership of Autoware to [The Autoware Foundation](https://www.autoware.org), which was co-founded by Tier IV, [Apex.AI](https://www.apex.ai), and [Linaro](https://www.linaro.org/). Now that Autoware is maintained by The Autoware Foundation, the roadmap, policy, and future of Autoware can be determined by the member companies rather than a particular individual company. We believe this makes Autoware be a _true_ open-source project. 
+
 ### How to create 3D map data?
 
-We suggest the following steps. First, you can create small-scale 3D map data, using the NDT mapping node provided by Autoware or using the [Autoware Tools](https://tools.tier4.jp/) (paid service), for private area testing. Once it goes well, you can contact a professional mapping company in your region to create large-scale 3D map data for public road testing. Examples of the map providers include [Aisan Technology](http://www.aisantec.co.jp/english/) and [Mandli](https://www.mandli.com/). Note that the NDT mapping node and the Autoware Tools are not suitable for creating large-scale 3D map data.
+We suggest the following steps. First, you try creating small-scale 3D map data for private area testing, using the NDT mapping node provided by Autoware or using the [Autoware Tools](https://tools.tier4.jp/) (paid service). Once it goes well, you can contact a professional mapping company in your region to create large-scale 3D map data for public road testing. Examples of the mapping companies include [Aisan Technology](http://www.aisantec.co.jp/english/) and [Mandli](https://www.mandli.com/). Note that the NDT mapping node and the Autoware Tools are designed for closed environments, thus not suitable for creating large-scale 3D map data.
 
 ### What car is available with Autoware?
 
@@ -45,4 +49,4 @@ Most of industrial PCs and gaming PCs with the Intel x86 architecture are good t
 
 ### Can I contribute to the Autoware project?
 
-Yes, of course. Please consider joining [The Autoware Foundation](https://www.autoware.org).
+Yes, of course. Please join [The Autoware Foundation](https://www.autoware.org)!
