@@ -10,8 +10,6 @@
 1. [ROSBAG Demo](https://github.com/CPFL/Autoware/wiki/ROSBAG-Demo)
 1. [Simulation Demo](https://github.com/CPFL/Autoware/wiki/Simulation-Demo)
 1. [Field Test](https://github.com/CPFL/Autoware/wiki/Field-Test)
-1. [Nodes HOWTO](https://github.com/CPFL/Autoware/wiki/Nodes-HOWTO)
-1. [Videos](https://github.com/CPFL/Autoware/wiki/videos)
 
 
 ### Developers Guide
