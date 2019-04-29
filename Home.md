@@ -4,7 +4,7 @@
 
 Autoware is ROS-based open-source software enabling self-driving vehicles to be deployed in private areas, urban roads, and highways. It provides, but not limited to, the functional modules described below. 
 
-_Localization_ depends on **3D high-definition map** data and the **NDT** algorithm. The result of _Localization_ can be complemented by the **Kalman Filter** algorithm using odometry information such as **CAN** messages and **GNSS/IMU** sensors.
+_Localization_ depends on **3D high-definition map** data and the **NDT** algorithm. The result of _Localization_ is complemented by the **Kalman Filter** algorithm, using odometry information obtained from **CAN** messages and **GNSS/IMU** sensors.
  
 _Detection_ is empowered by **camera** and **LiDAR** devices in combination with **3D high-definition map** data. The _Detection_ module uses **deep learning** and **sensor fusion** approaches.
 
