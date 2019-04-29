@@ -38,3 +38,7 @@ We suggest the following steps. First, you can create small-scale 3D map data, u
 ### What car is available with Autoware?
 
 Autoware requires a car to have an interface exposed to receive a twist of velocity and angle produced by the Autoware's _Control_ module. Such a car often provides a by-wire controller or a mechanical controller to actuate the steering and throttle.
+
+### Can I contribute to the Autoware project?
+
+Yes, of course. Please consider joining [The Autoware Foundation](https://www.autoware.org).
