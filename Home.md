@@ -2,7 +2,7 @@
 
 ## Welcome to the Autoware.AI Wiki
 
-Autoware.AI is ROS-based open-source software enabling self-driving vehicles to be tested in private areas, urban roads, and highways. Another variant of Autoware, _a.k.a._, [Autoware.Auto](https://gitlab.com/AutowareAuto), is also under development for the purpose of commercial deployment of self-driving vehicles. The current version of Autoware.AI provides, but not limited to, the functional modules described below. 
+Autoware.AI is **ROS-based open-source software**, enabling self-driving vehicles to be tested in private areas, urban roads, and highways. Another variant of Autoware, _a.k.a._, [Autoware.Auto](https://gitlab.com/AutowareAuto), is also under development for the purpose of commercial deployment of self-driving vehicles with functional safety capabilities. The current version of Autoware.AI provides, but not limited to, the functional modules described below. 
 
 _Localization_ depends on **3D high-definition map** data and the **NDT** algorithm. The result of _Localization_ is complemented by the **Kalman Filter** algorithm, using odometry information obtained from **CAN** messages and **GNSS/IMU** sensors.
  
