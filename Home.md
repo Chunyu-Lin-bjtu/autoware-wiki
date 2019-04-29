@@ -39,6 +39,10 @@ We suggest the following steps. First, you can create small-scale 3D map data, u
 
 Autoware requires a car to have an interface exposed to receive a twist of velocity and angle produced by the Autoware's _Control_ module. Such a car often implements a by-wire controller or a mechanical controller to actuate the steering and throttle. Examples of the car providers include [AutonomouStuff](https://autonomoustuff.com/product/astuff-automotive/) and [StreetDrone](https://streetdrone.com/vehicles/).
 
+### Which computer can run Autoware in real-time?
+
+Most of industrial PCs and gaming PCs with the Intel x86 architecture are good to begin with. For automotive applications, you can also consider the Arm architecture. Examples of Arm-based boards include [96Boards products](https://www.96boards.org/products/), [Xilinx products](https://www.xilinx.com/products/silicon-devices/soc/zynq-ultrascale-mpsoc.html), and [NVIDIA products](https://www.nvidia.com/en-us/self-driving-cars/drive-platform/). Many-core solutions are also provided with [Kalray MPPA](https://www.kalrayinc.com/products/) and [eSol MCOS](https://www.esol.com/embedded/).
+
 ### Can I contribute to the Autoware project?
 
 Yes, of course. Please consider joining [The Autoware Foundation](https://www.autoware.org).
