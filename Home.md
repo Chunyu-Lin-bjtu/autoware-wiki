@@ -50,3 +50,7 @@ Most of industrial PCs and gaming PCs with the Intel x86 architecture are good t
 ### Can I contribute to the Autoware project?
 
 Yes, of course. Please join [The Autoware Foundation](https://www.autoware.org)!
+
+### More questions?
+
+Visit [Slack](https://autoware.herokuapp.com/), [ROS Discourse](https://discourse.ros.org/c/autoware), and [ROS Answer](https://answers.ros.org/questions/scope:all/sort:activity-desc/tags:autoware/page:1/).
