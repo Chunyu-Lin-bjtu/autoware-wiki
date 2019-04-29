@@ -14,7 +14,7 @@ _Planning_ is based on **probabilistic robotics** and **rule-based systems**, pa
 
 _Control_ defines motion of the vehicle with a twist of **velocity** and **angle** (also **curvature**). The _Control_ module falls into both the Autoware-side stack (**MPC** and **Pure Pursuit**) and the vehicle-side interface (**PID** variants). 
 
-To conclude, Autoware provides a complete software stack for self-driving vehicles. [Join Autoware](https://autoware.herokuapp.com/) now, and your contribution will be loved by the world.
+To conclude, Autoware provides a complete software stack for self-driving vehicles. [Join Autoware](https://www.autoware.org/) now, and your contribution will be loved by the world.
 
 ## Getting started
 
