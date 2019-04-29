@@ -2,7 +2,7 @@
 
 ## Welcome to the Autoware Wiki
 
-Autoware is ROS-based open-source software enabling self-driving vehicles to be deployed in private areas, urban roads, and highways. It provides, but not limited to, the following functional modules. 
+Autoware is ROS-based open-source software enabling self-driving vehicles to be deployed in private areas, urban roads, and highways. It provides, but not limited to, the functional modules described below. 
 
 _Localization_ is based on **3D high-definition map** data and the **NDT** algorithm. The result of _Localization_ can be complemented by the **Kalman Filter** algorithm using odometry information such as **CAN** messages and **GNSS/IMU** sensors.
  
@@ -21,4 +21,8 @@ All in all, Autoware provides a complete software stack for self-driving technol
 You can easily install Autoware using Docker and run the demo using ROSBAG.
 
 1. [Installation](https://github.com/CPFL/Autoware/wiki/Installation)
-1. [Demo](https://github.com/CPFL/Autoware/wiki/Demo)
+1. [ROSBAG Demo](https://github.com/CPFL/Autoware/wiki/ROSBAG-Demo)
+1. [Simulation Demo](https://github.com/CPFL/Autoware/wiki/Simulation-Demo)
+1. [Field Test](https://github.com/CPFL/Autoware/wiki/Field-Test)
+
+## FAQ
