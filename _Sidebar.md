@@ -7,12 +7,11 @@
 1. [Installation](https://github.com/CPFL/Autoware/wiki/Installation)
     1. [Docker](https://github.com/CPFL/Autoware/wiki/Docker)
     1. [Source](https://github.com/CPFL/Autoware/wiki/Source-Build)
-1. [Demo](https://github.com/CPFL/Autoware/wiki/Demo)
+1. [ROSBAG Test](https://github.com/CPFL/Autoware/wiki/ROSBAG-Demo)
+1. [Simulation Demo](https://github.com/CPFL/Autoware/wiki/Simulation-Demo)
 1. [Field Test](https://github.com/CPFL/Autoware/wiki/Field-Test)
-1. [Simulation Test](https://github.com/CPFL/Autoware/wiki/Simulation-Test)
 1. [Nodes HOWTO](https://github.com/CPFL/Autoware/wiki/Nodes-HOWTO)
 1. [Videos](https://github.com/CPFL/Autoware/wiki/videos)
-1. [FAQ](https://github.com/CPFL/Autoware/wiki/faq)
 
 
 ### Developers Guide
