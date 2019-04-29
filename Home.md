@@ -25,10 +25,10 @@ All in all, Autoware provides a complete software stack for self-driving technol
 
 ## FAQ
 
-1. How to create 3D map data?
+### How to create 3D map data?
 
 We suggest the following steps. First, you can create small-scale 3D map data, using the NDT mapping node provided by Autoware or using the [Autoware Tools](https://tools.tier4.jp/) (paid service), for private area testing. Once it goes well, you can contact a professional mapping company in your region to create large-scale 3D map data for public road testing. Note that the NDT mapping node and the Autoware Tools are not suitable for creating large-scale 3D map data.
 
-1. What car is available with Autoware?
+### What car is available with Autoware?
 
 Autoware requires a car to have an interface exposed to receive a twist of velocity and angle produced by the Autoware's _Control_ module. Such a car often provides a by-wire controller or a mechanical controller to actuate the steering and throttle.
