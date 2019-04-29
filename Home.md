@@ -8,7 +8,7 @@ _Localization_ depends on **3D high-definition map** data and the **NDT** algori
  
 _Detection_ is empowered by **camera** and **LiDAR** devices in combination with **3D high-definition map** data. The _Detection_ module uses **deep learning** and **sensor fusion** approaches.
 
-_Tracking_ and _Prediction_ are realized with the **Kalman Filter** algorithm, leveraging lane network information provided by **3D high-definition map** data.
+_Tracking_ and _Prediction_ are realized with the **Kalman Filter** algorithm and the lane network information provided by **3D high-definition map** data.
  
 _Planning_ is based on **probabilistic robotics** and **rule-based systems**, partly using **deep learning** approaches as well. 
 
