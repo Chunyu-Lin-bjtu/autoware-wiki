@@ -1,0 +1,15 @@
+script:
+- |
+  git config user.name "gbiggs"
+  git config user.email "geoff.biggs@tier4.jp"
+  git remote remove origin
+  git remote add origin https://$GITHUB_API_KEY@github.com/autowarefoundation/autoware-wiki.git > /dev/null 2>&1
+  git remote add upstream https://$GITHUB_API_KEY@github.com/autowarefoundation/autoware-wiki.wiki.git > /dev/null 2>&1
+  git fetch origin
+  git fetch upstream
+  git merge upstream/master --no-edit
+  git push origin HEAD:master > /dev/null 2>&1
+  git push upstream HEAD:master > /dev/null 2>&1
+env:
+  matrix:
+    secure: nIlF+fTAN+aNATeU27xE1W9y9d5/PSXzag0+gadnrectoob3U9saCRrwORGzU9CLK6eOeUIB+xLiXlYwRxMw8xoEombRPUtThsx21HwefNBdWTxe9m35R5HTKTNX4K/OxrG4Pl10xQ5iQthXuoK52SGx2j9G6StgC0yoT3/gpab5Jsxj8hXM5TEYN8qrnDUonKUSV15aZixfdfEuHxovK77RDq7RrhyR02TjtE1DCPoDh6XXcgdzHAOouP/gut/ASuaqPH4IYZ65Fr+aWZEXqgwboV+uOspR7gAqoSnXRMN+pDyQDg+OeC6NVf+Sek9k0PeHBWspm6uv271kYwBrkW3k+NAzfzujPAmtfRhhimRQqwMPN98BnZMKyGICfuRosdILI+JzzWm28alL+w1PZRQ1pEG2Oc+vMfYrtrd+Gv4x1NiXfan47f0hIS9ViABopOSxlZ5IU2TQVyDIk5j7Lgt0Muc3ijuOCQ1dlVBxdET0G3jC4wFFYL+sgUztjF7t8SxueWZj4WGaHMGOCmNF6BgUfzJ5vB6VClod4OZt+R1yEt7FknIUbElrpGs/OXZCUw8LqZBLb+1YLFCSuNbuVGvLiJTvyEe1DgED7DOW25IGpE51O4cROoIruzqY8dQvHFF6Lr1I0l473ogSJfSNK6vXNCu9e+Pyv5J71xJzckI=
